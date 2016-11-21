@@ -1,0 +1,259 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen {
+
+dl.student-details dt,
+dl.demos dt {
+	font-weight:bold;
+	display:block;	
+	border-top: 1px solid #EEE;	
+	margin:0.5em 0 0 0;
+	padding:0.5em 0 0 0;
+}
+
+dl.student-details dd,
+dl.demos dd {
+	display:block;
+	margin-left:1em;		
+}
+
+dl.demos dd {	
+	padding-left:1em;
+	background-image: url(icon-arrow-right.gif);
+    background-position:left center;
+    background-repeat: no-repeat;				
+}
+
+dl.faqs dt {
+	margin: 0;    
+    padding: 0 0 5px 15px;
+    background-image: url(icon-arrow-down.gif);
+    background-position: 0.4em 1em;
+    background-repeat: no-repeat;
+    border-bottom: 1px dotted #DDDDDD;
+    display: block;
+    padding: 0.5em 1em 0.5em 2em;    		
+}
+
+dl.faqs dt a {
+	text-decoration: none;		
+}
+
+dl.faqs dd {
+	margin-left:2em;		
+}
+
+table.simple tr {
+	border: 1px solid #EEE;			
+}
+
+
+html.ie7 table.simple td  {
+	border-top: 1px solid #EEE;		
+	border-bottom: 1px solid #EEE;		
+}
+
+html.ie7 table.simple   {
+	border: 1px solid #EEE;			
+}
+
+table.simple caption  {
+	text-align:left;
+	font-weight:bold;
+	margin:0 0 1em 0;
+	padding:0;			
+}
+
+table.simple p {
+	margin-top: 0;			
+}
+
+table.simple {
+	margin:2em 0;			
+}
+
+table.simple th  {
+	width:auto;		
+}
+
+table.simple tr:nth-child(even) {
+    background-color: #EBF4FB;
+}
+
+
+html.ie7 table.simple tbody tr.zebraEven,
+html.ie8 table.simple tbody tr.zebraEven  {
+    background-color: #EBF4FB;
+}
+
+
+table.handouts th:nth-child(1) {
+	width:30%;			
+}
+
+table.handouts th:nth-child(3) {
+	width:20%;		
+}
+
+table.handouts td:nth-child(1) {
+	font-weight:bold;		
+}
+
+table.handouts a.pdf-link,
+table.handouts a.rtf-link  {	
+	display:block;
+	margin-bottom:1em;
+			
+}
+
+a.pdf-link,
+a.rtf-link  {
+	background: url(icon-pdf.png) no-repeat;	
+	white-space: nowrap;
+	padding-left:20px;
+	/*display:block;*/
+	/*padding-bottom:1em;*/
+	text-decoration:none;		
+}
+
+a.rtf-link  {
+	background: url(icon-doc.png) no-repeat;
+}
+
+div#ou-region1 div.ou-content ul.downloads-list li,
+div#ou-region1 div.ou-content div.ouaudio ul li {
+	background-image:none;
+	margin-left:0;
+}
+
+div#ou-region1 div.ou-content div.ouaudio ul li {	
+	padding:0;
+}
+
+
+div.warning,
+div.tip,
+div.notes {
+	border-top: 5px solid /*#069*/ #C03;
+	border-radius: 0;
+	padding: 1.5em 2em .5em 55px;
+	background-color: #E6EBF3;
+	color: #000;
+	margin: 1.5em 0;
+}
+
+div.tip {
+	border-top: 5px solid #069;	
+}
+div.notes {
+	border-top: 5px solid #A3336B;	
+}
+
+div#ou-region1 div.warning h2,
+div#ou-region1 div.tip h2,
+div#ou-region1 div.notes h2  {	
+	margin-top:0;	
+}
+
+div.ou-content div.ouvideo ul.tabs {
+	margin-bottom:0;
+}
+
+div.ouvideo div.transcript blockquote,
+div.ouaudio div.transcript blockquote {
+	background-image:none;
+}
+
+blockquote.simple {
+	padding-bottom:1em;
+	border-bottom:1px solid #EEE;	
+}
+
+blockquote.simple footer p {
+	margin-bottom:0;
+}
+
+blockquote.simple footer {
+	margin-left:1em;
+	font-size:0.9em;
+	color:#333;		
+}
+
+.clear {
+	overflow:auto;
+}
+
+div.twocol,
+div.twocol ul li {	
+	overflow:auto;	
+}
+
+div.twocol img {	
+	float:left;
+	margin:0 1em 1em 0;
+	padding: 5px;
+	border: solid 1px #EEE;
+}
+
+div.twocol a:hover img {
+	border: solid 1px #CCC;
+	-moz-box-shadow: 1px 1px 5px #999;
+	-webkit-box-shadow: 1px 1px 5px #999;
+    box-shadow: 1px 1px 5px #999;
+}
+
+div.twocol p {	
+	margin-top:0;
+}
+
+div.twocol div.leftcol {
+	float:left;
+	width:48%;	
+}
+div.twocol div.rightcol {
+	float:right;
+	width:48%;	
+}
+
+div#ou-region1 div.twocol ul h2 {	
+	border-top: 3px solid #A3336B;
+	font-size:1.6em;
+	padding-top:1em;
+}
+
+div.twocol ul h2 a{
+	text-decoration:none;	
+}
+
+body.template-content #ou-region1 .ou-content div.twocol div > ul > li {
+	background-image:none;
+	margin:0;
+	padding:0;
+}
+
+
+}
+
+@media only screen and (max-width: 640px), screen and (max-device-width: 640px) {
+
+blockquote.simple {
+	background-size:20px 18px;
+	padding-left:30px;	
+}
+
+div.twocol div.leftcol,
+div.twocol div.rightcol,
+div.twocol img {
+	float:none;
+	width:auto;		
+}
+
+div#ou-region1 div.twocol ul h2 {	
+	font-size:1.2em;
+}
+
+}
+
+
+

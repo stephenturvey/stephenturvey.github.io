@@ -1,0 +1,22 @@
+body {margin:0;padding:0;font-size:xx-small;font-family:sans-serif;color:#000;background-color:#fff}
+
+#ou-hd1 {margin:0;padding:4px;text-align:right}
+#ou-hd1 a {border:1px #ccc solid;padding:1px;text-decoration:none;color:#00f}
+#ou-hd2 {clear:both}
+#ou-hd1 img {float:left;padding-bottom:4px}
+
+#site {font-size:140%;margin:8px 4px 16px 4px}
+div#han {width:100%;height:auto}
+div#han2 {background-color:#e4f1f9;padding:5px 12px 10px 12px}
+div#han h1 {font-size:145%;margin:0;padding:0;color:#111;font-weight:normal}
+div#col14 {margin:16px 0;padding:0 0 8px 0}
+a {color:#000080}
+div.col14crse {width:100%;height:auto;border-top:1px solid #ccc;padding-top:1px;background-color:#f7fbfe}
+div.col14crse div.links {margin-top:1px;width:100%;border-top:1px solid #eee;padding-bottom:8px}
+div#col14 p {margin:0.3em 0.5em 8px 0.5em;padding:0;line-height:160%}
+div.col14crse h2 {margin:0;padding:0;font-size:100%;font-weight:normal;padding:8px 4px 7px 0.5em;color:#000}
+div.col14crse h2.welcome {background-color:#b9dbff}
+div#col14 h3 {font-weight:bold;font-size:100%;margin:8px 0 4px 0;padding:0 0.5em}
+div#col14 h3 a {text-decoration:none}
+div.col14crse ul {margin:10px 0;padding:0}
+div.col14crse ul li {list-style-type:disc;margin:0 0 0 16px;padding:0 0 2px 0}

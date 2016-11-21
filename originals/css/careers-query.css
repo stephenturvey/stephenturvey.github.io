@@ -1,0 +1,92 @@
+/* CSS Document */
+
+#careers-query-form {
+  color:#333333;  
+}
+
+#body-careers-query #content h3, 
+label.label-name,  
+label.label-reply {
+   color:#002E63; 
+   font-weight:normal; 
+   font-size:1.2em;      
+}
+
+#body-careers-query #content h3 {
+   margin-top:0.5em;
+}
+
+#careers-query-form dt label {
+   margin:0;
+   color:#333333;
+   font-weight:normal;
+}
+
+textarea {
+	margin:0 0 1em 0;
+	width:40em;
+	height:175px;
+	overflow:auto;
+}
+
+div.float-name,
+div.float-reply {
+   width:400px;
+   padding:0.5em 0;
+   height:auto;   
+}
+
+label.label-name, label.label-reply{
+   float:left;   
+   width:110px;  
+}
+
+input.input-name, input.input-reply{
+   width:230px;
+   margin-right:0;
+   padding-right:0;
+   font-size:105%;
+}
+
+#submit {
+   margin-top:3em;
+   margin-bottom:0.5em;
+   clear:left;   
+}
+
+#careers-query-form p.answer {
+   color:#002E63;
+   margin-top:1em;
+   margin-left:3em; 
+   padding-left:1em; 
+   border-left:3px solid #002E63;
+}
+
+textarea:focus, input:focus {
+  background-color:yellow;
+  color:black;
+}
+
+p.error {
+	color:#c00;
+	font-weight:bold;
+	font-size:120%;
+	background-color:#eee;
+	padding:4px;
+}
+
+p.error2 {
+	color:#c00;
+	font-weight:bold;
+	font-size:120%;
+}
+
+table#condetails {
+	margin:0;
+	padding:0;
+	width:100%;
+	border:0;
+}
+
+table#condetails td { border:0; }
+

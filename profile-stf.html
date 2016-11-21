@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Profile - StudentHome</title>
+
+<link rel="stylesheet" type="text/css" href="includes/headers-footers/ou-header.css" />
+
+<link rel="stylesheet" type="text/css" href="includes/studenthome-header-2012.css" />
+
+
+<style>
+/* ST: to accommodate old header/footer with new STF html */
+div#ou-org-header, 
+div#ou-org-footer, 
+.sh-header, 
+.grid, 
+#site2, 
+#site {
+float: none;
+margin: 0 auto;
+max-width: 1180px;
+}
+</style>
+
+
+<!-- ST: new stylesheet -->
+<link rel="stylesheet" type="text/css" href="//the-open-university.github.io/student-theme-framework/gui/styles.css" media="screen, projection" />
+<!-- end ST -->
+
+<script type="text/javascript" src="includes/headers-footers/ou-header.js"></script>
+<script type="text/javascript" src="includes/studenthome-menu-2012.js"></script>
+
+<!-- ST: include font awesome icons -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- end ST -->
+
+</head>
+<body class="ou-mobile ou-sections">
+<script type="text/javascript">if (typeof window.ou_sitestat=='function')ou_sitestat();</script>
+
+<div id="ou-org-header"> <a class="ou-skip" href="#ou-content">Skip to content</a> <a class="ou-link-ou" href="http://www.open.ac.uk/"><img src="includes/headers-footers/oulogo-56.jpg" alt="The Open University" /></a>
+  <div class="ou-role-nav">
+    <ul>
+      <li class="ou-role-accessibility"><a href="http://www.open.ac.uk/accessibility/">Accessibility</a></li>
+      <li class="ou-role-signin" id="ou-signin1"><a href="https://msds.open.ac.uk/signon/sams001.aspx" id="ou-signin2">Sign in</a></li>
+      <li id="ou-signout" class="ou-role-signout"><a href="https://msds.open.ac.uk/signon/samsoff.aspx" id="ou-signout2">/ Sign out</a></li>
+      <li id="ou-studenthome" class="ou-role-studenthome"><a href="http://www.open.ac.uk/students/" id="ou-studenthome2">StudentHome</a></li>
+      <li id="ou-tutorhome" class="ou-role-tutorhome"><a href="http://www.open.ac.uk/tutorhome/">TutorHome</a></li>
+      <li id="ou-intranet" class="ou-role-intranet"><a href="http://intranet.open.ac.uk/">IntranetHome</a></li>
+      <li id="ou-sponsor" class="ou-role-sponsor"><a href="https://css2.open.ac.uk/employers/sponsorhome/home/HomePage.aspx">SponsorHome</a></li>
+      <li id="ou-contact" class="ou-role-contact"><a href="http://www.open.ac.uk/contact/">Contact</a></li>
+      <li id="ou-search" class="ou-role-search"><a href="http://www.open.ac.uk/search/">Search the OU</a></li>
+    </ul>
+  </div>
+  <div class="ou-ia-nav">
+    <ul>
+      <li class="ou-ia-home"><a href="http://www.open.ac.uk/">The Open University</a></li>
+      <li class="ou-ia-study"><a href="http://www.open.ac.uk/study/">Study at the OU</a></li>
+      <li class="ou-ia-research"><a href="http://www.open.ac.uk/research/">Research at the OU</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/community/">OU Community</a></li>
+      <li class="ou-ia-about"><a href="http://www.open.ac.uk/about/">About the OU</a></li>
+    </ul>
+  </div>
+</div>
+
+<!--
+<div class="mnuwrap">
+<div class="sh-header" role="navigation">
+<ul>
+<li class="sh-home"><a href="index.aspx">StudentHome</a></li>
+<li class="sh-profile"><a href="profile.aspx" class="selected">Profile</a></li>
+<li class="sh-study"><a href="study-record.aspx" onmouseover="ioe_showmenu(3)" onmouseout="ioe_hidemenu()" onclick="ioe_hidemenu()">Study</a></li>
+<li class="sh-community"><a href="oulife.aspx">Community</a></li>
+<li class="sh-help"><a href="help.aspx">Help Centre</a></li>
+</ul>
+</div>
+</div>
+
+<div id="sh-header-menu"></div>
+<script type="text/javascript">
+var ioe_rel=1;
+var ioe_numcrse=3;
+var ioe_numqual=1;
+var ioe_course=["W102","W101","Y156"];
+var ioe_pres=["2014J","2014J","2010K"];
+var ioe_crsetype=[1,1,2];
+var ioe_crsetitle=["Law: concepts and perspectives","An introduction to law","Understanding children"];
+var ioe_crsewidth=27;
+var ioe_qualocc=["Q79_1"];
+var ioe_qualtitle=["Bachelor of Laws (Honours)"];
+var ioe_qualwidth=20;
+var iox_name="";
+var iox_nf="";
+ioe_createmenus();
+</script>
+-->
+
+
+<!-- ST: START STUDENT THEME FRAMEWORK HTML -->
+
+<div id="ou-site">
+
+<div id="ou-site-header">
+
+<ul class="ou-sections">
+<li class="ou-sh-home"><a href="#">StudentHome</a></li>
+<li class="ou-sh-profile"><a href="#" class="ou-selected">Profile</a></li>
+<li class="ou-sh-study"><a href="#">Study</a></li>
+<li class="ou-sh-community"><a href="#">Community</a></li>
+<li class="ou-sh-help"><a href="#">Help Centre</a></li>
+</ul>
+
+</div> <!-- end ou-site-header -->
+
+</div> <!-- end ou-site -->
+
+
+<div id="ou-site-body">
+
+<div id="ou-page">
+
+<div id="ou-region0">
+
+</div> <!-- end ou-region0 -->
+
+<div id="ou-region1">
+
+<div id="ou-content" class="ou-content">
+
+<h1>Profile</h1>
+
+<ul class="ou-tabs">
+<li><a href="#" class="ou-selected">OU profile</a></li>
+<li><a href="#">Online appearance</a></li>
+<li><a href="#">Preferred settings</a></li>
+<li><a href="#">Change password</a></li>
+</ul>
+
+
+<h3>Your contact details</h3>
+
+<table class="ou-table-headings-left">
+<tbody>
+
+<tr>
+<th style="width:30%">Name</th>
+<td style="width:50%">Stephen Turvey</td>
+<td style="width:20%">&nbsp;</td>
+</tr>
+
+<tr>
+<th>PI</th>
+<td>3428438</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<th>OUCU</th>
+<td>23949</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<th>Address</th>
+<td>5 Bellman's Drive<br>
+  Milton Keynes<br>
+  Buckinghamshire<br>
+  MK05 4NH</td>
+<td><a href="#"><i class="fa fa-pencil-square-o"></i> Edit</a></td>
+</tr>
+<tr>
+  <th>Delivery address</th>
+  <td>As above</td>
+  <td><a href="#"><i class="fa fa-pencil-square-o"></i> Edit</a></td>
+</tr>
+<tr>
+  <th>Phone (day, preferred)</th>
+  <td>01234 567891</td>
+  <td><a href="#"><i class="fa fa-pencil-square-o"></i> Edit</a></td>
+</tr>
+<tr>
+  <th>Phone (mobile)</th>
+  <td>07782 132456</td>
+  <td><a href="#"><i class="fa fa-pencil-square-o"></i> Edit</a></td>
+</tr>
+<tr>
+  <th>Email</th>
+  <td>&nbsp;</td>
+  <td><a href="#"><i class="fa fa-pencil-square-o"></i> Edit</a></td>
+</tr>
+<tr>
+  <th>Your Student Support Team</th>
+  <td>Law Student Support Team for Bachelor of Laws (Honours) W101 and W102. Phone: 01908 2343485.</td>
+  <td>&nbsp;</td>
+</tr>
+<tr>
+  <th>Catchment area</th>
+  <td>Harrogate (0142)</td>
+  <td>&nbsp;</td>
+</tr>
+<tr>
+  <th>Preferred online name</th>
+  <td>Mr. Jingles</td>
+  <td><a href="#"><i class="fa fa-pencil-square-o"></i> Edit</a></td>
+</tr>
+<tr>
+  <th>StudentHome introduction</th>
+  <td>&quot;Welcome, Stephen&quot;</td>
+  <td><a href="#"><i class="fa fa-pencil-square-o"></i> Edit</a></td>
+</tr>
+</tbody>
+</table>
+
+<hr>
+
+
+<h3>Your previous education and background</h3>
+<table class="ou-table-headings-left">
+  <tbody>
+    <tr>
+      <th style="width:30%">Highest education level</th>
+      <td style="width:50%">GCSE / O-level or SQA &amp; Standard grades</td>
+      <td style="width:20%"><a href="#"><i class="fa fa-pencil-square-o"></i> Edit</a></td>
+    </tr>
+    <tr>
+      <th>Last education institution </th>
+      <td>UK FE college</td>
+<td><a href="#"><i class="fa fa-pencil-square-o"></i> Edit</a></td>    </tr>
+    <tr>
+      <th>First generation status</th>
+      <td>Neither parent studied at a higher education institution</td>
+<td><a href="#"><i class="fa fa-pencil-square-o"></i> Edit</a></td>    </tr>
+    <tr>
+      <th>English for academic study</th>
+      <td>Up to 2 years since leaving school</td>
+      <td><a href="#"><i class="fa fa-pencil-square-o"></i> Edit</a></td>
+    </tr>
+    <tr>
+      <th>Care Leaver</th>
+      <td>n/a</td>
+      <td><a href="#"><i class="fa fa-pencil-square-o"></i> Edit</a></td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<h3>Your current occupation and study motivation</h3>
+<table class="ou-table-headings-left">
+  <tbody>
+    <tr>
+      <th style="width:30%">Occupation status</th>
+      <td style="width:50%">In full-time work/self-employed</td>
+      <td style="width:20%"><a href="#"><i class="fa fa-pencil-square-o"></i> Edit</a></td>
+    </tr>
+    <tr>
+      <th>Occupation type</th>
+      <td>Technical</td>
+      <td><a href="#"><i class="fa fa-pencil-square-o"></i> Edit</a></td>
+    </tr>
+    <tr>
+      <th>Occupation title</th>
+      <td>IT Support Manager</td>
+      <td><a href="#"><i class="fa fa-pencil-square-o"></i> Edit</a></td>
+    </tr>
+    <tr>
+      <th>Subject area of interest</th>
+      <td>Law</td>
+      <td><a href="#"><i class="fa fa-pencil-square-o"></i> Edit</a></td>
+    </tr>
+    <tr>
+      <th>Career motivation</th>
+      <td>Move to a new career area</td>
+      <td><a href="#"><i class="fa fa-pencil-square-o"></i> Edit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Additional requirements</h3>
+<p>The following details any special circumstances and support you have requested. If you think that this record is incorrect please use the <a href="#">online form</a> where you can update your record. Alternatively <a href="#">contact us</a>.</p>
+
+<table class="ou-table-plain ou-table-headers-style1">
+  <tbody>
+    <tr>
+      <th colspan="2">Your circumstances</th>
+      </tr>
+    <tr>
+      <td>Effects of condition</td>
+      <td>Dyslexia or another specific learning difficulty </td>
+      </tr>
+    <tr>
+      <th colspan="2">Support requested</th>
+      </tr>
+    <tr>
+      <td>Course materials</td>
+      <td>Audio versions of printed material<br>
+        Electronic text of printed material<br>
+        Transcripts of broadcasts and audio visual material</td>
+    </tr>
+    <tr>
+      <td>Other facilities</td>
+      <td>Alternative examination arrangements</td>
+    </tr>
+    <tr>
+      <th colspan="2">Disability information</th>
+      </tr>
+    <tr>
+      <td colspan="2">Dyslexia, dyspraxia and dyscalcula</td>
+      </tr>
+    <tr>
+      <th colspan="2">General and educational information</th>
+      </tr>
+    <tr>
+      <td colspan="2"><p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+        <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. </p>
+        <p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
+        <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p></td>
+      </tr>
+  </tbody>
+</table>
+
+
+</div> <!-- end ou-content -->
+</div> <!-- end ou-region1 -->
+
+<div id="ou-region2">
+
+</div> <!-- end ou-region2 -->
+
+</div> <!-- end ou-page -->
+
+</div> <!-- end ou-site-body -->
+
+<div id="ou-site-footer">
+
+</div> <!-- end ou-site-footer -->
+
+</div> <!-- end ou-site -->
+
+
+
+<!-- ST: END STUDENT THEME FRAMEWORK HTML -->
+
+
+
+
+
+<div id="ou-org-footer">
+
+<div class="ou-grid ou-mobile-footer" id="ou-mobile-jlinks"></div>
+
+<div class="ou-grid ou-footer-links">
+  <div class="ou-c1of4">
+    <ul>
+      <li class="ou-title"><a href="http://www.open.ac.uk">The Open University</a></li>
+      <li class="ou-copyright">&#169; Copyright <span id="sbyear"></span>. All rights reserved</li>
+      <li class="ou-phone" id="ou-phone1">+44 (0)300 303 5303</li>
+      <li class="ou-email"><a href="http://www.open.ac.uk/email/">Contact us</a></li>
+      <li class="ou-study"><a href="http://www.open.ac.uk/study/">Study at the OU</a></li>
+      <li class="ou-research"><a href="http://www.open.ac.uk/research/">Research</a></li>
+      <li class="ou-community"><a href="http://www.open.ac.uk/community/">Community</a></li>
+      <li class="ou-about"><a href="http://www.open.ac.uk/about/">About</a></li>
+      <li class="ou-accessibility"><a href="http://www.open.ac.uk/about/">Accessibility</a></li>
+    </ul>
+  </div>
+  <div class="ou-c2of4">
+    <ul>
+    <li class="ou-contact"><a href="http://www.open.ac.uk/contact/">Contact</a></li>
+      <li class="ou-search"><a href="http://www.open.ac.uk/search/">Search</a></li>
+      <li class="ou-privacy"><a href="http://www.open.ac.uk/privacy/">Privacy and cookies</a></li>
+      <li class="ou-copyright"><a href="http://www.open.ac.uk/copyright/">Copyright</a></li>
+      <li class="ou-conditions"><a href="http://www.open.ac.uk/conditions/">Conditions of use</a></li>
+      <li class="ou-cymraeg"><a href="http://www.open.ac.uk/cymraeg/">Cymraeg</a></li>
+      <li class="ou-mobile-enquiries" id="ou-phone2">0300 303 5303</li>
+    </ul>
+  </div>
+  <div class="ou-c3of4">
+    <ul>
+      <li class="ou-ia-study"><a href="http://www3.open.ac.uk/study/undergraduate/">Undergraduate</a></li>
+      <li class="ou-ia-study"><a href="http://www3.open.ac.uk/study/postgraduate/">Postgraduate</a></li>
+      <li class="ou-ia-study ou-ia-research"><a href="http://www.open.ac.uk/research-degrees">Research degrees</a></li>
+      <li class="ou-ia-home ou-ia-study"><a href="http://www.open.ac.uk/employers/">Employers</a></li>
+      <li class="ou-ia-about"><a href="http://www8.open.ac.uk/about/main/the-ou-explained/">OU explained</a></li>
+      <li class="ou-ia-about"><a href="http://www8.open.ac.uk/about/main/faculties-and-centres/">Faculties and centres</a></li>
+      <li class="ou-ia-about"><a href="http://www8.open.ac.uk/about/main/admin-and-governance/">Admin and governance</a></li>
+      <li class="ou-ia-about ou-ia-home"><a href="http://www.open.ac.uk/news/">Press Room</a></li>
+      <li class="ou-ia-home"><a href="http://www.open.ac.uk/alumni/" class="ou-home">Alumni</a></li>
+      <li class="ou-ia-home ou-ia-research ou-ia-about"><a href="http://www.open.ac.uk/jobs/">Jobs</a></li>
+      <li class="ou-ia-home"><a href="http://www.open.ac.uk/fundraising/">Donate</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/platform/">Platform</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/openlearn/">OpenLearn</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/facebook/">Facebook</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/twitter/">Twitter</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/youtube/">YouTube</a></li>
+      <li class="ou-ia-learning"><a href="http://www.open.ac.uk/students/">StudentHome</a></li>
+      <li class="ou-ia-learning"><a href="http://www.open.ac.uk/skillsforstudy/">Learning Support</a></li>
+      <li class="ou-ia-learning"><a href="http://library.open.ac.uk/">Library</a></li>
+    </ul>
+  </div>
+  <div class="ou-charter">The Open University is incorporated by Royal Charter (RC 000391), an <a href="http://www.open.ac.uk/foi/main/who-we-are-and-what-we-do/charity-information-gateway">exempt charity</a> in England &amp; Wales and a charity registered in Scotland (SC 038302).</div>
+  <div class="ou-charter"><br />Open University Student Budget Accounts Limited (OUSBA) is a wholly owned subsidiary of The Open University, Companies House number 303735 and until 31 March 2014 was licensed by the Office of Fair Trading (OFT) under licence number 573250 and from 1 April 2014 is authorised and regulated by the Financial Conduct Authority (FCA) under interim permission number 573250.</div>
+  <div class="ou-c4of4"><!-- reserved --></div>
+  </div>
+    
+</div>
+
+<script type="text/javascript">if (typeof window.ou_init=='function')ou_init();</script>
+
+</div>
+
+</body>
+</html>

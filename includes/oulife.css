@@ -1,0 +1,183 @@
+div#oulifehdr {
+	width:100%;
+	max-width:1200px;
+	min-width:770px;
+	margin:0 auto;
+	background-image:url(img/oulife-bg3.jpg);
+	background-position:top right;
+	background-repeat:no-repeat;
+	height:54px;
+	padding:0;
+	font-family:verdana,sans-serif;
+}
+
+div#oulifehdr img { border:none; }
+
+div#oulifehdr img.fl { float:left; }
+
+div#oulifehdr div.row1 {
+	margin:0 0 0 108px;
+	padding:7px 0 0 0;
+	color:#0014c2;
+	height:18px;
+	font-size:110%;
+	width:auto;
+}
+
+div#oulifehdr div.row1 a {
+	color:#008;
+	text-decoration:none;
+}
+
+div#oulifehdr div.row1 a:hover { text-decoration:underline; }
+
+div#oulifehdr div.row2 {
+	margin:1px 0 0 105px;
+	padding:0;
+	height:28px;
+	width:435px;
+	background-color:#fff;
+}
+
+div#oulifehdr div.row2 a {
+	display:block;
+	background-position:0 0;
+	background-repeat:no-repeat;
+	height:23px;
+	padding:5px 0 0 0;
+	margin:0;
+	text-align:center;
+	float:left;
+	color:#00274f;
+	font-size:110%;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+div#oulifehdr div.row2 a.x {
+	width:108px;
+	background-image:url(img/oulife-btn-left-off.gif);
+}
+
+div#oulifehdr div.row2 a.y {
+	width:105px;
+	background-image:url(img/oulife-btn-middle-off.gif);
+}
+
+div#oulifehdr div.row2 a.z {
+	width:108px;
+	background-image:url(img/oulife-btn-right-off.gif);
+}
+
+div#oulifehdr div.row2 a:hover { color:#fff; }
+
+div#oulifehdr div.row2 a.x:hover { background-image:url(img/oulife-btn-left-on.gif); }
+div#oulifehdr div.row2 a.y:hover { background-image:url(img/oulife-btn-middle-on.gif); }
+div#oulifehdr div.row2 a.z:hover { background-image:url(img/oulife-btn-right-on.gif); }
+
+div#oulifehdr div.srch {
+	float:right;
+	margin:-48px 0 0 0;
+	padding:0;
+	width:260px;
+	height:48px;
+	font-weight:bold;
+	font-size:110%;
+	color:#003366;
+}
+
+div#oulifehdr div.srch form {
+	margin:0;
+	padding:0 0 0 40px;
+	line-height:200%;
+}
+
+div#oulifehdr div.srch input.tx {
+	font-size:11px;
+	width:143px;
+	border:1px solid #8a8a8a;
+	color:#808080;
+	background-image:url(img/oulife-srch.gif);
+	background-position:top left;
+	background-repeat:no-repeat;
+	padding:2px 4px 1px 4px;
+	margin:0 3px 0 5px;
+}
+
+div#oulifehdr div.srch input.go {
+	margin:0 0 -3px 0;
+}
+
+div#oulifehdr div.srch input.rd {
+	margin:0 3px 0 5px;
+	vertical-align:-2px;
+}
+
+div#oulifespc {
+	clear:both;
+	height:32px;
+	position:relative;
+}
+
+div#oulifeftr {
+	width:100%;
+	max-width:1200px;
+	min-width:770px;
+	margin:0 auto 10px auto;
+	padding:0;
+	font-family:verdana,sans-serif;
+	height:54px;
+	position:relative;
+}
+
+div#oulifeftr1 {
+	margin:0 37px 0 49px;
+	background-position:0 0;
+	background-repeat:no-repeat;
+	background-color:#ccd6e0;
+	background-image:url(img/oulife-ftr-middle.gif);
+	background-repeat:repeat-x;
+	background-position:0 0;
+	height:54px;
+	position:relative;
+}
+
+div#oulifeftr p {
+	font-size:110%;
+	font-weight:bold;
+	position:relative;
+}
+
+div#oulifeftr p.lt {
+	margin:0;
+	padding:25px 0 0 5px;
+}
+
+div#oulifeftr p.rt {
+	float:right;
+	margin:-1.2em 5px 0 0;
+}
+
+div#oulifeftr p span {
+	margin:0;
+	padding:0 0 0 16px;
+}
+
+div#oulifeftr p a {
+	color:#425466;
+	text-decoration:none;
+}
+
+div#oulifeftr p a:hover {
+	text-decoration:underline;
+}
+
+#oulifeftrl {
+	float:left;
+	margin-left:36px;
+}
+
+#oulifeftrr {
+	float:right;
+	margin-right:24px;
+}

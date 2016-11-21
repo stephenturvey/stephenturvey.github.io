@@ -1,0 +1,31 @@
+<script type="text/javascript" src="/includes/header.js"></script>
+<script type="text/javascript">if (typeof window.ou_sitestat=='function')ou_sitestat();</script>
+<div id="oulifehdr"><a href="#ou-content" id="oulifeskip">skip</a>
+	<a href="http://intranet.open.ac.uk/oulife-home/"><img src="/includes/img/oulife-logo.jpg" width="105" height="54" alt="OU Life" class="fl" /></a>
+	<div class="row1"><a href="http://intranet.open.ac.uk/oulife-home/">Home</a> | <a href="http://intranet.open.ac.uk/oulife-home/blogs.aspx">Blogs</a> | <a href="http://intranet.open.ac.uk/oulife-home/wikis.aspx">Wikis</a> <a href="http://intranet.open.ac.uk/oulife-home/locations.aspx" style="margin-left:60px">Locations</a> | <a href="http://www8.open.ac.uk/library/help-and-support/ou-glossary">Glossary</a> <a href="https://msds.open.ac.uk/students/" style="margin-left:60px">StudentHome</a> | <a href="https://msds.open.ac.uk/tutorhome/">TutorHome</a> | <a href="http://www.open.ac.uk/">OU Home</a> | <a href="https://msds.open.ac.uk/signon/samsoff.aspx">Sign out</a></div>
+	<div class="row2"><a href="http://intranet.open.ac.uk/oulife-home/units.aspx" id="oulifeunit">Units</a><img src="/includes/img/oulife-divide.gif" width="3" height="28" alt="" class="fl" /><a href="http://intranet.open.ac.uk/oulife-home/az.aspx" id="oulifeaz">A-Z</a><img src="/includes/img/oulife-divide.gif" width="3" height="28" alt="" class="fl" /><span id="oulifealdir2"><a href="https://msds.open.ac.uk/staffdirectory/" id="oulifealdir">Find Staff</a></span></div>
+	<div class="srch"><form method="get" action="http://intranet.open.ac.uk/oulife-home/search.aspx"><!--<input type="radio" name="type" value="i" checked="checked" class="rd" />Intranet <input type="radio" name="type" value="p" class="rd" />People --><br /><input type="text" name="term" class="tx" value="Search Intranet" onfocus="oulftx=oulftf(this,oulftx)" /><input type="image" src="/includes/img/oulife-go.gif" alt="go" class="go" /></form></div>
+</div>
+<script type="text/javascript">//<![CDATA[
+if (document.getElementById && typeof(menuselobj) != "undefined")
+{
+	ele = document.getElementById(menuselobj);
+	ele.removeChild(ele.firstChild);
+	ele.appendChild(document.createTextNode(menuseltxt));
+	if (typeof(menuselcls) != "undefined") ele.className="sel " + menuselcls;
+}
+var oulftx=0;
+var ouimg=new Image(); ouimg.src="/includes/img/oulife-btn1-on.gif";
+ouimg=new Image(); ouimg.src="/includes/img/oulife-btn2-on.gif";
+ouimg=new Image(); ouimg.src="/includes/img/oulife-btn3-on.gif";
+ouimg=new Image(); ouimg.src="/includes/img/oulife-btn-right-on.gif";
+function oulftf(f,c)
+{
+	if (c == 0)
+	{
+		f.value="";
+		f.style.color="#000";
+	}
+	return 1;
+}
+//]]></script>

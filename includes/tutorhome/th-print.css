@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+/* PRINT yes */
+
+
+/* hide me away in a little cupboard beneath the stairs */
+
+#ou-site-header,
+#ou-site-manager,
+#ou-region2,
+div.spotlight,
+body.template-department .ou-c2of2 .box,
+a.toggle-link,
+a.button,
+p#welcome,
+a.remove,
+.on-this-page,
+.to-top,
+ul#azmenu {
+	display:none;
+}
+
+/**/
+
+/* standard */
+
+h1 {
+	font-size: 2.2em;
+	line-height: 1;
+	margin-bottom: 0;
+	padding-top: 0;
+}
+
+h2 {font-size: 1.6em;}
+h3 {font-size: 1.2em; font-weight:bold;}
+h3 {font-size: 1em; font-weight:bold;}
+
+p.description {
+	font-style:italic;
+	color:#555;
+	border-bottom:1px solid #ccc;
+	padding:0 0 1em 0;
+}
+
+ul {margin:0 0 1.5em 3em; color:#444;}
+
+.ou-content {
+	margin-top:1em;
+}
+
+/**/
+
+/* homepage */
+
+p.get-students {font-weight:bold;}
+
+/**/
+
+/* gallery pages */
+
+body.template-department .ou-c1of2,
+body.template-department .ou-c2of2 {
+	float:left;
+	width:70%;
+}
+
+body.template-department .ou-c2of2 {
+	width:25%;
+	margin-left:4%;
+}
+
+body.template-department .ou-c1of2 .ou-c1of2,
+body.template-department .ou-c1of2 .ou-c2of2 {
+	float:none;
+	margin-left:0;
+	width:100%;
+}
+
+body.template-department img.gallery-img {
+	max-width:100%;
+}
+
+/**/
+
+/* content pages */
+
+img.go2 {
+	float:right;
+	margin:0 0 1.5em 1.5em;
+}
+
+blockquote {
+	border-left:4px solid #000;
+	margin:1em 0 1em 0;
+	padding:.5em 0 .5em 2em;
+}
+
+.box-content,
+.box-content2,
+.box-content3 {
+	border:1px solid #ccc;
+	padding:1.5em;
+	margin:1em 0;	
+}
+
+.box-content p:last-child,
+.box-content2 p:last-child,
+.box-content3 p:last-child {
+	margin-bottom:0;
+}
+
+table tr td {
+	border-bottom:1px solid #ccc;
+}
+
+/**/
+
+/* a to ez */
+
+ul#azdirectory,
+ul#azdirectory li {
+	list-style:none;
+	margin-left:0;
+}
+
+ul#azdirectory li h2 {
+	border-bottom:1px solid #ccc;
+	padding-bottom:.5em;
+}
+
+a.toggleme-open {display:none;}
+
+/**/

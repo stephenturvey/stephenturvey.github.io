@@ -1,0 +1,15 @@
+div#ou-org-header, div#ou-org-footer, div.sh-header, div#sh-header-menu { display:none; }
+div.grey_inner { display:none; }
+#ioemenu2 { display:none; }
+div#resource_outer { margin:0; width:100%; }
+div#resource_col2 { left:370px; }
+div.course_inner a, div.qual_inner a, #whitewelcome a { display:none; }
+div#ou-footerf { display:none; }
+div#secondcol { display:none; }
+#firstcol { margin:0; }
+a.directions { display:none; }
+a.top { display:none; }
+div.col50d { display:none; }
+div.col50c { width:100%; }
+ul.faqlist { display:none; }
+.noprint { display:none; }

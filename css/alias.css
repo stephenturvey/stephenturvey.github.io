@@ -1,0 +1,37 @@
+.toggle-link, .toggle-link2, .toggle-link3
+{
+	background-position:0 0;
+	background-position:center;
+	background-repeat:no-repeat;
+	display:block;
+	height:20px;
+	width:20px;
+	margin:-2px 0 0;
+	float:right;
+}
+
+.toggle-link2 { background-image:url(../img/switch-minus.png); }
+.toggle-link3, .toggleplus { background-image:url(../img/switch-plus.png); }
+
+.toggle-link { background-image:url(../img/switch-minus.png); }
+.toggle-link2 { background-image:url(../img/switch-minus.png); }
+.toggle-link3, .toggleplus { background-image:url(../img/switch-plus.png); }
+
+#colalias {width:55em;}
+
+td { padding-top:8px; vertical-align:top; }
+
+td.lhs { width:16em; padding-right:4em; }
+
+td.lhs2 { padding-right:4em; }
+
+td.rhs { width:auto; }
+
+.qmn { width:16em; }
+
+input.textsml { width:2em; }
+input.textmed { width:8em; }
+input.textsm2 { width:5em; }
+
+table.tblalias td { padding-right:1em; }
+table.tblalias2 td { padding-right:2em; }

@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>StudentHome - Open University</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+<!-- ST: remove stylesheets
+<link rel="stylesheet" type="text/css" href="includes/ouice/3/screen.css" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="includes/ouice/3/print.css" media="print" />
+<link rel="stylesheet" type="text/css" href="css/site11.css" />
+-->
+
+
+<link rel="stylesheet" type="text/css" href="includes/studenthome-header-2012.css" />
+
+<!-- ST: new stylesheets -->
+<link rel="stylesheet" type="text/css" href="includes/headers-footers/ou-header.css" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="css/studenthome.css" media="screen, projection" />
+<!-- end ST -->
+
+
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="includes/ouice/3/ie.css" />
+<link rel="stylesheet" href="css/sh-ie.css" />
+<![endif]-->
+
+<!--[if lt IE 7]>
+<link rel="stylesheet" href="css/sh-ie6.css" />
+<![endif]-->
+
+<script type="text/javascript" src="includes/headers-footers/ou-header.js"></script>
+<script type="text/javascript" src="includes/studenthome-menu-2012.js"></script>
+<script type="text/javascript" src="js/site.js"></script>
+
+
+
+</head>
+
+<body class="ou-ia-learning ou-blend study r2r3 sh-study ou-mobile">
+<script type="text/javascript">if (typeof window.ou_sitestat=='function')ou_sitestat();</script>
+<div id="ou-org-header"> <a class="ou-skip" href="#ou-content">Skip to content</a> <a class="ou-link-ou" href="http://www.open.ac.uk/"><img src="includes/headers-footers/oulogo-56.jpg" alt="The Open University" /></a>
+  <div class="ou-role-nav">
+    <ul>
+      <li class="ou-role-accessibility"><a href="http://www.open.ac.uk/accessibility/">Accessibility</a></li>
+      <li class="ou-role-signin" id="ou-signin1"><a href="https://msds.open.ac.uk/signon/sams001.aspx" id="ou-signin2">Sign in</a></li>
+      <li id="ou-signout" class="ou-role-signout"><a href="https://msds.open.ac.uk/signon/samsoff.aspx" id="ou-signout2">/ Sign out</a></li>
+      <li id="ou-studenthome" class="ou-role-studenthome"><a href="http://www.open.ac.uk/students/" id="ou-studenthome2">StudentHome</a></li>
+      <li id="ou-tutorhome" class="ou-role-tutorhome"><a href="http://www.open.ac.uk/tutorhome/">TutorHome</a></li>
+      <li id="ou-intranet" class="ou-role-intranet"><a href="http://intranet.open.ac.uk/">IntranetHome</a></li>
+      <li id="ou-sponsor" class="ou-role-sponsor"><a href="https://css2.open.ac.uk/employers/sponsorhome/home/HomePage.aspx">SponsorHome</a></li>
+      <li id="ou-contact" class="ou-role-contact"><a href="http://www.open.ac.uk/contact/">Contact</a></li>
+      <li id="ou-search" class="ou-role-search"><a href="http://www.open.ac.uk/search/">Search the OU</a></li>
+    </ul>
+  </div>
+  <div class="ou-ia-nav">
+    <ul>
+      <li class="ou-ia-home"><a href="http://www.open.ac.uk/">The Open University</a></li>
+      <li class="ou-ia-study"><a href="http://www.open.ac.uk/study/">Study at the OU</a></li>
+      <li class="ou-ia-research"><a href="http://www.open.ac.uk/research/">Research at the OU</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/community/">OU Community</a></li>
+      <li class="ou-ia-about"><a href="http://www.open.ac.uk/about/">About the OU</a></li>
+    </ul>
+  </div>
+</div>
+<div class="canvas">
+
+<div class="mnuwrap"><div class="sh-header" role="navigation">
+<ul>
+<li class="sh-home"><a href="index.aspx">StudentHome</a></li>
+<li class="sh-profile"><a href="profile.aspx">Profile</a></li>
+<li class="sh-study"><a href="study-record.aspx" onmouseover="ioe_showmenu(3)" onmouseout="ioe_hidemenu()" onclick="ioe_hidemenu()" class="selected">Study</a></li>
+<li class="sh-community"><a href="oulife.aspx">Community</a></li>
+<li class="sh-help"><a href="help.aspx">Help Centre</a></li>
+</ul>
+</div></div><div id="sh-header-menu"></div>
+<script type="text/javascript">
+var ioe_rel=1;
+var ioe_numcrse=1;
+var ioe_numqual=0;
+var ioe_course=["SKG095"];
+var ioe_pres=["2014B"];
+var ioe_crsetype=[1];
+var ioe_crsetitle=["Learn about human genetics and health issues"];
+var ioe_crsewidth=37;
+var iox_name="";
+var iox_nf="";
+ioe_createmenus();
+</script>
+
+
+
+
+<div class="grid">
+
+	<div class="r1 aside">
+		<div class="static">
+
+
+		</div>
+	</div>
+
+	<div class="r2">
+		<div class="ou-content" id="ou-content">
+			<h1 class="h1main">Standalone module search</h1>
+			<div class="inview">
+
+
+
+
+<script type="text/javascript">
+
+function validateCourseForm()
+{
+  var i = document.CourseForm.subject.selectedIndex;
+  var selSubject = document.CourseForm.subject.options[i].value;
+  if (selSubject == "choose" || selSubject == "")
+  {
+    alert("Please select a subject area");
+    return false;
+  }
+  return true;
+}
+
+function crsefinder()
+{
+ 	var obj = document.getElementById("crsenotfound");
+	while(obj.firstChild) obj.removeChild(obj.firstChild);
+    var c = document.getElementById("crsefinderid").value;
+    if (c.length == 0) return;
+    c = c.toUpperCase();
+    var u = cqf_findcoursequal(c);
+    if (u == null)
+    {
+	    obj.appendChild(document.createTextNode("We have no description for '" + c + "'"));
+        return;
+    }
+    i = u.indexOf("/study/");
+    if (i > 0 && u.indexOf("/professionaldevelopment/") < 0) u = "https://msds.open.ac.uk/students/study" + u.substr(i+6);
+    document.location.href = u;
+}
+
+function validatemainform2()
+{
+    if (document.mainform.subj.selectedIndex > 0) return true;
+    if (document.mainform.cr.selectedIndex > 0) return true;
+    if (document.mainform.lv.selectedIndex > 0) return true;
+    if (document.mainform.rsch.selectedIndex > 0) return true;
+    if (document.mainform.sd.selectedIndex > 0) return true;
+    alert("Please select at least one search option.");
+    return false;
+}
+
+function validatemainform()
+{
+    if (document.mainform.selCourseSubject.selectedIndex > 0) return true;
+    if (document.mainform.selCreditPoints.selectedIndex > 0) return true;
+    if (document.mainform.selOUCourseLevel.selectedIndex > 0) return true;
+    if (document.mainform.selResidentialSchoolType.selectedIndex > 0) return true;
+    if (document.mainform.selCVPStartDate.selectedIndex > 0) return true;
+    alert("Please select at least one search option.");
+    return false;
+}
+
+function excludedcombo()
+{
+ 	var obj = document.getElementById("exclmodule");
+    if (obj)
+    {
+        var m = obj.value;
+        if (m.length < 4 || m.length > 8)
+            alert("Please enter a valid module code.");
+        else
+        {
+            document.location.href="https://msds.open.ac.uk/students/study" + "/tools/excluded/" + m.toLowerCase();
+        }
+    }
+    return false;
+}
+
+</script>
+
+<div class="panel">
+    <h2 style="font-size:100%;font-weight:bold">Search for a module</h2>
+    <form action="https://msds.open.ac.uk/module-search/index.aspx" method="get" onsubmit="return validatemainform2()" name="mainform">
+    <table class="compact">
+        <tr> 
+            <td class="sz1">in subject area:</td>
+            <td><select name="subj" class="align">
+            <option value="">&nbsp;</option>
+            <option value="Arts and Humanities">Arts and Humanities</option>
+            <option value="Business and Management">Business and Management</option>
+            <option value="Childhood and Youth">Childhood and Youth</option>
+            <option value="Computing and IT">Computing and IT</option>
+            <option value="Education">Education</option>
+            <option value="Engineering, Technology and Design">Engineering, Technology and Design</option>
+            <option value="Environment, Development and International Studies">Environment, Development and International Studies</option>
+            <option value="Health and Social Care">Health and Social Care</option>
+            <option value="Languages">Languages</option>
+            <option value="Law">Law</option>
+            <option value="Mathematics and Statistics">Mathematics and Statistics</option>
+            <option value="Psychology and Counselling">Psychology and Counselling</option>
+            <option value="Science">Science</option>
+            <option value="Social Sciences">Social Sciences</option>
+            </select></td>
+        </tr>
+        <tr> 
+            <td class="sz1">with credit points:</td>
+            <td><select name="cr" class="align">
+            <option value="">&nbsp;</option>
+            <option value="10">10 credits </option>
+            <option value="15">15 credits </option>
+            <option value="30">30 credits </option>
+            <option value="45">45 credits </option>
+            <option value="60">60 credits </option>
+            </select></td>
+        </tr>
+        <tr> 
+            <td class="sz1">at level:</td>
+            <td><select name="lv" size="1" class="align">
+            <option value="">&nbsp;</option>
+            <option value="1">Undergraduate level 1 </option>
+            <option value="2">Undergraduate level 2 </option>
+            <option value="3">Undergraduate level 3 </option>
+            <option value="M">Postgraduate </option>
+            </select></td>
+        </tr>
+        <tr> 
+            <td class="sz1">residential school:</td>
+            <td><select name="rsch" class="align">
+            <option value="">&nbsp;</option>
+            <option value="No School">No residential school</option>
+            <option value="Embedded">Embedded residential school</option>
+            <option value="Stand-alone">Stand-alone residential school</option>
+            </select></td>
+        </tr>
+        <tr> 
+            <td class="sz1">starting:</td>
+            <td><select name="sd" class="align">
+            <option value="">&nbsp;</option>
+            <option value="1">the next month</option>
+            <option value="3">the next 3 months</option>
+            <option value="6">the next 6 months</option>
+            <option value="12">the next year</option>
+            </select></td>
+        </tr>
+        <tr> 
+            <td class="sz1">&nbsp;</td>
+            <td><input type="checkbox" class="nomargin" name="new" value="True" /> show only new modules.</td>
+        </tr>
+        <tr>
+            <td class="sz1">&nbsp;</td>
+            <td><input type="submit" value="submit" />
+            
+            </td>
+        </tr>
+    </table> 
+    <input type="hidden" name="hidType" value="courses" />
+    </form>
+</div>
+
+<div class="panel">
+    <h2 style="font-size:100%;font-weight:bold">Module finder</h2>
+    
+    <p>If you know the module code, enter it here to see its description and to register online.
+    </p>
+    
+    <form method="get" action="#" onsubmit="crsefinder();return false"><table class="compact">
+        <tr> 
+            <td class="sz1"><input id="crsefinderid" type="text" size="10" maxlength="8" /></td>
+            <td><input type="submit" value="submit" /> <span id="crsenotfound" class="warning"></span></td>
+        </tr>
+    </table></form>
+</div>
+
+
+<div class="panel">
+    <h2 style="font-size:100%;font-weight:bold">Excluded combinations</h2>
+    <p>Enter a module code to see if it is an excluded combination, if you're thinking of working towards a qualification.</p>
+    <form action="#" method="get" onsubmit="return excludedcombo()">
+    <table class="compact">
+        <tr> 
+            <td class="sz1"><input id="exclmodule" type="text" size="10" maxlength="8" /></td>
+            <td><input type="submit" value="submit" /></td>
+        </tr>
+    </table>
+    </form>
+</div>
+
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+	<div class="r3 aside">
+
+
+<div class="context-nav">
+    <ul>
+        <li><a href="study-record.aspx?stay=1">Your study record</a></li>
+        
+        
+        
+        <li><a href="next-module.aspx">Next module</a></li>
+        
+        <li class="sub"><strong>Standalone module search</strong></li>
+        
+        <li><a href="enrolment-help.ashx">Enrolment Help</a></li>
+    </ul>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="https://msds.open.ac.uk/your-record/ssi/cqfinder.js"></script>
+
+
+	</div>
+	
+</div>
+</div>
+<div id="ou-org-footer">
+
+<div class="ou-grid ou-mobile-footer" id="ou-mobile-jlinks"></div>
+
+<div class="ou-grid ou-footer-links">
+  <div class="ou-c1of4">
+    <ul>
+      <li class="ou-title"><a href="http://www.open.ac.uk">The Open University</a></li>
+      <li class="ou-copyright">&#169; Copyright <span id="sbyear"></span>. All rights reserved</li>
+      <li class="ou-phone" id="ou-phone1">+44 (0)300 303 5303</li>
+      <li class="ou-email"><a href="http://www.open.ac.uk/email/">Contact us</a></li>
+      <li class="ou-study"><a href="http://www.open.ac.uk/study/">Study at the OU</a></li>
+      <li class="ou-research"><a href="http://www.open.ac.uk/research/">Research</a></li>
+      <li class="ou-community"><a href="http://www.open.ac.uk/community/">Community</a></li>
+      <li class="ou-about"><a href="http://www.open.ac.uk/about/">About</a></li>
+      <li class="ou-accessibility"><a href="http://www.open.ac.uk/about/">Accessibility</a></li>
+    </ul>
+  </div>
+  <div class="ou-c2of4">
+    <ul>
+    <li class="ou-contact"><a href="http://www.open.ac.uk/contact/">Contact</a></li>
+      <li class="ou-search"><a href="http://www.open.ac.uk/search/">Search</a></li>
+      <li class="ou-privacy"><a href="http://www.open.ac.uk/privacy/">Privacy and cookies</a></li>
+      <li class="ou-copyright"><a href="http://www.open.ac.uk/copyright/">Copyright</a></li>
+      <li class="ou-conditions"><a href="http://www.open.ac.uk/conditions/">Conditions of use</a></li>
+      <li class="ou-cymraeg"><a href="http://www.open.ac.uk/cymraeg/">Cymraeg</a></li>
+      <li class="ou-mobile-enquiries" id="ou-phone2">0300 303 5303</li>
+    </ul>
+  </div>
+  <div class="ou-c3of4">
+    <ul>
+      <li class="ou-ia-study"><a href="http://www3.open.ac.uk/study/undergraduate/">Undergraduate</a></li>
+      <li class="ou-ia-study"><a href="http://www3.open.ac.uk/study/postgraduate/">Postgraduate</a></li>
+      <li class="ou-ia-study ou-ia-research"><a href="http://www.open.ac.uk/research-degrees">Research degrees</a></li>
+      <li class="ou-ia-home ou-ia-study"><a href="http://www.open.ac.uk/employers/">Employers</a></li>
+      <li class="ou-ia-about"><a href="http://www8.open.ac.uk/about/main/the-ou-explained/">OU explained</a></li>
+      <li class="ou-ia-about"><a href="http://www8.open.ac.uk/about/main/faculties-and-centres/">Faculties and centres</a></li>
+      <li class="ou-ia-about"><a href="http://www8.open.ac.uk/about/main/admin-and-governance/">Admin and governance</a></li>
+      <li class="ou-ia-about ou-ia-home"><a href="http://www.open.ac.uk/news/">Press Room</a></li>
+      <li class="ou-ia-home"><a href="http://www.open.ac.uk/alumni/" class="ou-home">Alumni</a></li>
+      <li class="ou-ia-home ou-ia-research ou-ia-about"><a href="http://www.open.ac.uk/jobs/">Jobs</a></li>
+      <li class="ou-ia-home"><a href="http://www.open.ac.uk/fundraising/">Donate</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/platform/">Platform</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/openlearn/">OpenLearn</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/facebook/">Facebook</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/twitter/">Twitter</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/youtube/">YouTube</a></li>
+      <li class="ou-ia-learning"><a href="http://www.open.ac.uk/students/">StudentHome</a></li>
+      <li class="ou-ia-learning"><a href="http://www.open.ac.uk/skillsforstudy/">Learning Support</a></li>
+      <li class="ou-ia-learning"><a href="http://library.open.ac.uk/">Library</a></li>
+    </ul>
+  </div>
+  <div class="ou-charter">The Open University is incorporated by Royal Charter (RC 000391), an <a href="http://www.open.ac.uk/foi/main/who-we-are-and-what-we-do/charity-information-gateway">exempt charity</a> in England &amp; Wales and a charity registered in Scotland (SC 038302).</div>
+  <div class="ou-charter"><br />Open University Student Budget Accounts Limited (OUSBA) is a wholly owned subsidiary of The Open University, Companies House number 303735 and until 31 March 2014 was licensed by the Office of Fair Trading (OFT) under licence number 573250 and from 1 April 2014 is authorised and regulated by the Financial Conduct Authority (FCA) under interim permission number 573250.</div>
+  <div class="ou-c4of4"><!-- reserved --></div>
+  </div>
+    
+</div>
+
+<script type="text/javascript">if (typeof window.ou_init=='function')ou_init();</script>
+
+
+<!-- MONGOOSE -->
+</body>
+</html>

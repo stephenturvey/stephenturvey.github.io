@@ -1,0 +1,68 @@
+/* Additonal site specific styles needed to make th-head.css work */
+
+
+/* WORKING ONLINE */
+html#working-online div#ou-org-header ul li,
+html#working-online div#site-header ul li,
+html#working-online div#ou-org-footer ul li {
+	background-image:none;
+	text-align:left;	
+}
+html#working-online div#site {
+	width:100%;	
+	font-size:1em;	
+}
+html#working-online body#body-home div#cols {
+	width:800px;	
+	margin:0 auto;
+}
+html#working-online p#page-breadcrumb {
+	display:none;
+}
+
+/* DIVERSITY */
+html#diversity div#site {
+	width:90%;
+}
+
+/* DISABILITY */
+html#disabled div#ou-site-header{
+	margin-top:1em;
+}
+
+/* DEVELOPMENT */
+html#development p#page-breadcrumb {
+	display:none;
+}
+
+html#development h1 {
+	line-height:125%;
+}
+
+
+
+/* SOL */
+html#sol nav.breadcrumb ol{
+	display:none;
+}
+
+/* Communicating with your students */
+html#communicating ol.ancestors{
+	display:none;
+}
+
+html#communicating div#region1{
+	padding-top:1em;
+}
+
+/* YOUNGER STUDENTS */
+html#younger-students div#site{
+	margin-top:1em;
+}
+
+/* DAE */
+html#dae div#ou-site{
+	margin-top:1em;
+}
+
+

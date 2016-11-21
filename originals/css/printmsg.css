@@ -1,0 +1,11 @@
+div#ou-topbars { display:none; }
+div#ioemenu { display:none; }
+div.grey_inner { display:none; }
+div#ou-footerf { display:none; }
+a.accesslink { display:none; }
+div#msgcol1 { display:none; }
+div#msgcol2 { margin-left:0; margin-right:0; }
+div.message2 { border:none; font-size:150%; margin:0; background-image:none; }
+#ioemenu2 { display:none; }
+ul.extras li.faq_doc a, ul.extras li.faq_web a { background-image:none; }
+ul.extras li a { padding-left:0; }

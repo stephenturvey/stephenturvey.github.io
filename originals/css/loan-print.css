@@ -1,0 +1,10 @@
+div.noshow { display:block; }
+
+.r3, #ou-org-header, .mnuwrap, #sh-header-menu, #ou-org-footer {display:none;}
+.r2, .r2r3 .r2 {width:100%; margin:0; padding:0;}
+h1 {color:#000; padding:0; margin:0;}
+.r2r3 .r2 .ou-content {background-color:#fff;}
+.ou-content {background-image:none;}
+p.attn {border:1px solid #333; background-color:#fff;}
+div.ou-box {padding:0; border:none; background-image:none; box-shadow:none;}
+.element {margin:0;}

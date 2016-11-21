@@ -1,0 +1,161 @@
+body {
+	margin:0;
+	padding:0 20px;
+	font-family:Verdana, Helvetica, Arial, sans-serif;
+	font-size:75%;
+	color:#222;
+	background-color:#fff;
+	min-width:660px;
+}
+
+div {
+	margin:0;
+	padding:0;
+}
+	
+p {
+	margin:12px 0;
+	padding:0;
+	line-height:160%;
+}
+
+a { color:#000080; }
+
+a:hover {
+	color:#000;
+	text-decoration:underline;
+}
+
+img { border:none; }
+
+#site3 {
+	font-size:100%;
+	padding:0;
+	max-width:740px;
+	clear:both;
+	height:auto;
+	margin:0 auto;
+	font-size:110%;
+}
+
+#site3a {
+	margin:0;
+	padding:0;
+	width:100%;
+}
+
+div#col12 { width:100%; }
+
+div#col14 {
+	width:100%;
+	background-image:url(../img/personal-bg.jpg);
+	background-repeat:repeat-x;
+	background-position:0 0;
+	overflow:hidden;
+	padding-bottom:32px;
+}
+
+div#col16 {
+	clear:both;
+	width:100%;
+	height:auto;
+	margin-top:12px;
+	font-size:90%;
+}
+
+div#han {
+	width:100%;
+	height:auto;
+	display:inline;
+}
+
+div#han2 {
+	background-image:url(../img/canvas-bg.jpg);
+	background-repeat:repeat-x;
+	background-position:top;
+	background-color:#fff;
+	padding:9px 12px 14px 12px;
+	color:#000;
+}
+
+div#han h1 {
+	font-size:145%;
+	margin:0;
+	padding:0;
+	color:#111;
+	font-weight:normal;
+	font-family:Helvetica,"trebuchet ms",arial,sans-serif;
+}
+
+div.col14crse {
+	width:100%;
+	height:auto;
+	float:left;
+	clear:both;
+	border-top:1px solid #ccc;
+	padding-top:1px;
+}
+
+div.col14crse div.links {
+	margin-top:1px;
+	width:100%;
+	border-top:1px solid #eee;
+}
+
+div#col14 p {
+	margin:0.5em 0.5em 16px 0.5em;
+	padding:0;
+}
+
+div.col14crse h2 {
+	background-position:center center;
+	background-repeat:repeat-x;
+	margin:0;
+	padding:0;
+	font-size:100%;
+	font-weight:normal;
+	padding:8px 4px 7px 0.5em;
+	color:#000;
+}
+
+div.col14crse h2.welcome { background-image:url(../img/course-h2-bg.jpg); }
+div.col14crse h2.messages { background-image:url(../img/support-h2-bg.jpg); }
+
+div.col14crse ul {
+	margin:10px 0;
+	padding:0;
+}
+
+div.col14crse ul li {
+	list-style-type:none;
+	display:inline;
+	margin:0;
+	padding:0;
+}
+
+div.col14crse li a {
+	text-decoration:none;
+	background-image:url(../img/gui-arrow-right.gif);
+	background-repeat:no-repeat;
+	display:block;
+	background-position:0 0.16em;
+	padding:0.3em 0 0.3em 20px;
+	color:#333;
+}
+
+div.col14crse li a:hover {
+	background-color:#eee;
+	color:#000;
+}
+
+#alias {
+	background-color:#ffffe0;
+	border:1px solid #666;
+	font-size:65%;
+	padding:1px 4px;
+	float:right;
+}
+
+#alias a { text-decoration:none; color:#555; }
+
+#alias a:hover { text-decoration:underline; color:#000; }

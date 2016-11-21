@@ -1,0 +1,33 @@
+body {background-color:#fff; background-image:none; padding-bottom:2em;}
+
+div.ou-toolsshadow, p.ou-ancestors, ol.ou-ancestors, h1, div.ou-boxshadow, div#ou-org-footer, #ou-org-footer ul, div.ou-box {background-image:none;}
+
+div.ou-box li {display:inline;}
+
+div.ou-context-nav ul li strong {background-image:none;}
+
+div.ou-creative {background-color:#D8E9EC;}
+
+div#ou-org-header {margin-bottom:1em;}
+
+div.ou-role-nav {width:70%; line-height:150%; border:none; background-image:none; font-size:1em;}
+
+div.ou-full-nav, div.ou-context-nav {background-color:#fff; background-image:none; border:none; border-left: 1px solid #ddd; padding-left:1em;}
+div.ou-full-nav li a, div.ou-context-nav li a, div.ou-full-nav li strong, div.ou-context-nav li strong {background-color:#fff; background-image:none; border:none; padding:0;}
+
+div.ou-contact, div.ou-steps, div.ou-help, div.ou-action, div.ou-activity, div.ou-example, div.ou-notes, div.ou-promo, div.ou-download {
+	background-color:#f8f8f8;
+	background-image:none;
+	background-position:bottom;
+	background-repeat:repeat-x;
+}
+
+div#ou-page, body.ou-panels div.ou-content {border:none;}
+
+ul.ou-sections {background-color:#fff; margin:0; padding:0; background-image:none;}
+ul.ou-sections li a {background-image:none;}
+
+body.ou-neutral {background-color:#fff;}
+body.ou-neutral div.ou-full-nav, body.ou-neutral div.ou-context-nav {background-color:#fff;}
+
+div.ou-feature-block, div.ou-action-block, div.ou-action, div.ou-tip, div.ou-warning, div.ou-info, div.ou-steps, div.ou-references, div.ou-keypoints, div.ou-notes, div.ou-box, div.ou-summary  {background-image:none;}

@@ -1,0 +1,14 @@
+#mbvle-hd1 {margin:0;padding:4px;text-align:right}
+#mbvle-hd1 a {border:1px #ccc solid;padding:1px;text-decoration:none;font-size:9px;font-family:sans-serif;color:#00c;}
+#mbvle-hd2 {clear:both}
+#mbvle-hd1 img {float:left;padding-bottom:4px}
+
+#mbvlemenu {margin:20px 4px 0 4px;padding:0;font-size:13px;font-family:sans-serif}
+#mbvlemenu a {color:#000;text-decoration:none;background-color:#eee;padding:0 4px;line-height:150%}
+#mbvlemenu a.sel {background-color:#e8f5fe}
+#mbvlemenu ul {margin:0;padding:0px 0;list-style:none}
+#mbvlemenu ul li {padding:0 6px;margin:0;border:1px solid #ccc;border-right:none;display:inline;background-color:#eee}
+#mbvlemenu ul li.sel {background-color:#e8f5fe}
+#mbvlemenu ul li.last {border-right:1px solid #ccc}
+#mbvlemenu ul li.faq {margin-left:8px}
+#mbvlemenu ul li a {color:#000;text-decoration:none}

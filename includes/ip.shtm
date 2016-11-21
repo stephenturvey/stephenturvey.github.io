@@ -1,0 +1,1 @@
+||*<!--#echo var="REMOTE_ADDR" -->*|*<!--#echo var="HTTP_X_FORWARDED_FOR" -->*||

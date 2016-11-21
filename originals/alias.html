@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Alias - StudentHome</title>
+<link rel="stylesheet" type="text/css" href="includes/headers-footers/ou-header.css" />
+
+
+<link rel="stylesheet" type="text/css" href="css/iox5.css" />
+<link rel="stylesheet" type="text/css" href="css/alias.css" />
+<link rel="stylesheet" type="text/css" href="includes/studenthome-header-2012.css" />
+<script type="text/javascript" src="includes/headers-footers/ou-header.js"></script>
+<script type="text/javascript" src="includes/studenthome-menu-2012.js"></script>
+<script type="text/javascript" src="js/site.js"></script>
+<!--[if IE 6]>
+<style type="text/css" media="all">@import "css/ie6.css";</style>
+<![endif]-->
+
+
+<script type="text/javascript">
+
+function validateform()
+{
+    if (ispivalid() == false) 
+    {
+        alert("Please ensure the PI is valid.");
+        return false;
+    }
+
+    if (isCrnValid("inpCRN1") == false || isCrnValid("inpCRN2") == false || isCrnValid("inpCRN3") == false) return false;
+
+    return true;
+}
+
+function isCrnValid(x) 
+{
+    var crn = document.getElementById(x).value;
+    if (crn.length == 0 || crn.length == 11) return true;
+        
+    alert("CRN values must be 11 characters in length.");
+
+    return false;
+}
+
+function validatepi()
+{
+    obj=document.getElementById("sbtbtn");
+    if (!obj) return;
+    if (ispivalid() == true)
+        obj.disabled=false;
+    else
+        obj.disabled=true;
+}
+
+function ispivalid()
+{
+    var pi = document.getElementById("aliasform").fpi.value.toUpperCase();
+    if (pi.length == 0) return true;
+    if (pi.length != 8) return false;
+    c = pi.charAt(0);
+    if (c < 'A' || c > 'Z') return false;
+    for (i=1 ; i < 7 ; i++)
+    {
+        c = pi.charAt(i);
+        if (c < '0' || c > '9') return false;
+    }
+    c = pi.charAt(7);
+    if (c >= '0' && c <= '9') return true;
+    if (c >= 'A' && c <= 'Z') return true;
+    return false;
+}
+
+function ResetSLC() 
+{
+    document.getElementById("selLoanWS").selectedIndex = 0;
+    document.getElementById("selStatus1").selectedIndex = 0;
+    document.getElementById("selStatus2").selectedIndex = 0;
+    document.getElementById("selStatus3").selectedIndex = 0;
+//  document.getElementById("inpReason1").value = "";
+//  document.getElementById("inpReason2").value = "";
+//  document.getElementById("inpReason3").value = "";
+    document.getElementById("inpCRN1").value = "";
+    document.getElementById("inpCRN2").value = "";
+    document.getElementById("inpCRN3").value = "";
+}
+
+function set_crn(id, v)
+{
+    if (v)
+        document.getElementById(id).value = "12345678987";
+    else
+        document.getElementById(id).value = "";
+}
+
+function ResetModules(ndx)
+{
+    document.getElementById("inpMod" + ndx + "Code").value = "";
+    document.getElementById("inpMod" + ndx + "Pres").value = "";
+    document.getElementById("inpMod" + ndx + "Status").value = "";
+    document.getElementById("inpMod" + ndx + "Reason").value = "";
+    document.getElementById("inpMod" + ndx + "Date").value = "";
+    document.getElementById("chkMod" + ndx + "BD").checked = false;
+}
+
+</script>
+</head>
+<body class="ou-mobile">
+<script type="text/javascript">if (typeof window.ou_sitestat=='function')ou_sitestat();</script>
+<script type="text/javascript" src="includes/headers-footers/ou-cookie-policy.js"></script>
+<div id="ou-org-header"> <a class="ou-skip" href="#ou-content">Skip to content</a> <a class="ou-link-ou" href="http://www.open.ac.uk/"><img src="includes/headers-footers/oulogo-56.jpg" alt="The Open University" /></a>
+  <div class="ou-role-nav">
+    <ul>
+      <li class="ou-role-accessibility"><a href="http://www.open.ac.uk/accessibility/">Accessibility</a></li>
+      <li class="ou-role-signin" id="ou-signin1"><a href="https://msds.open.ac.uk/signon/sams001.aspx" id="ou-signin2">Sign in</a></li>
+      <li id="ou-signout" class="ou-role-signout"><a href="https://msds.open.ac.uk/signon/samsoff.aspx" id="ou-signout2">/ Sign out</a></li>
+      <li id="ou-studenthome" class="ou-role-studenthome"><a href="http://www.open.ac.uk/students/" id="ou-studenthome2">StudentHome</a></li>
+      <li id="ou-tutorhome" class="ou-role-tutorhome"><a href="http://www.open.ac.uk/tutorhome/">TutorHome</a></li>
+      <li id="ou-intranet" class="ou-role-intranet"><a href="http://intranet.open.ac.uk/">IntranetHome</a></li>
+      <li id="ou-sponsor" class="ou-role-sponsor"><a href="https://css2.open.ac.uk/employers/sponsorhome/home/HomePage.aspx">SponsorHome</a></li>
+      <li id="ou-contact" class="ou-role-contact"><a href="http://www.open.ac.uk/contact/">Contact</a></li>
+      <li id="ou-search" class="ou-role-search"><a href="http://www.open.ac.uk/search/">Search the OU</a></li>
+    </ul>
+  </div>
+  <div class="ou-ia-nav">
+    <ul>
+      <li class="ou-ia-home"><a href="http://www.open.ac.uk/">The Open University</a></li>
+      <li class="ou-ia-study"><a href="http://www.open.ac.uk/study/">Study at the OU</a></li>
+      <li class="ou-ia-research"><a href="http://www.open.ac.uk/research/">Research at the OU</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/community/">OU Community</a></li>
+      <li class="ou-ia-about"><a href="http://www.open.ac.uk/about/">About the OU</a></li>
+    </ul>
+  </div>
+</div>
+<div class="mnuwrap"><div class="sh-header" role="navigation">
+<ul>
+<li class="sh-home"><a href="index.aspx">StudentHome</a></li>
+<li class="sh-profile"><a href="profile.aspx">Profile</a></li>
+<li class="sh-study"><a href="study-record.aspx" onmouseover="ioe_showmenu(3)" onmouseout="ioe_hidemenu()" onclick="ioe_hidemenu()">Study</a></li>
+<li class="sh-community"><a href="oulife.aspx">Community</a></li>
+<li class="sh-help"><a href="help.aspx">Help Centre</a></li>
+</ul>
+</div></div><div id="sh-header-menu"></div>
+<script type="text/javascript">
+var ioe_rel=1;
+var ioe_numcrse=0;
+var ioe_numqual=0;
+
+var iox_name="";
+var iox_nf="";
+
+</script>
+
+
+
+<div id="site">
+<div id="colalias">
+
+
+<form action="alias.aspx" method="post" id="aliasform" onsubmit="return validateform()">
+    
+<h2 class="banner2 space0">View student's details</h2>
+<div class="innerinfo">
+	<table style="margin-top:8px">
+	<tr><td style="width:14em">Personal Identifier:</td><td><input name="fpi" type="text" id="fpi" maxlength="8" style="width:7em; font-family: verdana;" onchange="validatepi()" onkeyup="validatepi()" value="123456" /></td></tr>
+	<tr><td colspan="2"><input type="submit" class="submit" value="Submit" style="width:8em;" id="sbtbtn" /></td></tr></table>
+    <ul class="basic3" style="margin-top:32px">
+        <li><a href="staff-resources/index.aspx" class="std8">StudentHome staff resources</a></li>
+    </ul>
+</div>
+
+<h2 class="banner2 bkgrey">Advanced settings</h2>
+<div class="innerinfo">
+	<table>
+	<tr><td class="lhs">Show menu in VLE:<p style="font-size:90%;margin:4px 0 0 1em;padding:0;">Note that the menu will continue to appear on the VLE until you close your browser or clear this tickbox.</p></td><td><input name="fmenu" type="checkbox" id="fmenu" /></td></tr>
+	<tr><td class="lhs">Reservation student:</td><td><input name="fresn" type="checkbox" id="fresn" /></td></tr>
+<!--	<tr><td class="lhs">Qual planner preview mode:</td><td><select name="fpreview" id="fpreview" style="width:5em">
+	<option value="0">Off</option>
+	<option value="1">On</option>
+</select></td></tr>-->
+</table>
+</div>
+
+<script type="text/javascript">//<![CDATA[
+validatepi();
+//]]></script>
+
+<h2 class="banner2 bkgrey">Developer settings</h2>
+<div class="innerinfo">
+	<table>
+	<tr><td>Test mode: &nbsp;</td><td><select name="foutis1gk" id="foutis1gk" style="width:5em;">
+	<option value="0">Off</option>
+	<option value="1">On</option>
+</select></td></tr>
+	<tr><td class="lhs">Email address for testing:</td><td><input name="femail" type="text" id="femail" maxlength="200" class="qmn" /></td></tr>
+	<tr><td class="lhs">VOICE owner for testing:</td><td><input name="fowner" type="text" id="fowner" maxlength="40" class="qmn" style="width:12em" /></td></tr>
+	<tr><td class="lhs">OUCU override for SAMS services:</td><td><input name="foucu" type="text" id="foucu" maxlength="10" size="8" /></td></tr>
+	</table>
+</div>
+	
+<h2 class="banner2 bkgrey"><a href="javascript:sbExpand('mtnslc','')" id="mtnslca" class="toggle-link toggleplus"></a>SLC Testing</h2>
+<div id="mtnslcb" class="motion" style="height:0px">
+<div class="innerinfo">
+    <p style="margin-top:0">Requires test mode switched on above.</p>
+	<table>
+	<tr><td class="lhs2">Loan record data:</td><td><select name="selLoanWS" id="selLoanWS">
+	<option value="N">Normal (from web service)</option>
+	<option value="D">From P14 (copy-managed)</option>
+	<option value="O">Manual (set below)</option>
+</select></td></tr>
+	<tr><td class="lhs2"><br /><br />Manual records:</td><td>
+    <table class="tblalias">
+    <tr>
+        <td>Year</td>
+        <td>Status</td>
+<!--    <td>Reason</td>-->
+        <td>CRN</td>
+    </tr>
+    <tr>
+        <td>12/13</td>
+        <td><select name="selStatus1" id="selStatus1">
+	<option value=" ">&#160;</option>
+	<option value="E">E - eligible</option>
+	<option value="A">A - attended</option>
+	<option value="P">P - paid</option>
+	<option value="D">D - declined</option>
+	<option value="C">C - change of circs</option>
+	<option value="I">I - ineligible</option>
+</select></td>
+<!--    <td><input name="inpReason1" type="text" id="inpReason1" maxlength="2" class="textsml" /></td>-->
+        <td><input name="inpCRN1" type="text" id="inpCRN1" maxlength="11" class="textmed" /> <a href="javascript:set_crn('inpCRN1', 1)">set</a> / <a href="javascript:set_crn('inpCRN1', 0)">clear</a></td>
+    </tr>
+    <tr>
+        <td>13/14</td>
+        <td><select name="selStatus2" id="selStatus2">
+	<option value=" ">&#160;</option>
+	<option value="E">E - eligible</option>
+	<option value="A">A - attended</option>
+	<option value="P">P - paid</option>
+	<option value="D">D - declined</option>
+	<option value="C">C - change of circs</option>
+	<option value="I">I - ineligible</option>
+</select></td>
+ <!--   <td><input name="inpReason2" type="text" id="inpReason2" maxlength="2" class="textsml" /></td>-->
+        <td><input name="inpCRN2" type="text" id="inpCRN2" maxlength="11" class="textmed" /> <a href="javascript:set_crn('inpCRN2', 1)">set</a> / <a href="javascript:set_crn('inpCRN2', 0)">clear</a></td>
+    </tr>
+    <tr>
+        <td>14/15</td>
+        <td><select name="selStatus3" id="selStatus3">
+	<option value=" ">&#160;</option>
+	<option value="E">E - eligible</option>
+	<option value="A">A - attended</option>
+	<option value="P">P - paid</option>
+	<option value="D">D - declined</option>
+	<option value="C">C - change of circs</option>
+	<option value="I">I - ineligible</option>
+</select></td>
+<!--    <td><input name="inpReason3" type="text" id="inpReason3" maxlength="2" class="textsml" /></td>-->
+        <td><input name="inpCRN3" type="text" id="inpCRN3" maxlength="11" class="textmed" /> <a href="javascript:set_crn('inpCRN3', 1)">set</a> / <a href="javascript:set_crn('inpCRN3', 0)">clear</a></td>
+    </tr>
+    <tr><td colspan="2">&nbsp;</td><td><a href="javascript:ResetSLC()">reset</a></td></tr>
+    </table>
+    </td></tr>
+    <tr><td colspan="2"><input type="submit" class="submit" value="Submit" style="width:8em;" /></td></tr>
+	</table>
+</div>
+</div>
+
+<h2 class="banner2 bkgrey"><a href="javascript:sbExpand('mtnmod','')" id="mtnmoda" class="toggle-link toggleplus"></a>Module status testing</h2>
+<div id="mtnmodb" class="motion" style="height:0px">
+<div class="innerinfo">
+    <p style="margin-top:0">Requires test mode switched on above. These values override an existing module/pres on the module record page only. Module, pres and status code are mandatory fields.</p>
+	<table class="tblalias2">
+    <tr>
+        <td>Module<br />code</td>
+        <td>Pres<br />code (5)</td>
+        <td>Status<br />code</td>
+        <td>Status<br />reason</td>
+        <td>Status date<br />(yyyy-mm-dd)</td>
+        <td>1BD<br />enabled</td>
+    </tr>
+    <tr>
+        <td><input name="inpMod1Code" type="text" id="inpMod1Code" maxlength="8" class="textsm2" /></td>
+        <td><input name="inpMod1Pres" type="text" id="inpMod1Pres" maxlength="5" class="textsm2" /></td>
+        <td><input name="inpMod1Status" type="text" id="inpMod1Status" maxlength="2" class="textsml" /></td>
+        <td><input name="inpMod1Reason" type="text" id="inpMod1Reason" maxlength="2" class="textsml" /></td>
+        <td><input name="inpMod1Date" type="text" id="inpMod1Date" maxlength="10" class="textmed" /></td>
+        <td><input name="chkMod1BD" type="checkbox" id="chkMod1BD" value="Y" /></td>
+        <td><a href="javascript:ResetModules(1)">reset</a></td>
+    </tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr><td colspan="2"><input type="submit" class="submit" value="Submit" style="width:8em;" /></td></tr>
+	</table>
+</div>
+</div>
+
+	
+</form>
+     
+
+
+<br /><br />
+</div>
+<div id="ou-org-footer">
+
+<div class="ou-grid ou-mobile-footer" id="ou-mobile-jlinks"></div>
+
+<div class="ou-grid ou-footer-links">
+  <div class="ou-c1of4">
+    <ul>
+      <li class="ou-title"><a href="http://www.open.ac.uk">The Open University</a></li>
+      <li class="ou-copyright">&#169; Copyright <span id="sbyear"></span>. All rights reserved</li>
+      <li class="ou-phone" id="ou-phone1">+44 (0)300 303 5303</li>
+      <li class="ou-email"><a href="http://www.open.ac.uk/email/">Contact us</a></li>
+      <li class="ou-study"><a href="http://www.open.ac.uk/study/">Study at the OU</a></li>
+      <li class="ou-research"><a href="http://www.open.ac.uk/research/">Research</a></li>
+      <li class="ou-community"><a href="http://www.open.ac.uk/community/">Community</a></li>
+      <li class="ou-about"><a href="http://www.open.ac.uk/about/">About</a></li>
+      <li class="ou-accessibility"><a href="http://www.open.ac.uk/about/">Accessibility</a></li>
+    </ul>
+  </div>
+  <div class="ou-c2of4">
+    <ul>
+    <li class="ou-contact"><a href="http://www.open.ac.uk/contact/">Contact</a></li>
+      <li class="ou-search"><a href="http://www.open.ac.uk/search/">Search</a></li>
+      <li class="ou-privacy"><a href="http://www.open.ac.uk/privacy/">Privacy and cookies</a></li>
+      <li class="ou-copyright"><a href="http://www.open.ac.uk/copyright/">Copyright</a></li>
+      <li class="ou-conditions"><a href="http://www.open.ac.uk/conditions/">Conditions of use</a></li>
+      <li class="ou-cymraeg"><a href="http://www.open.ac.uk/cymraeg/">Cymraeg</a></li>
+      <li class="ou-mobile-enquiries" id="ou-phone2">0300 303 5303</li>
+    </ul>
+  </div>
+  <div class="ou-c3of4">
+    <ul>
+      <li class="ou-ia-study"><a href="http://www3.open.ac.uk/study/undergraduate/">Undergraduate</a></li>
+      <li class="ou-ia-study"><a href="http://www3.open.ac.uk/study/postgraduate/">Postgraduate</a></li>
+      <li class="ou-ia-study ou-ia-research"><a href="http://www.open.ac.uk/research-degrees">Research degrees</a></li>
+      <li class="ou-ia-home ou-ia-study"><a href="http://www.open.ac.uk/employers/">Employers</a></li>
+      <li class="ou-ia-about"><a href="http://www8.open.ac.uk/about/main/the-ou-explained/">OU explained</a></li>
+      <li class="ou-ia-about"><a href="http://www8.open.ac.uk/about/main/faculties-and-centres/">Faculties and centres</a></li>
+      <li class="ou-ia-about"><a href="http://www8.open.ac.uk/about/main/admin-and-governance/">Admin and governance</a></li>
+      <li class="ou-ia-about ou-ia-home"><a href="http://www.open.ac.uk/news/">Press Room</a></li>
+      <li class="ou-ia-home"><a href="http://www.open.ac.uk/alumni/" class="ou-home">Alumni</a></li>
+      <li class="ou-ia-home ou-ia-research ou-ia-about"><a href="http://www.open.ac.uk/jobs/">Jobs</a></li>
+      <li class="ou-ia-home"><a href="http://www.open.ac.uk/fundraising/">Donate</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/platform/">Platform</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/openlearn/">OpenLearn</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/facebook/">Facebook</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/twitter/">Twitter</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/youtube/">YouTube</a></li>
+      <li class="ou-ia-learning"><a href="http://www.open.ac.uk/students/">StudentHome</a></li>
+      <li class="ou-ia-learning"><a href="http://www.open.ac.uk/skillsforstudy/">Learning Support</a></li>
+      <li class="ou-ia-learning"><a href="http://library.open.ac.uk/">Library</a></li>
+    </ul>
+  </div>
+  <div class="ou-charter">The Open University is incorporated by Royal Charter (RC 000391), an <a href="http://www.open.ac.uk/foi/main/who-we-are-and-what-we-do/charity-information-gateway">exempt charity</a> in England &amp; Wales and a charity registered in Scotland (SC 038302).</div>
+  <div class="ou-charter"><br />Open University Student Budget Accounts Limited (OUSBA) is a wholly owned subsidiary of The Open University, Companies House number 303735 and until 31 March 2014 was licensed by the Office of Fair Trading (OFT) under licence number 573250 and from 1 April 2014 is authorised and regulated by the Financial Conduct Authority (FCA) under interim permission number 573250.</div>
+  <div class="ou-c4of4"><!-- reserved --></div>
+  </div>
+    
+</div>
+
+<script type="text/javascript">if (typeof window.ou_init=='function')ou_init();</script>
+
+</div>
+
+    
+<script type="text/javascript">
+document.forms["aliasform"].fpi.select();
+document.forms["aliasform"].fpi.focus();
+</script>
+
+
+</body>
+</html>

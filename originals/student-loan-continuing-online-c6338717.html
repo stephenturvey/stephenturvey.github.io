@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>StudentHome - Open University</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+<link rel="stylesheet" type="text/css" href="includes/headers-footers/ou-header.css" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="includes/ouice/3/screen.css" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="includes/ouice/3/print.css" media="print" />
+<link rel="stylesheet" type="text/css" href="includes/studenthome-header-2012.css" />
+<link rel="stylesheet" type="text/css" href="css/site11.css" />
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/loan4.css" />
+<link rel="stylesheet" type="text/css" href="css/loan-print.css" media="print" />
+
+
+
+
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="includes/ouice/3/ie.css" />
+<link rel="stylesheet" href="css/sh-ie.css" />
+<![endif]-->
+
+<!--[if lt IE 7]>
+<link rel="stylesheet" href="css/sh-ie6.css" />
+<![endif]-->
+
+<script type="text/javascript" src="includes/headers-footers/ou-header.js"></script>
+<script type="text/javascript" src="includes/studenthome-menu-2012.js"></script>
+<script type="text/javascript" src="js/site.js"></script>
+
+
+
+<!-- ST: new stylesheet -->
+<link rel="stylesheet" type="text/css" href="css/student-loan.css" media="screen, projection" />
+<!-- end ST -->
+
+
+
+</head>
+
+<body class="ou-ia-learning ou-blend study r2r3 sh-study ou-mobile">
+<script type="text/javascript">if (typeof window.ou_sitestat=='function')ou_sitestat();</script>
+<div id="ou-org-header"> <a class="ou-skip" href="#ou-content">Skip to content</a> <a class="ou-link-ou" href="http://www.open.ac.uk/"><img src="includes/headers-footers/oulogo-56.jpg" alt="The Open University" /></a>
+  <div class="ou-role-nav">
+    <ul>
+      <li class="ou-role-accessibility"><a href="http://www.open.ac.uk/accessibility/">Accessibility</a></li>
+      <li class="ou-role-signin" id="ou-signin1"><a href="https://msds.open.ac.uk/signon/sams001.aspx" id="ou-signin2">Sign in</a></li>
+      <li id="ou-signout" class="ou-role-signout"><a href="https://msds.open.ac.uk/signon/samsoff.aspx" id="ou-signout2">/ Sign out</a></li>
+      <li id="ou-studenthome" class="ou-role-studenthome"><a href="http://www.open.ac.uk/students/" id="ou-studenthome2">StudentHome</a></li>
+      <li id="ou-tutorhome" class="ou-role-tutorhome"><a href="http://www.open.ac.uk/tutorhome/">TutorHome</a></li>
+      <li id="ou-intranet" class="ou-role-intranet"><a href="http://intranet.open.ac.uk/">IntranetHome</a></li>
+      <li id="ou-sponsor" class="ou-role-sponsor"><a href="https://css2.open.ac.uk/employers/sponsorhome/home/HomePage.aspx">SponsorHome</a></li>
+      <li id="ou-contact" class="ou-role-contact"><a href="http://www.open.ac.uk/contact/">Contact</a></li>
+      <li id="ou-search" class="ou-role-search"><a href="http://www.open.ac.uk/search/">Search the OU</a></li>
+    </ul>
+  </div>
+  <div class="ou-ia-nav">
+    <ul>
+      <li class="ou-ia-home"><a href="http://www.open.ac.uk/">The Open University</a></li>
+      <li class="ou-ia-study"><a href="http://www.open.ac.uk/study/">Study at the OU</a></li>
+      <li class="ou-ia-research"><a href="http://www.open.ac.uk/research/">Research at the OU</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/community/">OU Community</a></li>
+      <li class="ou-ia-about"><a href="http://www.open.ac.uk/about/">About the OU</a></li>
+    </ul>
+  </div>
+</div>
+<div class="canvas">
+
+<div class="mnuwrap"><div class="sh-header" role="navigation">
+<ul>
+<li class="sh-home"><a href="index.aspx">StudentHome</a></li>
+<li class="sh-profile"><a href="profile.aspx">Profile</a></li>
+<li class="sh-study"><a href="study-record.aspx" onmouseover="ioe_showmenu(3)" onmouseout="ioe_hidemenu()" onclick="ioe_hidemenu()" class="selected">Study</a></li>
+<li class="sh-community"><a href="oulife.aspx">Community</a></li>
+<li class="sh-help"><a href="help.aspx">Help Centre</a></li>
+</ul>
+</div></div><div id="sh-header-menu"></div>
+<script type="text/javascript">
+var ioe_rel=1;
+var ioe_numcrse=2;
+var ioe_numqual=1;
+var ioe_course=["DB123","B123"];
+var ioe_pres=["2015B","2015D"];
+var ioe_crsetype=[1,1];
+var ioe_crsetitle=["You and your money: personal finance in context","Management practice"];
+var ioe_crsewidth=39;
+var ioe_qualocc=["Q70_1"];
+var ioe_qualtitle=["BA (Honours) Business Studies"];
+var ioe_qualwidth=20;
+var iox_name="";
+var iox_nf="Q";
+ioe_createmenus();
+</script>
+
+
+
+
+<div class="grid">
+
+	<div class="r1 aside">
+		<div class="static">
+
+
+		</div>
+	</div>
+
+	<div class="r2">
+		<div class="ou-content" id="ou-content">
+			<h1 class="h1main">Your student loan for BA (Honours) Business Studies</h1>
+			<div class="inview">
+
+
+<script type="text/javascript">
+
+function slcOpen(n)
+{
+	var obj=document.getElementById("mtnloan" + n + "b");
+	obj.style.display='block';
+	
+	obj=document.getElementById("mtnloan" + n + "a");
+	obj.setAttribute("href", "javascript:slcClose(" + n + ")");
+	obj.setAttribute("class", "sh-toggle toggle-minus");
+	
+	slcTracking(this, "", n);
+}
+
+function slcClose(n)
+{
+	var obj=document.getElementById("mtnloan" + n + "b");
+	obj.style.display='none';
+	
+	obj=document.getElementById("mtnloan" + n + "a");
+	obj.setAttribute("href", "javascript:slcOpen(" + n + ")");
+	obj.setAttribute("class", "sh-toggle");
+}
+
+function slcTracking(t, pdf, act)
+{
+	if (typeof window.ouClickEvent != 'function') return;
+	
+	var s = "";
+	
+	if (pdf.length > 0) s += "&ou_dl_ftype=pdf&ou_dl_fname=" + pdf;
+	
+	if (act == 1) s += "&ou_rv_type=slc&ou_rv_slc=s3_mistake"
+	if (act == 2) s += "&ou_rv_type=slc&ou_rv_slc=s4_check"
+	
+	if (act == 3) s += "&ou_ts_end=" + (new Date().getTime());
+
+	ouClickEvent(t, s.substr(1));	
+}
+
+function slcTrackingLink(t,n)
+{
+	if (typeof window.ouClickEvent != 'function') return;
+	
+	var s = "ou_ev_ty=navigation&ou_ev_ac=offsite&ou_ev_as=studentfinance.direct.gov.uk&ou_ev_pl=student-loan-link" + n;
+	
+	ouClickEvent(t,s);	
+}
+
+window.onbeforeunload = function(e) { slcTracking(this, "", 3); }
+
+</script>
+
+
+
+
+
+
+
+<p class="intro-steps">To complete your enrolment, follow these steps:</p>
+
+<!-- ST: change ul class to steps2, add em+number -->
+<ul class="steps2">
+  <li><a href="#step1"><em>1</em> Take note of our guidance</a></li>
+  <li><a href="#step2"><em>2</em> Apply for your loan</a></li>
+  <li><a href="#step3"><em>3</em> Supply CRN</a></li>
+  <li><a href="#step4"><em>4</em> Complete the fee loan process</a></li>
+</ul>
+
+<!-- ST: add div.steps-2015 wrapper, comment out div.element -->
+
+<div class="steps-2015">
+
+<div class="xelement"><a id="step1"></a>
+<p class="attn"><strong class="alert">Attention:</strong> If you've already applied for your Tuition Fee Loan, skip straight to <a href="#step2">Step 2</a>.</p>
+  <br /><h2><span>1</span><em>Step 1</em> Take note of our guidance</h2>
+  <p>You'll need to apply online to Student Finance England (SFE). Completing an online loan application with SFE is straightforward but to
+  ensure you complete it correctly you should note down the answers to the following questions before beginning your application. It is important that you
+  use the information below to avoid any delay in the approval of your loan application.</p>
+  <p>The online application will take you about 30 minutes.</p>
+  <p>To apply, you'll need:</p>
+  <ul>
+    <li>the answers to the questions in the table below</li>
+    <li>for UK applicants applying for the first time, details from your current, valid UK passport
+(you can apply with another form of identity evidence, but using your passport is quicker and easier)</li>
+    <li>your National Insurance number (if you haven't already given it to SFE)</li>
+</ul>
+  
+<table class="type2">
+<tr>
+  <th class="qq">SFE Question</th>
+  <th class="qg">Answer</th>
+  </tr>
+<tr class="odd">
+  <td>What course will you be studying?</td>
+  <td id="ctl00_cphCEN_tdNotOpen">
+<p id="ctl00_cphCEN_pUnknown1">For your BA (Honours) Business Studies you need to enter <strong>Named Honours (Arts)</strong>.</p> 
+<p id="ctl00_cphCEN_pUnknown2">On the online application form, start to type the qualification name as shown above in the box provided. Select the qualification that
+exactly matches and is followed by the month in which your qualification starts in this academic year.</p>
+<p id="ctl00_cphCEN_pUnknown3">For example if you're studying Named Honours (Arts) and your first module in this academic year starts in October, select 'Named Honours (Arts) (October)'.</p>
+
+</td>
+
+  </tr>
+<tr>
+  <td>In this academic year when will you start your course?</td>
+  <td><p>This is the start date of your first module in this academic year.</p>
+      <p>Note: If you've studied previously, but this is your first loan application you will need to apply for your loan for the correct
+      seasonal academic year. For further information see <a href="http://www2.open.ac.uk/students/say">Seasonal Academic Year</a>.</p></td>
+</tr>
+<tr class="odd">
+  <td>How long is your course?</td>
+  <td>This will be the number of years in which you currently expect to complete your qualification with the OU. Student Finance England is
+      expecting an estimated date at this stage; it does not matter if your plans change.</td>
+</tr>
+<tr>
+  <td>How much is the tuition fee you will be charged by the Open University?</td>
+  <td><p>This will depend on the number of credits you intend to study in your academic year. Insert the total of the fee(s) from the
+         modules you intend to study in your 2014/15 academic year.</p>
+      <p>For example:</p>
+        <table class="type2">
+          <tr>
+            <th scope="col">30 credits</th>
+            <th scope="col">60 credits</th>
+            <th scope="col">90 credits</th>
+            <th scope="col">120 credits</th>
+            </tr>
+          <tr>
+            <td>&#163;1316</td>
+            <td>&#163;2632</td>
+            <td>&#163;3948</td>
+            <td>&#163;5264</td>
+            </tr>
+          </table>
+      <p>The fee for the Professional Graduate Certificate in Education "PGCE" is &#163;6750 in year 1 and &#163;2250 in year two.</p>
+      <p>Note: If you've studied previously, but this is your first loan application you will need to apply for your loan for
+      module fees in the correct academic year. For further information see <a href="http://www2.open.ac.uk/students/say">Seasonal Academic Year</a>.</p>
+  </td>
+</tr>
+<tr class="odd">
+  <td>How much would you like to borrow?</td>
+  <td>
+    <p>Click on the option "Maximum I'm entitled to". This means that you'll only have to make one application to Student Finance England for your
+    intended study for this academic year. By selecting this option, the full amount of the fee you have stated in the question above can be
+    paid for with your Tuition Fee Loan.</p>
+    <p>The OU will only be paid the amount actually needed to cover your module fees and you will only be
+    liable for the amount of loan that you actually use. If the OU amends your Tuition Fee Loan with Student Finance England you will receive
+    notification from the OU and Student Finance England to confirm your change of circumstance.</p>
+  </td>
+</tr>
+</table>
+</div>
+
+
+
+<!-- ST: add <hr> -->
+<hr>
+<!-- end ST -->
+<div class="xelement"><a id="step2"></a>
+  <h2><span>2</span><em>Step 2</em> Apply for your loan</h2>
+  <p class="green-btn"><a href="http://www.studentfinance.direct.gov.uk/portal/page?_pageid=153,4680119&amp;_dad=portal&amp;_schema=PORTAL" onclick="slcTrackingLink(this,1)"><span>Complete your online application</span></a></p>
+</div>
+
+<!-- ST: add <hr> -->
+<hr>
+<!-- end ST -->
+<div class="xelement"><a id="step3"></a>
+<h2><span>3</span><em>Step 3</em> Use your CRN to complete your enrolment</h2>
+  
+
+
+    <p>If this is your first Tuition Fee Loan application you will be given a CRN (Customer Reference Number) when you create an account
+    with SFE using their online portal. If you have already used a Tuition Fee Loan to pay for tuition fees at another institution, you can use your existing CRN to complete your enrolment.</p>
+  
+    <p>Once you have completed and submitted your Tuition Fee Loan application to SFE you're ready to complete
+    your enrolment. To do this we'll ask you for your CRN number as proof that you've registered and applied for your Tuition Fee Loan, so make sure you
+    have this to hand before you proceed.</p><p>By telling us your Customer Reference Number (CRN) and completing your enrolment you are accepting
+    our <a href="http://www.open.ac.uk/students/charter/essential-documents/conditions-registration">Conditions of Registration</a> and <a href="http://www.open.ac.uk/students/charter/essential-documents/fee-rules">Fee Rules</a>. Failure to fully complete the fee loan application process after telling us your CRN will
+    mean you continue to be liable for all your tuition fees and we will ask you to pay your fees by an alternative payment method.
+    See Step 4 to ensure you fully complete the fee loan application process.</p><p class="ou-phone">Complete your enrolment by returning your registration documents to us in the envelope provided. Please ensure you have completed the registration documents and included your CRN number.</p>
+    <p>You'll also be able to complete enrolment on any other modules that you've asked us to hold for you. We'll remind you to do this from StudentHome.</p>
+
+
+  <p>When you've completed your enrolment on <strong>DB123 You and your money: personal finance in context</strong>, we'll begin to send you the information you need to start studying.</p>
+  <p>Note: your records will update overnight, after which we'll display your CRN on this page.</p>
+
+</div>
+
+
+<!-- ST: add <hr> -->
+<hr>
+<!-- end ST -->
+<div class="xelement"><a id="step4"></a>
+  <h2><span>4</span><em>Step 4</em> Completing the fee loan process</h2>
+  <p>After SFE have processed your fee loan application, they'll send you a Student Finance Entitlement pack. This confirms that your loan has been
+  successful. At the same time, they will enclose a Student Finance Declaration Form which you <strong>must</strong> sign and return as soon as possible. If you do
+  not return the Student Finance Declaration Form to SFE your loan application will not be finalised and SFE will not cover your tuition fees.</p>
+  <p>Once you have returned the Student Finance Declaration Form, SFE will pay your tuition fees directly to the Open University a minimum of 14 days after the start of your first module.</p>
+  
+  <p>If you have any queries, call <img src="img/sfe-inline.png" alt="Student Finance England" class="img-inline sfe" /> on:</p>
+  
+<!-- ST: restructure <br> and <p> -->
+
+  <p>Phone: <strong>0300 100 0607</strong><br />
+    Monday to Friday: 08:00 - 20:00<br />
+    Saturday and Sunday: 09:00 - 17:30</p>
+    <p>Minicom 0300 100 0622 (only works with a Minicom device)</p>
+
+<!-- end ST -->
+
+</div>
+
+
+</div> <!-- end steps-2015 -->
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+	<div class="r3 aside">
+
+
+<div class="context-nav">
+    <ul>
+        <li><a href="qualification.aspx?q=Q70&amp;o=1&amp;stay=1">BA (Honours) Business Studies</a></li>
+        <li><a href="module-chooser.aspx?q=Q70&amp;o=1">Your module choices</a></li>
+        <li><a href="enrolment-help.ashx">Enrolment help</a></li>
+        
+        
+        <li><strong>Your student loan</strong></li>
+    </ul>
+</div>
+
+
+	</div>
+	
+</div>
+</div>
+<div id="ou-org-footer">
+
+<div class="ou-grid ou-mobile-footer" id="ou-mobile-jlinks"></div>
+
+<div class="ou-grid ou-footer-links">
+  <div class="ou-c1of4">
+    <ul>
+      <li class="ou-title"><a href="http://www.open.ac.uk">The Open University</a></li>
+      <li class="ou-copyright">&#169; Copyright <span id="sbyear"></span>. All rights reserved</li>
+      <li class="ou-phone" id="ou-phone1">+44 (0)300 303 5303</li>
+      <li class="ou-email"><a href="http://www.open.ac.uk/email/">Contact us</a></li>
+      <li class="ou-study"><a href="http://www.open.ac.uk/study/">Study at the OU</a></li>
+      <li class="ou-research"><a href="http://www.open.ac.uk/research/">Research</a></li>
+      <li class="ou-community"><a href="http://www.open.ac.uk/community/">Community</a></li>
+      <li class="ou-about"><a href="http://www.open.ac.uk/about/">About</a></li>
+      <li class="ou-accessibility"><a href="http://www.open.ac.uk/about/">Accessibility</a></li>
+    </ul>
+  </div>
+  <div class="ou-c2of4">
+    <ul>
+    <li class="ou-contact"><a href="http://www.open.ac.uk/contact/">Contact</a></li>
+      <li class="ou-search"><a href="http://www.open.ac.uk/search/">Search</a></li>
+      <li class="ou-privacy"><a href="http://www.open.ac.uk/privacy/">Privacy and cookies</a></li>
+      <li class="ou-copyright"><a href="http://www.open.ac.uk/copyright/">Copyright</a></li>
+      <li class="ou-conditions"><a href="http://www.open.ac.uk/conditions/">Conditions of use</a></li>
+      <li class="ou-cymraeg"><a href="http://www.open.ac.uk/cymraeg/">Cymraeg</a></li>
+      <li class="ou-mobile-enquiries" id="ou-phone2">0300 303 5303</li>
+    </ul>
+  </div>
+  <div class="ou-c3of4">
+    <ul>
+      <li class="ou-ia-study"><a href="http://www3.open.ac.uk/study/undergraduate/">Undergraduate</a></li>
+      <li class="ou-ia-study"><a href="http://www3.open.ac.uk/study/postgraduate/">Postgraduate</a></li>
+      <li class="ou-ia-study ou-ia-research"><a href="http://www.open.ac.uk/research-degrees">Research degrees</a></li>
+      <li class="ou-ia-home ou-ia-study"><a href="http://www.open.ac.uk/employers/">Employers</a></li>
+      <li class="ou-ia-about"><a href="http://www8.open.ac.uk/about/main/the-ou-explained/">OU explained</a></li>
+      <li class="ou-ia-about"><a href="http://www8.open.ac.uk/about/main/faculties-and-centres/">Faculties and centres</a></li>
+      <li class="ou-ia-about"><a href="http://www8.open.ac.uk/about/main/admin-and-governance/">Admin and governance</a></li>
+      <li class="ou-ia-about ou-ia-home"><a href="http://www.open.ac.uk/news/">Press Room</a></li>
+      <li class="ou-ia-home"><a href="http://www.open.ac.uk/alumni/" class="ou-home">Alumni</a></li>
+      <li class="ou-ia-home ou-ia-research ou-ia-about"><a href="http://www.open.ac.uk/jobs/">Jobs</a></li>
+      <li class="ou-ia-home"><a href="http://www.open.ac.uk/fundraising/">Donate</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/platform/">Platform</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/openlearn/">OpenLearn</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/facebook/">Facebook</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/twitter/">Twitter</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/youtube/">YouTube</a></li>
+      <li class="ou-ia-learning"><a href="http://www.open.ac.uk/students/">StudentHome</a></li>
+      <li class="ou-ia-learning"><a href="http://www.open.ac.uk/skillsforstudy/">Learning Support</a></li>
+      <li class="ou-ia-learning"><a href="http://library.open.ac.uk/">Library</a></li>
+    </ul>
+  </div>
+  <div class="ou-charter">The Open University is incorporated by Royal Charter (RC 000391), an <a href="http://www.open.ac.uk/foi/main/who-we-are-and-what-we-do/charity-information-gateway">exempt charity</a> in England &amp; Wales and a charity registered in Scotland (SC 038302). The Open University is authorised and regulated by the Financial Conduct Authority.</div>
+  <div class="ou-c4of4"><!-- reserved --></div>
+  </div>
+    
+</div>
+
+<script type="text/javascript">if (typeof window.ou_init=='function')ou_init();</script>
+</body>
+</html>

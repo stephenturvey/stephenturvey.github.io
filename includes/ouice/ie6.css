@@ -1,0 +1,11 @@
+body {background-color:#fff; background-image:none;}
+
+div.toolsshadow, p.ancestors, ol.ancestors, h1, div.boxshadow, div#org-footer, #org-footer ul, div.box {background-image:none;}
+
+div.box li {display:inline;}
+
+div.context-nav ul li strong {background-image:none;}
+
+div.creative {background-color:#D8E9EC;}
+
+div#org-header {margin-bottom:1em;}

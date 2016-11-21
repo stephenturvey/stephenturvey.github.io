@@ -1,0 +1,11 @@
+div.tools ul, div.tools form, div.nav ul {margin:0 0 0 0; padding:0 0 0 0; display:inline; vertical-align:middle;}
+p.ancestors {margin-top:1em;}
+
+div#page {zoom: 1; /* triggers hasLayout */} 
+
+div.clearfix {zoom: 1; /* triggers hasLayout */}
+
+form fieldset {background-color:#fff; padding:1em;}
+form fieldset legend {color:#000;}
+
+body.ou-media div#ou-region1, body.ou-media div#ou-region2 {width:100%; height:auto; float:left; clear:both;}

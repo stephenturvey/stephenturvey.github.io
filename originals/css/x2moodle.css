@@ -1,0 +1,32 @@
+body {margin:0;padding:0;font-family:verdana,arial,geneva,helvetica,sans-serif;font-size:xx-small;background-color:#fff;color:#000;}
+img {border:0}
+a.white {color:#000;}
+a.white:hover {color:#03c;text-decoration:underline;}
+a {text-decoration:none;}
+span.code {font-size:85%;font-weight:normal;}
+select {font-size:120%;}
+textarea {font-size:120%;font-family:Verdana,Geneva,Arial,Helvetica,sans-serif;margin:5px;overflow:auto;}
+span.highlight {font-weight:bold;color:#000;}
+span.white {color:#fff;}
+h1 {font-size:135%;font-family:arial,sans-serif;margin:0;padding:3px 0 0 20px;font-weight:bold;}
+p.more_details {padding:0 0 0 20px;font-size:92%;margin:5px 0 10px 0;}
+span.hide {visibility:hidden;}
+span.textselector span.textsel {bottom:0.2em;font-size:95%;color:#666;margin-right:1em;}
+span.textselector {float:right;vertical-align:top;padding:0;margin:0;}
+span.red {color:#c00;}
+img.textsel {border:1px solid #547FBD}
+div.course_inner {background-color:#f1f1f1;font-size:130%;font-weight:normal;padding:5px 5px 0px 8px;height:4em;vertical-align:super;border-bottom:1px solid #ccc;}
+#course-view {font-size:0.8em;letter-spacing:0;}
+div#qnh {margin:0 240px 0 0;font-size:medium;}
+div#qnr {width:230px;font-size:130%;float:right;padding:0 4px 4px 6px;background-image:url(../img/bluegrad736b.jpg);background-repeat:repeat-x;height:736px;}
+div#qnr a {color:#00f;text-decoration:none;}
+div#qnr a:hover {color:#00f;text-decoration:underline;}
+div#qnr h2 {font-size:110%;font-weight:bold;color:#000;margin:12px 0 4px 0;padding:0;}
+div#qnr h2 a {color:#000;}
+div#qnr table {margin:0 0 4px 0;padding:0;}
+div#qnr table td {font-size:100%;padding:1px 0;}
+div#qnr table td.col1 {width:80px;}
+div#qnr table td.col2 {text-align:right;}
+div#qnr table td.gap {padding-top:4px;}
+div#qnr p {margin:0 0 6px 0;padding:0;}
+div#qnr p.sml {font-size:95%;}

@@ -1,0 +1,5 @@
+div.tools ul, div.tools form, div.nav ul {margin:0 0 0 0; padding:0 0 0 0; display:inline; vertical-align:middle;}
+p.ancestors {margin-top:1em;}
+
+div#page {zoom: 1;     /* triggers hasLayout */} 
+

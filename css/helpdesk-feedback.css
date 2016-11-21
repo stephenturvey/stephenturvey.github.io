@@ -1,0 +1,59 @@
+body {
+	margin:0;
+	padding:0;
+	font-family:verdana,arial,geneva,helvetica,sans-serif;
+	font-size:xx-small;
+}
+
+h1 {
+	margin:0 0 20px 0;
+	padding:0;
+	font-size:120%;
+}
+
+#content {
+	margin:32px 20px 32px 20px;
+	padding:0;
+	font-size:130%;
+	width:720px;
+	line-height:140%;
+}
+
+#mainbox {
+	margin:32px 0 0 0;
+	padding:12px;
+	border:1px #ccc solid;
+}
+
+p {
+	margin:20px 0 20px 0;
+	padding:0;
+}
+
+.rad1 {
+	margin:0 0 -2px 20px;
+}
+
+.rad2 {
+	margin:4px 0 -2px 0;
+}
+
+.check1 {
+	margin:6px 0 0 0;
+}
+
+table.hide {
+	visibility:hidden;
+	position:absolute;
+	margin:0 0 20px 0;
+	padding:0;
+	border:none;
+	border-collapse:collapse;
+	width:90%;
+}
+
+table.hide td {
+	margin:0;
+	padding:0;
+}
+

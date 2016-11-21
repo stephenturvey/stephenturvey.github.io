@@ -1,0 +1,99 @@
+#ioemenu, #ioemenu2 {
+	white-space:nowrap;
+	margin:0 20px 0 0;
+	padding:0 0 0 20px;
+	font-size:xx-small;
+	font-family:verdana,arial,helvetica,sans-serif;
+	min-width:716px;
+}
+
+#ioemenu { height:29px; }
+
+#ioemenu2 ul {
+	margin:0;
+	background-color:#fbf5ca;
+	padding:0;
+	list-style:none;
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+	border-top:1px solid #fff;
+	position:absolute;
+	visibility:hidden;
+	z-index:100;
+	font-size:130%;
+	top:129px;
+}
+
+#ioemenu2 ul li {
+	padding:0;
+	margin:0;
+	border-bottom:2px solid #fff;
+	width:100%;
+}
+
+#ioemenu2 ul li a {
+	padding:3px 4px 2px 4px;
+	margin:0;
+	color:#000;
+	line-height:150%;
+	display:block;
+	text-decoration:none;
+}
+
+#ioemenu2 ul li a.active {
+	color:#000;
+}
+
+#ioemenu2 ul li a.cancel {
+	color:#666;
+}
+
+#ioemenu2 ul li a:hover {
+	background-color:#b8dbff;
+	color:#000;
+}
+
+a.ioem1, a.ioem2, a.ioem3, a.ioem4 {
+	display:block;
+	height:29px;
+	background-position:0 0;
+	background-repeat:no-repeat;
+	text-decoration:none;
+	text-align:center;
+	font-size:130%;
+	color:#000;
+	padding:6px 0 0 0;
+	margin:0;
+	float:left;
+}
+
+a:hover.ioem1, a:hover.ioem2, a:hover.ioem3, a:hover.ioem4 {
+	text-decoration:none;
+	color:#000;
+}
+
+a.ioem1 {
+	background-image:url(/.templates/includes/menu-left-grey.jpg);
+	width:112px;
+}
+
+a.ioem2 {
+	background-image:url(/.templates/includes/menu-middle-grey.jpg);
+	width:111px;
+}
+
+a.ioem3 {
+	background-image:url(/.templates/includes/menu-right-grey.jpg);
+	width:113px;
+}
+
+a.ioem4 {
+	background-image:url(/.templates/includes/menu-faq-grey.jpg);
+	width:46px;
+	float:right;
+}
+
+a:hover.ioem1 { background-image:url(/.templates/includes/menu-left-blue.jpg); }
+a:hover.ioem2 { background-image:url(/.templates/includes/menu-middle-blue.jpg); }
+a:hover.ioem3 { background-image:url(/.templates/includes/menu-right-blue.jpg); }
+a:hover.ioem4 { background-image:url(/.templates/includes/menu-faq-blue.jpg); }

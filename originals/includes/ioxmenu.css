@@ -1,0 +1,118 @@
+#ioemenu, #ioemenu2 {
+	white-space:nowrap;
+	margin:0 20px 0 20px;
+	padding:0;
+	min-width:716px;
+	max-width:1200px;
+	font:xx-small Verdana, Helvetica, Arial, sans-serif;
+}
+
+#ioemenu {
+	height:37px;
+	background-image:url(img/iox-menu-bg.jpg);
+	background-position:0 0;
+	background-repeat:repeat-x;
+}
+
+#ioemenu2 { display:none; }
+
+#ioemenu2 ul {
+	margin:0;
+	background-color:#fbf5ca;
+	padding:0;
+	list-style:none;
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+	border-top:1px solid #fff;
+	position:absolute;
+	visibility:hidden;
+	z-index:100;
+	font-size:130%;
+	top:125px;
+}
+
+#ioemenu2 ul li {
+	padding:0;
+	margin:0;
+	border-bottom:2px solid #fff;
+	width:100%;
+}
+
+#ioemenu2 ul li a {
+	padding:3px 4px 2px 4px;
+	margin:0;
+	color:#000;
+	line-height:150%;
+	display:block;
+	text-decoration:none;
+}
+
+#ioemenu2 ul li a.active {
+	color:#000;
+}
+
+#ioemenu2 ul li a.cancel {
+	color:#666;
+}
+
+#ioemenu2 ul li a:hover {
+	background-color:#b8dbff;
+	color:#000;
+}
+
+a.ioem1, a.ioem2, a.ioem3, a.ioem4, a.ioem5 {
+	display:block;
+	height:27px;
+	background-position:0 0;
+	background-repeat:no-repeat;
+	text-decoration:none;
+	text-align:center;
+	font-size:130%;
+	color:#000;
+	padding:10px 0 0 0;
+	margin:0;
+	float:left;
+}
+
+a:hover.ioem2, a:hover.ioem3, a:hover.ioem4, a:hover.ioem5 {
+	text-decoration:none;
+	color:#000;
+}
+
+a.ioem1, a:hover.ioem1 {
+	background-image:url(img/iox-menu-sh.jpg);
+	color:#fff;
+	font-weight:bold;
+	width:105px;
+	text-decoration:none;
+}
+
+a.ioem2 {
+	background-image:url(img/iox-menu-pr.jpg);
+	width:77px;
+}
+
+a.ioem3 {
+	background-image:url(img/iox-menu-cs.jpg);
+	width:79px;
+}
+
+a.ioem4 {
+	background-image:url(img/iox-menu-qu.jpg);
+	width:107px;
+}
+
+a.ioem5 {
+	background-image:url(img/iox-menu-fq.jpg);
+	width:62px;
+}
+
+a:hover.ioem2 { background-image:url(img/iox-menu-pr2.jpg); }
+a:hover.ioem3 { background-image:url(img/iox-menu-cs2.jpg); }
+a:hover.ioem4 { background-image:url(img/iox-menu-qu2.jpg); }
+a:hover.ioem5 { background-image:url(img/iox-menu-fq2.jpg); }
+
+a.ioes2 { background-image:url(img/iox-menu-pr2.jpg); }
+a.ioes3 { background-image:url(img/iox-menu-cs2.jpg); }
+a.ioes4 { background-image:url(img/iox-menu-qu2.jpg); }
+a.ioes5 { background-image:url(img/iox-menu-fq2.jpg); }

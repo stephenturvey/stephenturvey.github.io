@@ -1,0 +1,74 @@
+body {margin:0;padding:0;font-size:xx-small;font-family:sans-serif;color:#000;background-color:#fff}
+h1 {margin:0;padding:0.1em 0 0.08em 0.15em;font-size:140%;font-weight:bold;background-color:#000;color:#fff}
+a {color:#00f;text-decoration:none}
+div#content	{margin:0.15em 0.15em 0 0.15em;padding:0;font-size:140%}
+p.normal {font-size:95%;margin-left:0.15em;margin-right:0.15em}
+div#nav {margin:0;padding:0.1em 0.15em 0.15em 0.25em;background-color:#eee;border-bottom:1px solid #000;font-size:120%;color:#000}
+p#namepi {margin:0 0.15em 0.6em 0.2em;padding:0}
+div.coursebox {margin:1em 0.15em 0.4em 0.15em;padding:0;border:1px solid #ccc}
+div.coursebox h3 {margin:0 0 0.08em 0;padding:0 0.15em 0.15em 0.35em;font-size:100%;font-weight:normal;background-color:#ffffce;color:#000}
+div.coursebox p {margin:0;padding:0.15em 0.15em 0.15em 0.35em;font-size:95%}
+div.coursebox p.lnks {margin:0.2em 0.15em 0.15em 0.35em}
+div.qualbox {margin:1em 0.15em 0.4em 0.15em;padding:0;border:1px solid #ccc}
+div.qualbox h3 {margin:0 0 0.08em 0;padding:0 0.15em 0.15em 0.35em;font-size:100%;font-weight:bold;background-color:#d2dcff;color:#000}
+div.qualbox p {margin:0;padding:0.15em 0.15em 0.15em 0.35em;font-size:95%}
+div.msgbox {margin:1em 0.15em 0.4em 0.15em;padding:0;border:1px solid #ccc}
+div.msgbox h3 {margin:0 0 0.08em 0;padding:0 0.15em 0.15em 0.35em;font-size:100%;font-weight:bold;background-color:#ddd;color:#000}
+div.rdbox {margin:1em 0.15em 0.4em 0.15em;padding:0;border:1px solid #ccc}
+div.rdbox h3 {margin:0 0 0.08em 0;padding:0 0.15em 0.15em 0.35em;font-size:100%;font-weight:bold;background-color:#c9eece;color:#000}
+div.msgbox p, div.rdbox p {margin:0;padding:0.15em 0.15em 0.15em 0.35em;font-size:95%}
+div.msgbox ul, div.qualbox ul, div.rdbox ul {margin:0;padding:0}
+div.msgbox ul li, div.qualbox ul li, div.rdbox ul li {margin:0 0.15em 0 1.5em;padding:0;list-style:circle;font-size:95%}
+p#foot {margin:2em 0.08em 1em 0.08em;padding:0;text-align:center;font-size:90%}
+div#crsetop {margin:0;padding:0.2em 0.15em 0.2em 0.4em;background-color:#ffffce;border-bottom:1px solid #ccc;color:#000}
+div#greytop {margin:0;padding:0.2em 0.15em 0.2em 0.4em;background-color:#eee;border-bottom:1px solid #ccc;color:#000}
+div#crsetop h2, div#greytop h2 {margin:0;padding:0;font-weight:normal;font-size:140%}
+div#crsetop p, div#qualtop p, div#greytop p {margin:0.2em 0 0 0;padding:0}
+div#content h2 {margin:1.6em 0.2em 0 0;padding:0.08em 0 0.15em 0.15em;font-size:100%;font-weight:normal;border-top:1px solid #000;background-color:#eee;color:#000}
+div.crsesect {margin:0.6em 0 0 0.3em;padding:0}
+div.crsesect h4 {color:#f00;font-size:110%;font-weight:normal;padding:0;margin:0.9em 0.15em 0.35em 0.15em}
+table.tbl1 {margin:0;padding:0;border:1px solid #ccc;width:92%}
+table.tbl1 th {background-color:#f4f4f4;text-align:left;font-weight:bold;font-size:95%;padding-left:0.18em;color:#000}
+table.tbl1 th.c {text-align:center}
+table.tbl1 th.hd {background-color:#fff;border-top:1px solid #ccc;text-align:center;font-style:italic;font-size:80%;padding-left:0;color:#000}
+table.tbl1 th.hdl {background-color:#fff;border-top:1px dashed #ccc;text-align:left;font-style:italic;font-size:80%;padding-left:0.18em;color:#000}
+table.tbl1 th.ql {background-color:#fff;border-top:1px solid #ccc;text-align:left;font-size:95%;font-weight:normal;padding:0.2em 0.18em 0.15em 0.18em;background-color:#f4f4f4;color:#000}
+table.tbl1 th.wh {background-color:#fff}
+table.tbl1 td {border-top:1px dashed #ccc;text-align:center;font-size:90%;padding-right:0.15em}
+table.tbl1 td.l {text-align:left;padding-left:0.15em}
+table.tbl1 td.l2 {text-align:left;padding-left:0.15em;border-top:none}
+table.tbl1 td.r {text-align:right;padding-right:0.5em;font-style:italic}
+table.tbl1 td.r2 {text-align:right;padding-right:0.5em;font-style:italic;border-top:none}
+table.tbl1 td.pending {text-align:left;padding:0.3em 0.15em 0.15em 0.3em;border:none}
+table.tbl1 td.result {text-align:left;padding:0.15em 0.15em 0.3em 0.15em;color:#c00;font-size:110%;font-weight:bold}
+div.crsesect p {margin:0.7em 0 0 0;padding:0;font-size:95%}
+div.crsesect ul {margin:0.5em 0 0 0;padding:0}
+div.crsesect ul li {margin:0 0.15em 0 1.4em;padding:0 0 0.2em 0;list-style:circle;font-size:95%}
+div.crsesect ul li.closed {color:#666}
+div.crsesect ul.qa li {margin:0 0.15em 0 1.5em;padding:0 0 0.28em 0;list-style:square;font-size:90%}
+span.grey {color: #666;background-color:#fff}
+div#qualtop {margin:0;padding:0.2em 0.15em 0.2em 0.4em;background-color:#d2dcff;border-bottom:1px solid #ccc;color:#000}
+div#qualtop h2 {margin:0;padding:0;font-weight:normal;font-size:140%}
+span.ital {font-size:90%;padding-right:0.15em;display:block;font-style:italic}
+p.error {font-size:95%;color:#c00;padding:0 0.3em 0 0.3em;background-color:#fff}
+input.submit {background-color:#f4f4f4;color:#c00}
+p.smlprint {margin:0.9em 0.15em 0 0.18em;font-size:80%;color:#666;background-color:#fff}
+span.completed {color:#999;font-size:90%}
+span.extra {color:#666;font-size:90%}
+div.message {margin:1.6em 0.3em 0 0.3em;padding:0;border:1px solid #ccc}
+div.message div.date {font-size:80%;font-weight:normal;color:#000;background-color:#eee;border-bottom:1px dashed #ccc;border-top:none;margin:0 0.1em 0 0.1em;padding:0.25em}
+div.message div.title {font-size:100%;font-weight:normal;color:#cc0000;background-color:#fff;margin:0;padding:0.2em}
+div.message p {padding:0.2em;margin:0;font-size:95%}
+div.contactus {margin:1.4em 0.3em 0 0.3em;padding:0.15em;border:1px solid #ccc;background-color:#eee;font-size:95%}
+div.contactus em {font-size:95%;color:#333}
+input.t1 {width:98%}
+textarea {width:98%;overflow:auto}
+p.red {color:#900}
+p.faq {margin:0.8em 0.4em -0.8em 0.4em;color:#c00}
+span.red  {color:#900}
+span.error  {color:#c00}
+
+#ou-hd1 {margin:0;padding:4px;text-align:right}
+#ou-hd1 a {border:1px #ccc solid;padding:1px}
+#ou-hd2 {clear:both}
+#ou-hd1 img {float:left;padding-bottom:4px}

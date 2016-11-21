@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>StudentHome - Open University</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+<link rel="stylesheet" type="text/css" href="includes/headers-footers/ou-header.css" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="includes/ouice/3/screen.css" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="includes/ouice/3/print.css" media="print" />
+<link rel="stylesheet" type="text/css" href="includes/studenthome-header-2012.css" />
+<link rel="stylesheet" type="text/css" href="css/site11.css" />
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/loan4.css" />
+<link rel="stylesheet" type="text/css" href="css/loan-print.css" media="print" />
+
+
+
+
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="includes/ouice/3/ie.css" />
+<link rel="stylesheet" href="css/sh-ie.css" />
+<![endif]-->
+
+<!--[if lt IE 7]>
+<link rel="stylesheet" href="css/sh-ie6.css" />
+<![endif]-->
+
+<script type="text/javascript" src="includes/headers-footers/ou-header.js"></script>
+<script type="text/javascript" src="includes/studenthome-menu-2012.js"></script>
+<script type="text/javascript" src="js/site.js"></script>
+
+
+
+
+<!-- ST: new stylesheet -->
+<link rel="stylesheet" type="text/css" href="css/student-loan.css" media="screen, projection" />
+<!-- end ST -->
+
+</head>
+
+<body class="ou-ia-learning ou-blend study r2r3 sh-study ou-mobile">
+<script type="text/javascript">if (typeof window.ou_sitestat=='function')ou_sitestat();</script>
+<div id="ou-org-header"> <a class="ou-skip" href="#ou-content">Skip to content</a> <a class="ou-link-ou" href="http://www.open.ac.uk/"><img src="includes/headers-footers/oulogo-56.jpg" alt="The Open University" /></a>
+  <div class="ou-role-nav">
+    <ul>
+      <li class="ou-role-accessibility"><a href="http://www.open.ac.uk/accessibility/">Accessibility</a></li>
+      <li class="ou-role-signin" id="ou-signin1"><a href="https://msds.open.ac.uk/signon/sams001.aspx" id="ou-signin2">Sign in</a></li>
+      <li id="ou-signout" class="ou-role-signout"><a href="https://msds.open.ac.uk/signon/samsoff.aspx" id="ou-signout2">/ Sign out</a></li>
+      <li id="ou-studenthome" class="ou-role-studenthome"><a href="http://www.open.ac.uk/students/" id="ou-studenthome2">StudentHome</a></li>
+      <li id="ou-tutorhome" class="ou-role-tutorhome"><a href="http://www.open.ac.uk/tutorhome/">TutorHome</a></li>
+      <li id="ou-intranet" class="ou-role-intranet"><a href="http://intranet.open.ac.uk/">IntranetHome</a></li>
+      <li id="ou-sponsor" class="ou-role-sponsor"><a href="https://css2.open.ac.uk/employers/sponsorhome/home/HomePage.aspx">SponsorHome</a></li>
+      <li id="ou-contact" class="ou-role-contact"><a href="http://www.open.ac.uk/contact/">Contact</a></li>
+      <li id="ou-search" class="ou-role-search"><a href="http://www.open.ac.uk/search/">Search the OU</a></li>
+    </ul>
+  </div>
+  <div class="ou-ia-nav">
+    <ul>
+      <li class="ou-ia-home"><a href="http://www.open.ac.uk/">The Open University</a></li>
+      <li class="ou-ia-study"><a href="http://www.open.ac.uk/study/">Study at the OU</a></li>
+      <li class="ou-ia-research"><a href="http://www.open.ac.uk/research/">Research at the OU</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/community/">OU Community</a></li>
+      <li class="ou-ia-about"><a href="http://www.open.ac.uk/about/">About the OU</a></li>
+    </ul>
+  </div>
+</div>
+<div class="canvas">
+
+<div class="mnuwrap"><div class="sh-header" role="navigation">
+<ul>
+<li class="sh-home"><a href="index.aspx">StudentHome</a></li>
+<li class="sh-profile"><a href="profile.aspx">Profile</a></li>
+<li class="sh-study"><a href="study-record.aspx" onmouseover="ioe_showmenu(3)" onmouseout="ioe_hidemenu()" onclick="ioe_hidemenu()" class="selected">Study</a></li>
+<li class="sh-community"><a href="oulife.aspx">Community</a></li>
+<li class="sh-help"><a href="help.aspx">Help Centre</a></li>
+</ul>
+</div></div><div id="sh-header-menu"></div>
+<script type="text/javascript">
+var ioe_rel=1;
+var ioe_numcrse=1;
+var ioe_numqual=1;
+var ioe_course=["Y032"];
+var ioe_pres=["2015B"];
+var ioe_crsetype=[1];
+var ioe_crsetitle=["People, work and society Access module"];
+var ioe_crsewidth=32;
+var ioe_qualocc=["T09_1"];
+var ioe_qualtitle=["Certificate of Higher Education Open"];
+var ioe_qualwidth=23;
+var iox_name="";
+var iox_nf="Q";
+ioe_createmenus();
+</script>
+
+
+
+
+<div class="grid">
+
+	<div class="r1 aside">
+		<div class="static">
+
+
+		</div>
+	</div>
+
+	<div class="r2">
+		<div class="ou-content" id="ou-content">
+			<h1 class="h1main">Your student loan for Certificate of Higher Education Open</h1>
+			<div class="inview">
+
+
+<script type="text/javascript">
+
+    function slcOpen(n) {
+        var obj = document.getElementById("mtnloan" + n + "b");
+        obj.style.display = 'block';
+
+        obj = document.getElementById("mtnloan" + n + "a");
+        obj.setAttribute("href", "javascript:slcClose(" + n + ")");
+        obj.setAttribute("class", "sh-toggle toggle-minus");
+
+        slcTracking(this, "", n);
+    }
+
+    function slcClose(n) {
+        var obj = document.getElementById("mtnloan" + n + "b");
+        obj.style.display = 'none';
+
+        obj = document.getElementById("mtnloan" + n + "a");
+        obj.setAttribute("href", "javascript:slcOpen(" + n + ")");
+        obj.setAttribute("class", "sh-toggle");
+    }
+
+    function slcTracking(t, pdf, act) {
+        if (typeof window.ouClickEvent != 'function') return;
+
+        var s = "";
+
+        if (pdf.length > 0) s += "&ou_dl_ftype=pdf&ou_dl_fname=" + pdf;
+
+        if (act == 1) s += "&ou_rv_type=slc&ou_rv_slc=s3_mistake"
+        if (act == 2) s += "&ou_rv_type=slc&ou_rv_slc=s4_check"
+
+        if (act == 3) s += "&ou_ts_end=" + (new Date().getTime());
+
+        ouClickEvent(t, s.substr(1));
+    }
+
+    window.onbeforeunload = function (e) { slcTracking(this, "", 3); }
+
+</script>
+
+
+
+
+
+<p class="intro-steps">To complete your enrolment, follow these steps:</p>
+
+<!-- ST: change ul class to steps2, add em+number -->
+<ul class="steps2">
+  <li><a href="#step1"><em>1</em> Read warning</a></li>
+  <li><a href="#step2"><em>2</em> Get form</a></li>
+  <li><a href="#step3"><em>3</em> Fill it in</a></li>
+  <li><a href="#step4"><em>4</em> Send to SFW</a></li>
+  <li><a href="#step5"><em>5</em> Supply CRN</a></li>
+  <li><a href="#step6"><em>6</em> Start studying!</a></li>
+</ul>
+
+
+<div class="steps-2015">
+
+
+<div class="xelement"><a id="step1"></a>
+<p class="attn"><strong class="alert">Attention:</strong> If you've already applied for your Tuition Fee Loan, skip straight to <a href="#step5">Step 5</a>.</p>
+  <br /><h2><span>1</span><em>Step 1</em> Read this warning</h2>
+  <p>You'll need to complete a loan application form which we will send to you and return it to Student Finance Wales (SFW). For modules
+  starting in October you have until the 11th September to give us your Customer Reference Number (CRN), therefore it is important that you apply as
+  soon as possible so that SFW can provide you with your CRN in time.</p>
+  <p>This process is mostly straightforward, but  some parts are easy to get wrong. Follow our guidance and you should be OK!
+    It is important that you complete all the relevant sections and that the information you provide is correct to prevent any delay to your enrolment. If you have any doubts about how to complete a question on your student loan application form then we strongly recommend you call SFW on 0300 200 4050 for guidance BEFORE you submit your application. SFW has a dedicated team of advisors ready and waiting to help you.</p>
+ 
+ <p>To apply, you'll need:</p> 
+ <ul class="nextsteps">
+ <li>the answers to the questions in the table below.</li>
+ <li>for UK applicants applying for the first time, details from your current, valid UK passport (you can apply with another form of identity evidence, but using your passport is quicker and easier).</li>
+ <li>your National Insurance number (if you haven't already given it to SFW).</li>
+ </ul>
+  <p class="attn"><strong class="alert">Attention:</strong> Section 4 of the SFW Tuition Fee Loan application form is easy to get wrong. See below for details of what you need to write in section 4, for your Certificate of Higher Education Open:</p>
+
+<table class="type2">
+  <tr>
+      <th class="qn">Section</th>
+      <th class="qq">Question on form</th>
+      <th class="qg"> The answer you should give </th>
+    </tr>
+    <tr class="odd">
+      <td>4.1</td>
+      <td> University or college details </td>
+      <td> <p><strong>Name: </strong><br />
+        The Open University in Wales</p>
+        <p><strong>Full address:</strong><br />
+          18 Custom House Street<br />
+          Cardiff<br />
+          CF10 1AP</p></td>
+    </tr>
+    <tr>
+      <td>4.1.2</td>
+      <td>Name of your course</td>
+      <td>Certificate of Higher Education</td>
+
+    </tr>
+    <tr class="odd">
+      <td>4.2</td>
+      <td>Qualification you expect to gain</td>
+      <td>CertHE</td>
+
+    </tr>
+    <tr>
+      <td>4.3</td>
+      <td>In this academic year, when will you start your studies?</td>
+      <td><strong></strong></td>
+      </tr>
+</table>
+<p>The answers above to <strong>4.1.2</strong> and <strong>4.2</strong> are what you need to enter for your Certificate of Higher Education Open.
+This is how Student Finance Wales will recognise your OU qualification and differs to how you see it displayed elsewhere in StudentHome.
+The answer to <strong>4.3</strong> is based on your first module  start date.</p>
+</div>
+
+<!-- ST: add <hr> -->
+<hr>
+<!-- end ST -->
+<div class="xelement"><a id="step2"></a>
+  <h2><span>2</span><em>Step 2</em> Get the form</h2>
+  <p><img src="img/sfw-logo.jpg" width="230" height="49" alt="Student Finance Wales" /></p>
+  <p><strong>We'll send you an application form to apply to Student Finance Wales for a part-time Tuition Fee Loan.</strong></p>
+  <p>You will also be able to find information and download an application form on the <a href="http://www.studentfinancewales.co.uk/part-time-students.aspx">Student Finance Wales website</a> or call them on 0300 200 4050.
+  <p>If you need a new form you can request one using the <a href="http://www3.open.ac.uk/forms/SLCFormreq/">replacement request form</a>.</p>
+</div>
+
+<!-- ST: add <hr> -->
+<hr>
+<!-- end ST -->
+<div class="xelement"><a id="step3"></a>
+  <h2><span>3</span><em>Step 3</em> Fill it in</h2>
+<p>You must complete the fee loan application even if you just want to apply for a targeted grant.</p>
+<p class="attn"><strong class="alert">Attention:</strong> there are some places where it's easy to get the wrong answer, so as you fill in the form refer to:</p>
+
+<div class="ou-box">
+<p><a href="javascript:slcOpen(1)" id="mtnloan1a" class="sh-toggle">Read 'How to avoid mistakes' - Additional guidance for OU students</a></p>
+<div id="mtnloan1b" class="noshow">
+<p>Some sections of the Tuition Fee Loan Application are easy for OU students to get wrong so we have detailed some special instructions below, including your personalised answers for section 4.</p>
+  <h3>1. Your personal details</h3>
+  <table class="type2">
+    <tr>
+      <th class="qn">Question number</th>
+      <th class="qq">Question summary</th>
+      <th class="qg">Our guidance</th>
+      </tr>
+    <tr class="odd">
+      <td>1.1</td>
+      <td>Customer reference number (CRN)</td>
+      <td>This is your Student Finance Wales CRN. If this is your first application for a Tuition Fee Loan, or you don't know your CRN, then please leave this box blank.</td>
+      </tr>
+    <tr>
+      <td>1.2</td>
+      <td>Personal details</td>
+      <td>Use the full name you are currently known by,
+but ensure that you copy your place of birth from your passport or birth or
+adoption certificate. If this name
+differs from the name you gave us when you reserved your module please contact
+us.</td>
+    </tr>
+    <tr class="odd">
+      <td>1.4</td>
+      <td>Valid UK passport</td>
+      <td>
+        All students are required to provide evidence of their residence (see section 3 of the application form).
+        If you are a UK national and hold a valid UK passport you must provide full answers to this question,
+        including your 9-digit passport number. You do not need to send Student Finance Wales your passport.
+      </td>
+    </tr>
+    <tr>
+      <td>1.5</td>
+      <td>Address details</td>
+      <td>If you intend to live at  home whilst studying put &ldquo;as above&rdquo; in the term time address field and leave the date box blank.</td>
+      </tr>
+  </table>
+  <h3>3. Residence</h3>
+  <p>If you are a UK national, and have not completed your passport information in Section 1.4 please see the SFW guidance notes in Section 3.1 to see what evidence you need to send.</p>
+  <p>If you need help with questions about your residency status call Student Finance Wales on 0300 200 4050.</p>
+
+
+  <h3>4. About your University, or college and course</h3>
+ 
+  <table class="type2">
+    <tr>
+      <th class="qn">Question number</th>
+      <th class="qq">Question summary</th>
+      <th class="qg">Our guidance</th>
+      </tr>
+    <tr class="odd">
+      <td>4.1</td>
+      <td>University details</td>
+      <td><p>The information you should write on this application is:</p>
+      <p>The Open University in Wales<br />
+          18 Custom House Street<br />
+          Cardiff<br />
+          CF10 1AP</p></td>
+      </tr>
+    <tr>
+      <td>4.1.2</td>
+      <td>Name of your course</td>
+      <td>This is a key question as your application will be returned if this information is left blank or incorrectly completed. For your Certificate of Higher Education Open you need to enter <strong>Certificate of Higher Education</strong>.</td>
+      </tr>
+    <tr class="odd">
+      <td>4.2</td>
+      <td>Qualification you expect to gain</td>
+      <td>For your Certificate of Higher Education Open you need to enter <strong>CertHE</strong>.</td>
+      </tr>
+    <tr>
+      <td>4.3</td>
+      <td>When will you start your studies?</td>
+      <td>
+         <p>This should be the month and year you start your qualification. For your Certificate of Higher Education Open you need to enter <strong></strong>.</p>
+      </td>
+      </tr>
+    <tr class="odd">
+      <td>4.4</td>
+      <td>When will you finish the last year of your course?</td>
+      <td>This will be the date you currently expect to complete your qualification with the OU. Student Finance Wales is expecting an estimated date at this stage; it does not matter if your plans change.</td>
+      </tr>
+    <tr>
+      <td>4.6</td>
+      <td>Which year of studies are you going into?</td>
+      <td><p>Most students will be entering their first year of study. If you have successfully applied  for credit transfer you'll need to show which year you will be working towards,  for example year 3 of a  6 year course.</p>
+        <p>If you're unsure, call <img src="img/ou-shield.gif" alt="The Open University" class="img-inline" /> The Open University in Wales on 0300 303 5303.</p></td>
+      </tr>
+    <tr class="odd">
+      <td>4.8</td>
+      <td>Full tuition fee the OU is  charging you</td>
+      <td><p>This is the fee for all modules you're studying between 1st September 2014 and 31st August 2015.
+      If you are unsure about anything please contact The Open University in Wales on 0300 303 5303.</p>
+        
+      </tr>
+  </table>
+  <h3>5. Your loan request</h3>
+  <table class="type2">
+    <tr>
+      <th class="qn">Question number</th>
+      <th class="qq">Question summary</th>
+      <th class="qg">Our guidance</th>
+      </tr>
+    <tr class="odd">
+      <td>5.1</td>
+      <td>Amount of the tuition fee loan</td>
+      <td>Tick the box "Maximum available to you". This means you'll only have to make one application to Student Finance Wales each year. The OU will only be paid the amount actually needed to cover your module fees and you'll only be liable for the amount of loan that you actually use.</td>
+      </tr>
+    <tr>
+      <td>5.2</td>
+      <td>Contact details</td>
+      <td><p>You can put anyone who knows you and lives at a different address. They don't have to be related to you.</p>
+      <p>This information is required by Student Finance Wales and will not be shared with the OU. If you have any questions call Student Finance Wales on 0300 200 4050.</p></td>
+      </tr>
+  </table>
+  
+  <p><strong>Please note: if you're studying modules totalling 60 credits or more you can apply for a course grant to help with study related costs. If you want to apply for a course grant please complete sections 6, 7 and 8.</strong></p>
+  
+  <h3>9. Declaration</h3>
+  <p>Don't  forget to read, sign and date the declaration starting on page 16.  Student Finance Wales will be unable to  process your loan application without your signature.  This will delay your application, and could  result in you having to pay for your studies up front.</p>
+  
+  <div>
+    <div> 
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- ST: add <hr> -->
+<hr>
+<!-- end ST -->
+<div class="xelement"><a id="step4"></a>
+  <h2><span>4</span><em>Step 4</em> Check and post to Student Finance Wales immediately</h2>
+<p class="attn"><strong class="alert">Attention:</strong> Before you send off the form, use our checklist.</p>
+
+<div class="ou-box">
+<p><a href="javascript:slcOpen(2)" id="mtnloan2a" class="sh-toggle">Do a final check, including the address for Student Finance Wales</a></p>
+
+<div id="mtnloan2b" class="noshow">
+<p>To ensure the processing of your Tuition Fee Loan application is not delayed and common mistakes are avoided, please check that you have completed the following.</p>
+<ol class="checklist">
+  <li class="odd"><strong>Have you signed and dated</strong> your student declaration on page 16 of the Tuition Fee Loan application form? Without your signature, your loan application will be delayed and this could result in you having to pay for your studies upfront.</li>
+  <li>
+    <strong>Have you given</strong> the relevant proof of identity - see question 1.4 of the application form.
+    For example, have you written your full UK passport number or enclosed your original birth or adoption certificate
+    (all original documents will be returned to you by special delivery. There’s no need to enclose your UK passport).
+  </li>
+  <li class="odd">
+    <strong>In section 4, have you included:</strong>
+    <ul>
+      <li>your course name</li>
+      <li>the qualification you are aiming for</li>
+      <li>the expected end date</li>
+    </ul>
+    You'll find these details in the letter we have sent you and on step 1, section 4 of this web page.
+  </li>
+  <li><strong>Have you double checked</strong> you have filled in all the relevant sections on the application form? If you are unsure call Student Finance Wales on 0300 200 4050 before submitting your application.</li>
+</ol>
+
+<!-- ST: replace p.red-text with warning box -->
+<div class="box warning">
+  <p>If you have any doubts about what to enter in any section of the loan application form please call Student Finance Wales on 0300 200 4050, as any missing information could delay your Tuition Fee Loan approval.</p>
+</div>
+<!-- end ST -->
+
+  
+  <p>When you've fully completed the Tuition Fee Loan Application form, and checked it against this list, send it with your supporting evidence (if appropriate) to:</p>
+  <p>Student Finance Wales<br />
+    PO Box 211<br />
+    Llandudno Junction<br />
+    LL30 9FU</p>
+  
+</div>
+</div>
+
+</div>
+<!-- ST: add <hr> -->
+<hr>
+<!-- end ST -->
+<div class="xelement"><a id="step5"></a>
+  <h2><span>5</span><em>Step 5</em> Receive your CRN and complete your enrolment </h2>
+  <p>Student Finance Wales will send you a CRN - Customer Reference Number.</p>
+  <p>Allow around 10 working days from the time Student Finance Wales receive your 
+        application before you expect to receive this. If you need your CRN sooner than this you can phone 
+        Student Finance Wales on 0300 200 4050 and ask to be given your CRN over the phone.</p>
+  
+  <p class="attn"><strong class="alert">Attention:</strong> As soon as you receive your CRN you're ready to complete your enrolment with us:</p>
+  <p>To do this we'll ask you to enter your CRN number as proof that you’ve applied for your Tuition Fee Loan, so make sure you have this to hand before you proceed.</p>
+  <p>You’ll also need to confirm you want to pay all or part of your module fee with your Tuition Fee Loan.</p>
+  <p class="green-btn"><a class="ou-email"><span>Complete your enrolment online</span></a></p><p class="ou-phone">or call <img src="img/ou-shield.gif" alt="The Open University" class="img-inline" /> The Open University in Wales on 0300 303 5303.</p>
+  <p>If you don't receive your CRN within 10 days, call:</p>
+  
+<!-- ST: restructure <br> and <p> -->
+    <p><img src="img/sfw-logo.jpg" width="230" height="49" alt="Student Finance Wales" /></p>
+    <p>Phone: <strong>0300 200 4050</strong><br />
+    Monday to Friday: 08:00 - 20:00<br />
+    Saturday: 09:00 - 13:00<br />
+    Sunday: Closed</p>
+    <p>Minicom 0300 100 1693 (only works with a Minicom device)</p>
+<!-- end ST -->
+    
+  <p>You'll also be able to complete enrolment on any other modules that you've asked us to hold for you. We'll remind you to do this from your StudentHome page.</p>
+  
+  
+<!-- ST: add box -->
+<div class="box tip">
+<p>Note: your records will update overnight, after which we'll display your CRN on this page.</p>
+</div>
+<!-- end ST -->
+
+  
+</div>
+<!-- ST: add <hr> -->
+<hr>
+<!-- end ST -->
+<div class="xelement"><a id="step6"></a>
+  <h2><span>6</span><em>Step 6</em> Start studying!</h2>
+  <p>When you've completed your enrolment, we'll begin to send you the information you need to start studying.</p>
+  <p>Studying starts with induction, and then access to your online learning environment.</p>
+  <p>After Student Finance Wales have processed your loan application, they'll send you a Student Entitlement letter. This confirms your loan has been successful. They will pay your tuition fees directly to the Open University - but don't worry, you'll be able to start studying before your loan has been confirmed, as long as you gave us your CRN when you completed your enrolment.</p>
+  <p>If you've applied for a course grant and additional grants Student Finance Wales will pay you directly after your module starts.</p>
+<p>If you have any queries, call:</p>
+<!-- ST: restructure <br> and <p> -->
+    <p><img src="img/sfw-logo.jpg" width="230" height="49" alt="Student Finance Wales" /></p>
+    <p>Phone: <strong>0300 200 4050</strong><br />
+    Monday to Friday: 08:00 - 20:00<br />
+    Saturday: 09:00 - 13:00<br />
+    Sunday: Closed</p>
+    <p>Minicom 0300 100 1693 (only works with a Minicom device)</p>
+<!-- end ST -->
+</div>
+
+</div> <!-- end steps-2015 -->
+
+
+
+			</div>
+		</div>
+	</div>
+
+	<div class="r3 aside">
+
+
+<div class="context-nav">
+    <ul>
+        <li><a href="qualification.aspx?q=T09&amp;o=1&amp;stay=1">Certificate of Higher Education Open</a></li>
+        
+        
+        
+        
+        <li><strong>Your student loan</strong></li>
+        
+    </ul>
+</div>
+
+
+	</div>
+	
+</div>
+</div>
+<div id="ou-org-footer">
+
+<div class="ou-grid ou-mobile-footer" id="ou-mobile-jlinks"></div>
+
+<div class="ou-grid ou-footer-links">
+  <div class="ou-c1of4">
+    <ul>
+      <li class="ou-title"><a href="http://www.open.ac.uk">The Open University</a></li>
+      <li class="ou-copyright">&#169; Copyright <span id="sbyear"></span>. All rights reserved</li>
+      <li class="ou-phone" id="ou-phone1">+44 (0)300 303 5303</li>
+      <li class="ou-email"><a href="http://www.open.ac.uk/email/">Contact us</a></li>
+      <li class="ou-study"><a href="http://www.open.ac.uk/study/">Study at the OU</a></li>
+      <li class="ou-research"><a href="http://www.open.ac.uk/research/">Research</a></li>
+      <li class="ou-community"><a href="http://www.open.ac.uk/community/">Community</a></li>
+      <li class="ou-about"><a href="http://www.open.ac.uk/about/">About</a></li>
+      <li class="ou-accessibility"><a href="http://www.open.ac.uk/about/">Accessibility</a></li>
+    </ul>
+  </div>
+  <div class="ou-c2of4">
+    <ul>
+    <li class="ou-contact"><a href="http://www.open.ac.uk/contact/">Contact</a></li>
+      <li class="ou-search"><a href="http://www.open.ac.uk/search/">Search</a></li>
+      <li class="ou-privacy"><a href="http://www.open.ac.uk/privacy/">Privacy and cookies</a></li>
+      <li class="ou-copyright"><a href="http://www.open.ac.uk/copyright/">Copyright</a></li>
+      <li class="ou-conditions"><a href="http://www.open.ac.uk/conditions/">Conditions of use</a></li>
+      <li class="ou-cymraeg"><a href="http://www.open.ac.uk/cymraeg/">Cymraeg</a></li>
+      <li class="ou-mobile-enquiries" id="ou-phone2">0300 303 5303</li>
+    </ul>
+  </div>
+  <div class="ou-c3of4">
+    <ul>
+      <li class="ou-ia-study"><a href="http://www3.open.ac.uk/study/undergraduate/">Undergraduate</a></li>
+      <li class="ou-ia-study"><a href="http://www3.open.ac.uk/study/postgraduate/">Postgraduate</a></li>
+      <li class="ou-ia-study ou-ia-research"><a href="http://www.open.ac.uk/research-degrees">Research degrees</a></li>
+      <li class="ou-ia-home ou-ia-study"><a href="http://www.open.ac.uk/employers/">Employers</a></li>
+      <li class="ou-ia-about"><a href="http://www8.open.ac.uk/about/main/the-ou-explained/">OU explained</a></li>
+      <li class="ou-ia-about"><a href="http://www8.open.ac.uk/about/main/faculties-and-centres/">Faculties and centres</a></li>
+      <li class="ou-ia-about"><a href="http://www8.open.ac.uk/about/main/admin-and-governance/">Admin and governance</a></li>
+      <li class="ou-ia-about ou-ia-home"><a href="http://www.open.ac.uk/news/">Press Room</a></li>
+      <li class="ou-ia-home"><a href="http://www.open.ac.uk/alumni/" class="ou-home">Alumni</a></li>
+      <li class="ou-ia-home ou-ia-research ou-ia-about"><a href="http://www.open.ac.uk/jobs/">Jobs</a></li>
+      <li class="ou-ia-home"><a href="http://www.open.ac.uk/fundraising/">Donate</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/platform/">Platform</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/openlearn/">OpenLearn</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/facebook/">Facebook</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/twitter/">Twitter</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/youtube/">YouTube</a></li>
+      <li class="ou-ia-learning"><a href="http://www.open.ac.uk/students/">StudentHome</a></li>
+      <li class="ou-ia-learning"><a href="http://www.open.ac.uk/skillsforstudy/">Learning Support</a></li>
+      <li class="ou-ia-learning"><a href="http://library.open.ac.uk/">Library</a></li>
+    </ul>
+  </div>
+  <div class="ou-charter">The Open University is incorporated by Royal Charter (RC 000391), an <a href="http://www.open.ac.uk/foi/main/who-we-are-and-what-we-do/charity-information-gateway">exempt charity</a> in England &amp; Wales and a charity registered in Scotland (SC 038302). The Open University is authorised and regulated by the Financial Conduct Authority.</div>
+  <div class="ou-c4of4"><!-- reserved --></div>
+  </div>
+    
+</div>
+
+<script type="text/javascript">if (typeof window.ou_init=='function')ou_init();</script>
+</body>
+</html>

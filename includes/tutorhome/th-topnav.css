@@ -1,0 +1,303 @@
+@charset "utf-8";
+
+/*------------------------------------*\
+   CONTENTS
+   
+   TutorHome standalone top navigation
+   
+\*------------------------------------*/
+
+@media screen {
+
+	body {
+		font: 80%/1.5em Tahoma,"Lucida Grande",Arial,Helvetica,sans-serif;
+	}
+	
+	div.th-topnav {
+		float:left;
+		width:100%;
+		border-radius:6px 6px 0 0;
+		background-color:#143748;
+		background-image:none;
+	}
+	
+	div.th-topnav a.menu-icon {
+		display: none;
+	}
+	
+	div.th-topnav ul.ou-sections  {
+		background:none;
+		padding:0;
+		margin:0;
+		border-radius:0;
+		float:left;
+		width:100%;	
+	}
+	
+	div.th-topnav ul.ou-sections ul {
+		position: absolute;
+		top: 100%;
+		left: -9999em;
+		width: 20em;
+		background-image:url(bg-nav-dropdown.jpg);
+		background-position:bottom left;
+		background-repeat:repeat-x;
+	}
+	
+	div.th-topnav ul.ou-sections li {
+		display: inline;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	div.th-topnav ul.ou-sections li a {
+		background-color:transparent;
+		background-image:none;
+		color:#eee;
+		border:none;
+		border-radius:0;
+		margin-top:0;
+		padding:0.8em;
+		text-decoration:none;
+		display:inline-block;
+	}
+	
+	div.th-topnav ul.ou-sections li:first-child a  {
+		border-top-left-radius:6px;
+		padding-left:1em;
+	}
+	
+	div.th-topnav ul.ou-sections ul li:first-child a  {
+		border-top-left-radius:0;
+	}
+	
+	div.th-topnav ul.ou-sections li a.ou-selected  {
+		color:#fff;
+		background-color:#f3f3f3;
+		background-image:url(bg-nav-current3.jpg);
+		background-position:center bottom;
+		background-repeat:no-repeat;
+	}
+	
+	div.th-topnav ul.ou-sections li a:hover  {
+		background-color:#296E8F;
+		color:#fff;
+	}
+	
+	/* corrects Chrome bug */
+	div.th-topnav li[role='menuitem'] {
+		float:left;
+		position:relative;
+	}
+	
+	div.th-topnav ul.ou-sections li.hover {
+		z-index: 100;
+	}
+	
+	div.th-topnav li.hover ul[role='menu'] {	
+		left: 0;
+		margin:0;
+		padding:0;
+		background-color:#296E8F;    
+		-webkit-border-bottom-right-radius: 0.5em;
+	    -webkit-border-bottom-left-radius: 0.5em;
+	    -moz-border-radius-bottomright: 0.5em;
+	    -moz-border-radius-bottomleft: 0.5em;
+	    border-bottom-right-radius: 0.5em;
+	    border-bottom-left-radius: 0.5em;	
+	}
+	
+	div.th-topnav ul.ou-sections li.hover ul[role='menu'] a,
+	div.th-topnav ul.ou-sections li.hover ul[role='menu'] strong {
+	    color:#FFF;
+	    display:block;
+	    position: relative;
+	    width:18em;
+	    margin:0;
+	    padding:0.5em 1em;
+	    /*background:url(border-top.png) repeat-x;*/
+		border-top:1px solid #528AA5;
+	    font-weight:normal;
+	}
+	
+	div.th-topnav ul.ou-sections li.hover ul[role='menu'] strong {
+	    background-color: #A3336B;
+		background-image:none;
+	}
+	
+	xdiv.th-topnav ul.ou-sections li.hover ul[role='menu'] li:first-child a {
+	    background-image:none;
+	    border-radius:0;
+	}
+	
+	div.th-topnav li.hover ul[role='menu'] > li:last-child a {	
+	    -webkit-border-bottom-right-radius: 0.5em;
+	    -webkit-border-bottom-left-radius: 0.5em;
+	    -moz-border-radius-bottomright: 0.5em;
+	    -moz-border-radius-bottomleft: 0.5em;
+	    border-bottom-right-radius: 0.5em;
+	    border-bottom-left-radius: 0.5em;
+	}
+	/* <- keeps the tab hover state on as the dropdown gets explored */
+	
+	div.th-topnav ul.ou-sections a:hover,
+	div.th-topnav ul.ou-sections a:focus,
+	div.th-topnav ul.ou-sections a:active,
+	div.th-topnav ul.ou-sections li.hover > a {
+	    background-color:#296E8F;
+	    color:#FFF;
+	}
+	
+	div.th-topnav ul.ou-sections li:hover ul[role='menu'] li a:hover,
+	div.th-topnav ul.ou-sections li.hover ul[role='menu'] li a:hover,
+	div.th-topnav ul.ou-sections li:hover ul[role='menu'] li a:focus,
+	div.th-topnav ul.ou-sections li.hover ul[role='menu'] li a:focus,
+	div.th-topnav ul.ou-sections li:hover ul[role='menu'] li a:active,
+	div.th-topnav ul.ou-sections li.hover ul[role='menu'] li a:active {
+	    background-color:#000;
+	    color:#FFF;
+	}
+	
+	div.th-topnav ul.ou-sections li a {padding:.8em;}
+
+	
+	}
+	
+	
+	@media only screen and (max-width: 850px), screen and (max-device-width: 850px) {
+	
+		/* styles for iPad and tablets */
+			div.th-topnav ul.ou-sections li a {padding:.6em .5em;}
+	
+	}
+
+	
+	@media only screen and (max-width: 640px), screen and (max-device-width: 640px) {
+	
+	/* styles for mobile devices */
+	
+	div.th-topnav,
+	div.th-topnav a.active {
+		-webkit-border-radius:0;
+		-moz-border-radius:0;
+		border-radius:0;	
+	}
+	
+	div.th-topnav a.menu-icon {
+		color: #A3336B;
+		background: #FFF url(icon-menu.png) no-repeat 95% center;
+		padding:1.1em 1em 1em 1em;
+		display: block;
+		font-weight:bold;/*text-indent:-9999px;overflow:hidden;*/
+		font-family:"Myriad Pro",Calibri,Tahoma,"Lucida Grande",Arial,Helvetica,sans-serif;
+		font-size:1.2em;
+	}
+
+	div.th-topnav a.menu-icon:hover {
+		background-color: #E5E5E5;
+	}
+	
+	div.th-topnav a.active {
+		color:#FFF;
+		background: #143748 url(icon-menu-active.png) no-repeat 95% center;
+		border-radius: 0.5em 0.5em 0 0;
+	}
+	
+	div.th-topnav a.active:hover {
+		background-color:#143748;
+	}
+	 
+	div.th-topnav ul.ou-sections {
+		display: block; /* visibility will be toggled with jquery */
+		float:left;
+		text-align:left;
+		width:100%;
+		background-color:#143748;
+		border-bottom:1px solid white;
+		-moz-column-count:2;
+		-webkit-column-count:2;
+		column-count:2;
+	}
+	
+	div.th-topnav ul.ou-sections li, 
+	div.th-topnav ul.ou-sections li a {
+		display:block;
+	}
+	
+	div.th-topnav ul.ou-sections li a {
+		background-color:#254555;
+		border-radius:6px;
+		font-weight:bold;
+		padding:.6em 1em;
+	}
+	
+	div.th-topnav ul.ou-sections li {
+		margin-bottom:.8em;
+	}
+	
+	div.th-topnav ul.ou-sections li a.ou-selected {
+		background-image:none;
+		background-color:#A3336B;
+	}
+
+	div#ou-breadcrumb {
+		display:none;
+	}
+	
+	
+	div.th-topnav li > ul {
+		display: none;
+	}
+	
+	div.th-topnav li[role='menuitem'] {
+		 float:none;
+		 position:static;
+	}
+	
+	div.th-topnav ul.ou-sections {
+		float:none;
+		border-bottom:0;
+		width:auto;
+		text-align:left;
+		-moz-column-count:2;
+		-webkit-column-count:2;
+		column-count:2;
+		margin:0 1em;
+	}
+	
+	
+	/* Fixes float bug in IE7 */
+	html.ie7 body.dashboard div.ou-c3of3 {
+	   margin-left:-1em; 
+	}
+
+
+
+}
+
+
+
+@media only screen and (min-width: 640px) {
+
+	/* ensure menu is visible on desktop version */
+	div.th-topnav div ul.ou-sections {
+		display: block !important;
+	}
+
+
+}
+
+
+
+@media only screen and (max-width: 640px) {
+	
+	/* ensure menu is visible on desktop version */
+	div.th-topnav div ul.ou-sections {
+		display: none;
+	}
+}
+
+
+
+

@@ -1,0 +1,33 @@
+div#ou-org-header, div#ou-org-footer, div.sh-header, div#sh-header-menu, div#ouheader, div#ou-footerf, div#ioemenu, div#alias, div#col17, div.advertwrapper, a#ou-skip5, div#col18 ul, .noprint { display:none; }
+
+div#col18 {
+	width:92%;
+	float:left;
+	background-image:none;
+	background-color:#fff;
+	color:#000;
+}
+
+div.stories { margin-top:4em; }
+
+.printonlyi { display:inline; }
+.printonlyb { display:block; }
+
+h2.banner {
+	font-weight:bold;
+	font-size:120%;
+}
+
+#col6 { margin-right:0; }
+#col6 h1 { font-size:150%; }
+
+a { color:#000; }
+
+a.std6 { 
+	background-image:none;
+	padding-left:0;
+}
+
+.warn2 { color:#000; }
+
+img.corner { display:none; }

@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+/* Student Loan pages CSS - Jan 2015 */
+
+
+
+/*
+----------------------------------------------------------
+	General
+----------------------------------------------------------
+*/
+
+p, h2, .ou-box .box p {margin:0 0 15px 0;}
+
+.ou-box p {margin:10px 0;}
+
+.ou-box p a.sh-toggle {text-decoration:none;}
+
+ul.nextsteps {margin-bottom:20px;}
+
+ul.nextsteps li {margin-bottom:5px;}
+
+ul.nextsteps li ul {margin-top:5px;}
+
+ol.ou-next-steps,
+ol.ou-next-steps li {margin:0; padding:0; list-style:none; color:#555;}
+
+ol.ou-next-steps li {padding:15px 20px 15px 65px; margin-bottom:10px; border:1px solid #ddd; border-radius:3px; position:relative;}
+
+ol.ou-next-steps li:nth-child(odd) {background-color:#f5f5f5;}
+
+ol.ou-next-steps li em {font-style:normal; font-weight:bold; display:block; margin-bottom:3px; text-transform:uppercase; color:#000;}
+
+ol.ou-next-steps li span {position:absolute; top:22px; left:18px; font-weight:bold; display:inline-block; border-radius:20px; background-color:#69963D; color:#fff; text-align:center; padding:5px 10px; font-size:1.2em; }
+
+
+/*
+----------------------------------------------------------
+	Boxes
+----------------------------------------------------------
+*/
+
+
+/* shared attributes */
+
+.box {
+	padding:15px 15px 15px 20px;
+	background-color:#eee;
+	margin:0 0 15px 0;
+	border-left-width:4px;
+	border-left-style:solid;
+}
+
+.box p:last-child {
+	margin-bottom:0;
+}
+
+.box h2,
+.box h3 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:1em;
+	margin:2px 0 4px 0;
+}
+
+
+/* Modifiers */
+
+.ou-action {border-color:#539d3c}
+.ou-activity {border-color:#ffc23d;}
+.contact {border-color:#880088;}
+.ou-download {border-color:#539d3c;}
+.ou-example {border-color:#312B39;}
+.info {border:none; border-left:3px solid #0b55a8; border-radius:0;}
+.ou-keypoints {border-color: #312B39;}
+.ou-notes {border-color: #ffc23d;}
+.success {border-color:#539d3c;}
+.ou-summary {border-color:#880088;}
+.tip {border-color:#ffc23d;}
+.warning {border-color:#b52a1e; color:#222;}
+.ou-references {border-color:#0b55a8;}
+.ou-steps {border-color:#880088;}
+
+
+/*
+----------------------------------------------------------
+	Other
+----------------------------------------------------------
+*/
+
+
+hr {
+	border: 0;
+	border-bottom: 1px solid #ddd;
+	margin: 30px 0;
+	clear:both;
+}
+
+.piece {margin-left:0;}
+
+a.ou-info {text-decoration:none;}
+
+
+.steps-2015 {
+	background-image:url(../img/bg-steps.png);
+	background-repeat:repeat-y;
+	background-position:top left;
+	padding-left:60px;
+	margin-top:20px;
+}
+
+.steps-2015 h2 span {font-weight:bold; display:inline-block; border-radius:30px; background-color:#69963D; color:#fff; text-align:center; padding:14px 18px; margin-right:10px;  }
+
+.steps-2015 h2 {margin-left:-57px;}
+
+.steps-2015 .green-btn {margin:2em 0 4em 0;}
+
+p.intro-steps {padding:10px; font-size:1.1em; color:#555;}
+
+ul.steps2,
+ul.steps2 li {
+	margin:0;
+	padding:0;
+	list-style:none;	
+}
+
+ul.steps2 {
+	padding:0 0 20px 10px;
+	border-bottom:1px solid #eee;
+	margin-bottom:20px;
+}
+
+ul.steps2 li a {text-decoration:none;}
+
+ul.steps2 li {
+	display:inline;
+	background-image: url(../img/menu-arrow-right.png);
+	background-position:center right;
+	background-repeat:no-repeat;
+	padding-right:15px;
+	margin-right:4px;
+}
+
+ul.steps2 li:last-child {
+	background-image:none; 
+	padding-right:0; 
+	margin-right:0;
+}
+
+ul.steps2 li a em {
+	font-weight: bold;
+	font-style:normal;
+	display: inline-block;
+	border-radius: 20px;
+	background-color: #69963D;
+	color: #fff;
+	text-align: center;
+	padding: 2px 8px;
+	margin-right: 4px;
+}

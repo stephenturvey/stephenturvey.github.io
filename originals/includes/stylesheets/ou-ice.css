@@ -1,0 +1,131 @@
+
+/*
+
+OU ICE stylesheet
+
+2008.02.04 - gdc53 first version
+
+*/
+
+div#ou-lhs a#ou-link-ou { /* GC: Added 2008.01.30 */
+	border:none; 
+	width:62px; 
+	height:102px; 
+	display:block; 
+	text-indent:-5000em; 
+	overflow:hidden; 
+	text-decoration:none; 
+	background-image:url(../graphics/oulogo_med_colour.gif); 
+	background-repeat:no-repeat;
+	margin-top:8px;
+}
+
+
+
+/* Study at the OU CSS document: 16/01/2008. Last updated 30/01/2008 by Stephen Turvey */
+
+
+/* GENERAL ELEMENTS
+----------------------------------------------------------------- */
+
+body {font-family: Verdana, Arial, Helvetica, sans-serif; padding: 0; margin: 0; font-size: 62.5%; color: #303131; background: #fff; } /* resets font size so 1em = 10px */
+
+a {color: #003399; text-decoration: underline; background: transparent; }
+
+a:visited {color: #4E247B; text-decoration: underline; }
+
+a:hover {color: #B8A7CA; }
+
+div#page-header h1 {font-family: Trebuchet MS, Arial, Helvetica, sans-serif; font-size: 2.4em; font-weight:normal; color: #00274F; margin:0 6% 0 90px; padding: 0; /*line-height: 1.2em;*/}
+
+div#page-header h1 em {font-size: .6em; font-style:normal; color:#003399;}
+
+div#page-header p {margin-left:90px; margin-right:6%;}
+
+h3 {font-size: 1em; font-weight:bold;}
+
+ul {margin-left:0; padding:0; list-style:none;}
+
+ul li {margin:3px 0; padding:0 0 0 15px; list-style-type:none; background:url(../graphics/bullet-arrow.gif) 0 0.6em no-repeat;}
+
+blockquote {color: #666; font-style: italic;}
+
+
+/* STRUCTURAL ELEMENTS
+------------------------------------------------------------------ */
+
+
+div#site {width:100%; height:auto; font-size: 1.2em; line-height: 1.6em; } /* sets font size to 12px equiv */
+
+div#site-body, div#page, div#site-header, div#page-header, div#page-footer, div#site-footer {width:100%; height:auto; float:left; clear:both;}
+
+div#page-body {margin:0 5% 0 90px;}
+
+div#page {border:none;}
+
+div#ou-row1 ul li a#ou-study {border-color:#5ab5ee; color:#5ab5ee;}
+div#ou-row1 ul li a#ou-study:hover {color:#000;}
+
+div#col1 {width:65%; height:auto; float:left;}
+div#col2 {width:30%; height:auto; float:right;}
+
+div#col1, div#col2 {margin-top: 1.5em;}
+
+
+
+/* PAGE HEADER
+-------------------------------------------------------------------- */
+
+div#page-header {background-image:url(../graphics/page-header-bg.jpg); background-repeat:repeat-x; background-position:bottom left; padding: 2.5em 0 1.8em 0;}
+
+
+
+/* COL 1 STYLES
+---------------------------------------------------------------------- */
+
+div#col1 h2 {font-size: 1.2em; font-weight:bold; color: #000;  border-top: 3px solid #F0CEB0; padding:.8em 0 0 0; margin:1.8em 0 -.3em 0; }
+
+
+/* About this page */
+
+div#about-this-page p {color: #464646; margin-top:0;} /* slightly lighter font colour than body */
+
+/* On this page box */
+
+div#on-this-page {border: 1px solid #e8e8e8; padding: 10px 10px 10px 10px; margin: 1.5em 0; }
+div#on-this-page h2  {display:inline; background:none; font-size:.9em; margin:0; padding:0 10px 0 0; border:none; font-weight:bold;}
+div#on-this-page ul {margin:0; list-style:none; padding:0;display:inline;}
+div#on-this-page ul li {display: inline; background:none; padding:0 0 0 0; margin:0; white-space:nowrap;}
+div#on-this-page ul li a {padding: 0 8px 0 0; border-right: 1px solid #d1d1d1; margin-right: 4px; text-decoration:none;font-size: .9em;}
+div#on-this-page ul li a:visited {text-decoration:none;}
+div#on-this-page ul li:last-child a {border-right:none;} /* no pipe for last list item (unless IE6) */
+
+/* Related pages div */
+
+div#related-pages {clear: both;}
+
+
+/*  Sub columns */
+
+div.subcol1, div.subcol2 {width: 48%; height:auto; float: left; padding: 0; margin: 0 0 0 0; }
+div.subcol2 {float:right;}
+
+div#col1 div.link-list h2 {margin:1em 0 0 0;}
+
+/* Tables */
+
+table {width: 100%;}
+table, tr, th, td {border:0; border-collapse: collapse; vertical-align : top;}
+table th, td {padding:0.5em; text-align:left; }
+table tr.odd {background: /*#FCEFE5*/ #f8f8f8;}
+
+/* Link equiv/back box (back to post/undergrad) */
+
+div#link-equivalent {float: left; clear: both; width:100%; }
+div#link-equivalent p, div#link-back p {border: 1px solid #e8e8e8; padding: 10px; font-size: .9em; color: #464646; margin-top: 2em; }
+
+/* COL 2 STYLES
+---------------------------------------------------------------------- */
+
+
+div#col2 h2 {font-family: Trebuchet MS, sans-serif; font-size: 1.4em; font-weight:normal; color: #00274F; background: url(../graphics/col2-h2-underline.jpg) repeat-x bottom left; padding-bottom: 15px; margin-top: 0;}

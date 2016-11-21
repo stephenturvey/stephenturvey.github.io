@@ -1,0 +1,48 @@
+a.ou-link-ou {top:0.5em;}
+div.ou-role-nav {margin:0;}
+div#ou-org-header div.ou-role-nav  {padding:0.5em 0.5em; margin:0 0 0 21px;}
+div#ou-org-header div.ou-role-nav li a {padding:0 0.5em; margin:0;}
+a.ou-link-ou {width:20px; height:24px; background-image:url("/includes/headers-footers/oulogo-24.png"); background-repeat:no-repeat;}
+a.ou-link-ou img {display:none;}
+{background-image:none; background-color:#fff; color:#000;}
+div#ou-org-footer {background-image:none;}
+div#ou-org-header {min-height:30px;}
+div.ou-ia-nav,
+div.ou-role-nav li.ou-role-accessibility,
+div.ou-role-nav li.ou-toggle-mobile,
+div.ou-role-nav li.ou-role-studenthome,
+div.ou-role-nav li.ou-role-tutorhome,
+div.ou-role-nav li.ou-role-intranet,
+div.ou-role-nav li.ou-role-contact,
+li.ou-email,
+div.ou-role-nav li.ou-role-search,
+li.ou-copyright,
+li.ou-phone,
+body.ou-ia-study div#ou-org-footer div.ou-c3of4 li.ou-ia-study,
+body.ou-ia-research div#ou-org-footer div.ou-c3of4 li.ou-ia-research,
+body.ou-ia-community div#ou-org-footer div.ou-c3of4 li.ou-ia-community,
+body.ou-ia-learning div#ou-org-footer div.ou-c3of4 li.ou-ia-learning,
+body.ou-ia-about div#ou-org-footer div.ou-c3of4 li.ou-ia-about
+ {display:none !important;}
+ #ou-org-footer li.ou-title, #ou-org-footer li.ou-phone {font-size:1em; font-family:Tahoma, "Lucida Grande", Arial, Helvetica, sans-serif;}
+ 
+#ou-org-footer div.ou-c1of4, #ou-org-footer div.ou-c2of4 {width:48%;}
+div.ou-footer-links ul {background-image:none;}
+div.ou-footer-links ul li {border-bottom:1px solid #eee; padding:0.3em 0;}
+
+li.ou-study,
+li.ou-research,
+li.ou-community,
+li.ou-about,
+li.ou-accessibility,
+li.ou-contact,
+li.ou-search,
+div.ou-mobile-footer {display:block;}
+
+#ou-org-footer div.ou-mobile-footer p {margin:0 1em;}
+#ou-org-footer ul.ou-footer-portals {margin:1em; padding:0; float:left; clear:both;  background-image:none;}
+#ou-org-footer div.ou-mobile-footer ul.ou-footer-portals li {display:inline-block; margin-right:0.5em; padding-right:0.8em; border-right:1px solid #ddd;}
+#ou-org-footer div.ou-mobile-footer ul.ou-footer-portals li:last-child {border-right:none;}
+div.ou-mobile-enquiries {display:block; margin:1em;}
+
+div#ou-org-footer div.ou-c1of4, div#ou-org-footer div.ou-c2of4, div#ou-org-footer div.ou-c3of4, div#ou-org-footer div.ou-c4of4 {min-height:0;}

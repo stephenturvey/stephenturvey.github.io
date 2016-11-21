@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/* gdc53 2011.03.15 */
+
+/* Small viewports 2010.12.07
+.......................................................................... */
+div#ou-region1, div#ou-region2, div.ou-c1of2, div.ou-c2of2, div.ou-c1of3, div.ou-c2of3, div.ou-c3of3, body.ou-altnav div.ou-c1of2, body.ou-altnav div.ou-c2of2, body.ou-three div.ou-c2of2 {width:100%; float:none; clear:both; margin:0; padding:0;}
+img {max-width:100%;}
+ul.ou-sections li a {-webkit-border-bottom-right-radius: 5px;
+-webkit-border-bottom-left-radius: 5px; -moz-border-radius-bottomright: 5px;
+-moz-border-radius-bottomleft: 5px; border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;}
+ul.ou-sections {padding-bottom:0.5em; padding-right:0.5em;}
+body.ou-three div.ou-c1of2, body.ou-three, div.ou-c2of2, body.ou-three div#ou-region1, body.ou-three div#ou-region2 {width:100%; float:none; clear:both; margin:0; padding:0;}
+object, img {max-width:100%;}
+
+div#ou-org {min-width:180px;}
+div#ou-site {margin-top:0.5em;}
+div#ou-region1, div.ou-content {overflow: visible;}
+
+body.ou-panels div.ou-content, div.ou-content {margin-top:0; float:left; clear:both; padding:0 0.5em; margin:0 0 0 0; border:none;}
+body.ou-panels ol.ou-ancestors, ol.ou-ancestors {margin:0 0 0 0; overflow:visible; clear:both;}
+body {padding-bottom:3em;}
+
+div#ou-page {margin:0; padding:0; border:none;}
+
+body.ou-panels h1, h1 {border-bottom:none; background-image:none; margin:1em 0 0.5em 0; padding:0;}
+
+h1,h2,h3,h4,h6,h6 {font-size:1.2em; font-weight:bold; font-family:Tahoma, 'Lucida Grande', Arial, Helvetica, sans-serif;}
+
+div#ou-region1 h2, div#ou-region1 h3, div#ou-region1 h4, div#ou-region1 h5, div#ou-region1 h6 {font-weight:bold;}
+
+div.ou-full-nav li a, div.ou-context-nav li a, div.ou-full-nav li strong, div.ou-context-nav li strong {padding:1em;}
+div.ou-full-nav ul ul ul li a {padding:1em;}

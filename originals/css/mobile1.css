@@ -1,0 +1,18 @@
+body {
+	background-color:#fff;
+	background-image:none;
+}
+
+#ioemenu a {color:#000;text-decoration:none;background-color:#eee;padding:0 4px;line-height:150%}
+#ioemenu a.sel {background-color:#000;color:#fff}
+#ioemenu ul {margin:0;padding:0px 0;list-style:none}
+#ioemenu ul li {padding:0 6px;margin:0;border:1px solid #ccc;border-right:none;display:inline;background-color:#eee}
+#ioemenu ul li.sel {background-color:#e8f5fe}
+#ioemenu ul li.last {border-right:1px solid #ccc}
+#ioemenu ul li.faq {margin-left:8px}
+#ioemenu ul li a {color:#000;text-decoration:none}
+
+.home .ou-content>h1
+{
+	display:none;
+}

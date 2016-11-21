@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Student Support Team - StudentHome</title>
+
+
+<link rel="stylesheet" type="text/css" href="includes/headers-footers/ou-header.css" />
+
+<!-- ST: remove stylesheet
+<link rel="stylesheet" type="text/css" href="css/iox5.css" />
+-->
+
+<link rel="stylesheet" type="text/css" href="includes/studenthome-header-2012.css" />
+
+<!-- ST: new stylesheet -->
+<link rel="stylesheet" type="text/css" href="css/studenthome.css" media="screen, projection" />
+<!-- end ST -->
+
+<script type="text/javascript" src="includes/studenthome-menu-2012.js"></script>
+<script type="text/javascript" src="js/iox.js"></script>
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="css/ie6.css" />
+<![endif]-->
+
+<script type="text/javascript" src="includes/headers-footers/ou-header.js"></script>
+
+
+<script type="text/javascript">
+function validate()
+{
+var x = document.getElementById("emailaddr").value;
+if (x.length < 6 || x.indexOf('@') < 0) { alert("Please enter your email address."); return false; }
+if (document.getElementById("subject").selectedIndex == 0) { alert("Please select a subject."); return false; }
+if (document.getElementById("query").value.length < 5) { alert("Please enter your query."); return false; }
+document.getElementById("sbtbtn").disabled = true;
+return true;
+}
+</script>
+
+
+</head>
+<body class="ou-mobile">
+<script type="text/javascript">if (typeof window.ou_sitestat=='function')ou_sitestat();</script>
+<div id="ou-org-header"> <a class="ou-skip" href="#ou-content">Skip to content</a> <a class="ou-link-ou" href="http://www.open.ac.uk/"><img src="includes/headers-footers/oulogo-56.jpg" alt="The Open University" /></a>
+  <div class="ou-role-nav">
+    <ul>
+      <li class="ou-role-accessibility"><a href="http://www.open.ac.uk/accessibility/">Accessibility</a></li>
+      <li class="ou-role-signin" id="ou-signin1"><a href="https://msds.open.ac.uk/signon/sams001.aspx" id="ou-signin2">Sign in</a></li>
+      <li id="ou-signout" class="ou-role-signout"><a href="https://msds.open.ac.uk/signon/samsoff.aspx" id="ou-signout2">/ Sign out</a></li>
+      <li id="ou-studenthome" class="ou-role-studenthome"><a href="http://www.open.ac.uk/students/" id="ou-studenthome2">StudentHome</a></li>
+      <li id="ou-tutorhome" class="ou-role-tutorhome"><a href="http://www.open.ac.uk/tutorhome/">TutorHome</a></li>
+      <li id="ou-intranet" class="ou-role-intranet"><a href="http://intranet.open.ac.uk/">IntranetHome</a></li>
+      <li id="ou-sponsor" class="ou-role-sponsor"><a href="https://css2.open.ac.uk/employers/sponsorhome/home/HomePage.aspx">SponsorHome</a></li>
+      <li id="ou-contact" class="ou-role-contact"><a href="http://www.open.ac.uk/contact/">Contact</a></li>
+      <li id="ou-search" class="ou-role-search"><a href="http://www.open.ac.uk/search/">Search the OU</a></li>
+    </ul>
+  </div>
+  <div class="ou-ia-nav">
+    <ul>
+      <li class="ou-ia-home"><a href="http://www.open.ac.uk/">The Open University</a></li>
+      <li class="ou-ia-study"><a href="http://www.open.ac.uk/study/">Study at the OU</a></li>
+      <li class="ou-ia-research"><a href="http://www.open.ac.uk/research/">Research at the OU</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/community/">OU Community</a></li>
+      <li class="ou-ia-about"><a href="http://www.open.ac.uk/about/">About the OU</a></li>
+    </ul>
+  </div>
+</div>
+<div class="mnuwrap"><div class="sh-header" role="navigation">
+<ul>
+<li class="sh-home"><a href="index.aspx">StudentHome</a></li>
+<li class="sh-profile"><a href="profile.aspx">Profile</a></li>
+<li class="sh-study"><a href="study-record.aspx" onmouseover="ioe_showmenu(3)" onmouseout="ioe_hidemenu()" onclick="ioe_hidemenu()">Study</a></li>
+<li class="sh-community"><a href="oulife.aspx">Community</a></li>
+<li class="sh-help"><a href="help.aspx">Help Centre</a></li>
+</ul>
+</div></div><div id="sh-header-menu"></div>
+<script type="text/javascript">
+var ioe_rel=1;
+var ioe_numcrse=3;
+var ioe_numqual=1;
+var ioe_course=["W102","W101","Y156"];
+var ioe_pres=["2014J","2014J","2010K"];
+var ioe_crsetype=[1,1,2];
+var ioe_crsetitle=["Law: concepts and perspectives","An introduction to law","Understanding children"];
+var ioe_crsewidth=27;
+var ioe_qualocc=["Q79_1"];
+var ioe_qualtitle=["Bachelor of Laws (Honours)"];
+var ioe_qualwidth=20;
+var iox_name="";
+var iox_nf="Q";
+ioe_createmenus();
+</script>
+
+<div id="site">
+<div id="col19"><a id="ou-content"></a>
+
+<h1>Contact your Law Student Support Team</h1>
+
+
+
+
+
+
+
+
+<p class="flag">Need help <strong>now</strong>? Try our online resources for instant answers</p>
+
+<ul class="basic3 space1">
+<li><a href="help.aspx" class="std8">Help (frequently asked questions)</a></li>
+<li><a href="http://www.open.ac.uk/students/help/" class="std8">Computing Helpdesk</a></li>
+<li><a href="http://www.open.ac.uk/skillsforstudy/index.php" class="std8">Skills for OU Study</a></li>
+<li><a href="http://www.open.ac.uk/disability/" class="std8">Services for disabled students</a></li>
+<li><a href="http://www.open.ac.uk/careers/" class="std8">OU Careers Advisory Service</a></li>
+<li><a href="help-topic.aspx?t=5" class="std8">Financial Support</a></li>
+</ul>
+
+<h2>Contact form</h2>
+<p>Queries submitted using this form will be sent to your Law Student Support Team. Please
+see your <a href="#role">Student Support Team role</a> for a reminder of what they can help you with. If your query relates to something else, see <a href="help-contacts.aspx">all your contacts</a>.</p>
+
+<div class="helpbody helpbg1 indent space2">
+<form method="post" action="student-support-team.aspx" name="sstform" onsubmit="return validate()">
+<input name="state" type="hidden" id="state" value="JhaBEzNUSmBGGxdMOI35UiJ2SPaOFCMJmmADaWWFbiz/Epv3i/bS/cVRLwPjKKFNTMogDeF1Dic0H9Fhi93/XQ==" />
+<table class="contact">
+<tr>
+	<td class="clhs">Name (PI)</td>
+	<td id="tdName" class="rlhs">Kapil Dev (123456)</td>
+</tr>
+
+<tr><td class="clhs">Your email</td>
+<td class="rlhs"><input name="emailaddr" type="text" id="emailaddr" value="buttonturvey@hotmail.com" /></td></tr>
+<tr><td class="clhs">Subject</td>
+<td class="rlhs"><select name="subject" id="subject">
+	<option selected="selected" value="0">Choose a subject...</option>
+	<option value="1">Assignments</option>
+	<option value="2">Computer issues</option>
+	<option value="3">Disability/additional requirements</option>
+	<option value="4">Module materials missing/late</option>
+	<option value="5">Help with study skills</option>
+	<option value="6">Paying for my studies</option>
+	<option value="8">Exam issues/revision</option>
+	<option value="9">Progress concerns</option>
+	<option value="10">Tutor/tutorials</option>
+	<option value="11">Concerned about continuing with a module</option>
+	<option value="13">Choosing my next module</option>
+	<option value="14">Changing my study plans</option>
+	<option value="15">Planning my qualification</option>
+	<option value="12">Other</option>
+</select></td></tr>
+<tr><td class="clhs">Query</td>
+<td class="rlhs"><textarea name="query" id="query" cols="40" rows="8"></textarea></td></tr>
+<tr><td>&nbsp;</td><td class="rlhs"><input type="submit" value="Submit" class="smt" id="sbtbtn" /></td></tr>
+</table>
+</form>
+
+<p>Or call us on 01908 541063 during office hours (08:30 - 17:00). It would
+be useful to quote your Personal Identifier when you contact us.</p>
+
+<p>For postal address see <a href="http://www2.open.ac.uk/students/help/ou-offices">OU Offices</a>.</p>
+
+</div>
+
+
+<a id="role"></a><h2>Student Support Team role</h2>
+<p>Your Student Support Team works with tutors to provide information, administrative support and specialist advice to students on a wide range of issues including:</p>
+<ul class="faqlist2 indent2">
+<li>Getting started with your studies e.g. how to prepare and gain confidence.</li>
+<li>Improving your learning skills e.g. note taking, time management, preparing assignments.</li>
+<li>Tutorial arrangements e.g. attending a different venue.</li>
+<li>Your study progress e.g. how to catch up if you fall behind.</li>
+<li>Disability, health problems or learning difficulties affecting your studies.</li>
+<li>Revision, examinations &amp; ECA queries e.g. examination arrangements, revision planning.</li>
+<li>Planning a programme of study e.g. module &amp; qualification planning.</li>
+<li>Careers information, advice and guidance e.g. academic references, careers interviews.</li>
+<li>Studying with English as an additional language.</li>
+</ul>
+<p>Your tutor is your first point of contact for any queries directly related to the content of your module, including assignments and tutorials.</p>
+
+
+
+
+</div>
+<div id="ou-org-footer">
+
+<div class="ou-grid ou-mobile-footer" id="ou-mobile-jlinks"></div>
+
+<div class="ou-grid ou-footer-links">
+  <div class="ou-c1of4">
+    <ul>
+      <li class="ou-title"><a href="http://www.open.ac.uk">The Open University</a></li>
+      <li class="ou-copyright">&#169; Copyright <span id="sbyear"></span>. All rights reserved</li>
+      <li class="ou-phone" id="ou-phone1">+44 (0)300 303 5303</li>
+      <li class="ou-email"><a href="http://www.open.ac.uk/email/">Contact us</a></li>
+      <li class="ou-study"><a href="http://www.open.ac.uk/study/">Study at the OU</a></li>
+      <li class="ou-research"><a href="http://www.open.ac.uk/research/">Research</a></li>
+      <li class="ou-community"><a href="http://www.open.ac.uk/community/">Community</a></li>
+      <li class="ou-about"><a href="http://www.open.ac.uk/about/">About</a></li>
+      <li class="ou-accessibility"><a href="http://www.open.ac.uk/about/">Accessibility</a></li>
+    </ul>
+  </div>
+  <div class="ou-c2of4">
+    <ul>
+    <li class="ou-contact"><a href="http://www.open.ac.uk/contact/">Contact</a></li>
+      <li class="ou-search"><a href="http://www.open.ac.uk/search/">Search</a></li>
+      <li class="ou-privacy"><a href="http://www.open.ac.uk/privacy/">Privacy and cookies</a></li>
+      <li class="ou-copyright"><a href="http://www.open.ac.uk/copyright/">Copyright</a></li>
+      <li class="ou-conditions"><a href="http://www.open.ac.uk/conditions/">Conditions of use</a></li>
+      <li class="ou-cymraeg"><a href="http://www.open.ac.uk/cymraeg/">Cymraeg</a></li>
+      <li class="ou-mobile-enquiries" id="ou-phone2">0300 303 5303</li>
+    </ul>
+  </div>
+  <div class="ou-c3of4">
+    <ul>
+      <li class="ou-ia-study"><a href="http://www3.open.ac.uk/study/undergraduate/">Undergraduate</a></li>
+      <li class="ou-ia-study"><a href="http://www3.open.ac.uk/study/postgraduate/">Postgraduate</a></li>
+      <li class="ou-ia-study ou-ia-research"><a href="http://www.open.ac.uk/research-degrees">Research degrees</a></li>
+      <li class="ou-ia-home ou-ia-study"><a href="http://www.open.ac.uk/employers/">Employers</a></li>
+      <li class="ou-ia-about"><a href="http://www8.open.ac.uk/about/main/the-ou-explained/">OU explained</a></li>
+      <li class="ou-ia-about"><a href="http://www8.open.ac.uk/about/main/faculties-and-centres/">Faculties and centres</a></li>
+      <li class="ou-ia-about"><a href="http://www8.open.ac.uk/about/main/admin-and-governance/">Admin and governance</a></li>
+      <li class="ou-ia-about ou-ia-home"><a href="http://www.open.ac.uk/news/">Press Room</a></li>
+      <li class="ou-ia-home"><a href="http://www.open.ac.uk/alumni/" class="ou-home">Alumni</a></li>
+      <li class="ou-ia-home ou-ia-research ou-ia-about"><a href="http://www.open.ac.uk/jobs/">Jobs</a></li>
+      <li class="ou-ia-home"><a href="http://www.open.ac.uk/fundraising/">Donate</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/platform/">Platform</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/openlearn/">OpenLearn</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/facebook/">Facebook</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/twitter/">Twitter</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/youtube/">YouTube</a></li>
+      <li class="ou-ia-learning"><a href="http://www.open.ac.uk/students/">StudentHome</a></li>
+      <li class="ou-ia-learning"><a href="http://www.open.ac.uk/skillsforstudy/">Learning Support</a></li>
+      <li class="ou-ia-learning"><a href="http://library.open.ac.uk/">Library</a></li>
+    </ul>
+  </div>
+  <div class="ou-charter">The Open University is incorporated by Royal Charter (RC 000391), an <a href="http://www.open.ac.uk/foi/main/who-we-are-and-what-we-do/charity-information-gateway">exempt charity</a> in England &amp; Wales and a charity registered in Scotland (SC 038302).</div>
+  <div class="ou-charter"><br />Open University Student Budget Accounts Limited (OUSBA) is a wholly owned subsidiary of The Open University, Companies House number 303735 and until 31 March 2014 was licensed by the Office of Fair Trading (OFT) under licence number 573250 and from 1 April 2014 is authorised and regulated by the Financial Conduct Authority (FCA) under interim permission number 573250.</div>
+  <div class="ou-c4of4"><!-- reserved --></div>
+  </div>
+    
+</div>
+
+<script type="text/javascript">if (typeof window.ou_init=='function')ou_init();</script>
+
+</div>
+
+</body>
+</html>

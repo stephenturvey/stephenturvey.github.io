@@ -1,0 +1,2736 @@
+@charset "utf-8";
+/*
+Theme Name: OUICE
+Theme URI: http://www.open.ac.uk/webstandards/
+Description: Version 1.0
+Author: Guy Carberry
+Author URI: http://www.open.ac.uk/personalpages/g.d.carberry/
+Tags: open university, ouice
+
+Contents..
+
+1.0 - Reset browser defaults
+2.0 - Typrography
+3.0 - Layout
+4.0 - Colour
+5.0 - Navigation systems
+6.0 - Content styles
+*/
+
+/* 1.0 RESET BROWSER DEFAULTS
+-------------------------------------------------------------------------*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin:0;
+	padding:0;
+	border:0;
+	vertical-align:baseline;
+}
+body {
+	line-height:1.5;
+}
+table {
+	border-collapse:separate;
+	border-spacing:0;
+}
+caption, th, td {
+	text-align:left;
+	font-weight:normal;
+}
+table, td, th {
+	vertical-align:middle;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content:"";
+}
+blockquote, q {
+	quotes:"" "";
+}
+a img {
+	border:none;
+}
+/* 2.0 TYPOGRAPHY
+-------------------------------------------------------------------------*/
+
+body {
+	font-size:75%;
+	color:#222;
+	background:#fff;
+	font-family: Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight:normal;
+	color:#111;
+}
+h1 {
+	font-size:3em;
+	line-height:1;
+	margin-bottom:0.5em;
+	padding-top:0.1em;
+}
+h2 {
+	font-size:2em;
+	margin-bottom:0.75em;
+}
+h3 {
+	font-size:1.5em;
+	line-height:1;
+	margin-bottom:1em;
+}
+h4 {
+	font-size:1.2em;
+	line-height:1.25;
+	margin-bottom:1em;
+	height:1.25em;
+	font-weight:700;
+}
+h5 {
+	font-size:1em;
+	margin-bottom:1em;
+	font-weight:700;
+}
+h6 {
+	font-size:1em;
+	font-weight:700;
+	margin-bottom:1em;
+}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
+	margin:0;
+}
+p {
+	margin:0 0 1.5em;
+}
+a:focus, a:hover {
+	color:#000;
+}
+a {
+	color:#009;
+	text-decoration:underline;
+}
+blockquote {
+	margin:1.5em;
+	color:#666;
+	font-style:italic;
+}
+strong {
+	font-weight:bold;
+}
+em, dfn {
+	font-style:italic;
+}
+dfn {
+	font-weight:bold;
+}
+sup, sub {
+	line-height:0;
+}
+abbr, acronym {
+	border-bottom:1px dotted #666;
+}
+address {
+	margin:0 0 1.5em;
+	font-style:italic;
+}
+del {
+	color:#666;
+}
+pre, code {
+	margin:1.5em 0;
+	white-space:pre;
+}
+pre, code, tt {
+	font:1em 'andale mono', 'lucida console', monospace;
+	line-height:1.5;
+}
+li ul, li ol {
+	margin:0 1.5em;
+}
+ul, ol {
+	margin:0 1.5em 1.5em 1.5em;
+}
+ul {
+	list-style-type:disc;
+}
+ol {
+	list-style-type:decimal;
+}
+dl {
+	margin:0 0 1.5em 0;
+}
+dl dt {
+	font-weight:bold;
+}
+dd {
+	margin-left:1.5em;
+}
+table {
+	margin-bottom:1.4em;
+	width:100%;
+}
+th {
+	font-weight:bold;
+	background:#eee;
+}
+th, td {
+	padding:1em;
+}
+tr.even td {
+	background:#eee;
+}
+tfoot {
+	font-style:italic;
+}
+caption {
+	background:#eee;
+}
+.small {
+	font-size:.8em;
+	margin-bottom:1.875em;
+	line-height:1.875em;
+}
+.large {
+	font-size:1.2em;
+	line-height:2.5em;
+	margin-bottom:1.25em;
+}
+.hide {
+	display:none;
+}
+.quiet {
+	color:#666;
+}
+.loud {
+	color:#000;
+}
+.highlight {
+	background:#EDEDDB;
+}
+div.highlight {
+	padding:0.5em;
+	margin:1em 0;
+}
+.added {
+	background:#060;
+	color:#fff;
+}
+.removed {
+	background:#900;
+	color:#fff;
+}
+.first {
+	margin-left:0;
+	padding-left:0;
+}
+.last {
+	margin-right:0;
+	padding-right:0;
+}
+.top {
+	margin-top:0;
+	padding-top:0;
+}
+.bottom {
+	margin-bottom:0;
+	padding-bottom:0;
+}
+h2 {
+	line-height:110%;
+}
+/* 3.0 LAYOUT
+-------------------------------------------------------------------------*/
+
+body {
+	font-size:75%;
+	line-height:150%;
+	color:#333;
+	background-color:white;
+	margin:/*1.7em*/ 0 /*1em*/ 6%;
+	text-align:center;
+	max-width:100%;
+}
+body.enhanced h1 {
+	border-bottom:3px solid #eee;
+	padding-bottom:0.5em;
+}
+body.zoom div#region1, body.zoom div#region2, body.zoom div#region3 {
+	width:100%;
+	margin-left:0;
+	margin-right:0;
+	clear:both;
+	float:left;
+}
+body.zoom div#page {
+	background-image:none;
+}
+body.zoom div#site {
+	min-width:22.5em;
+	max-width:60em;
+}
+div#site {
+	max-width:78.3em;
+	min-width:60em;
+	margin:0 auto;
+	text-align:left;
+}
+div#site-header, div#site-body, div#site-footer, div#page, div.grid {
+	width:100%;
+	float:left;
+	clear:both;
+	height:auto;
+	margin:0;
+	padding:0;
+}
+
+div#site-body {position:relative;}
+
+body.gutters div#page {
+	background-image:url(dot.gif);
+	background-position:67%;
+	background-repeat:repeat-y;
+} /* Apply this class to the body element in order to have a dividing line between region 1 and 2 */
+body.pure div#region1, body.pure div#region2, body.pure div#region3 {
+	width:100%;
+	height:auto;
+	float:left;
+	clear:both;
+}
+body.pure div#page {
+	background-image:none;
+}
+body.wrapped {
+	background-image:url(gui-body-bg.jpg);
+	background-repeat:repeat-x;
+	background-position:top left;
+	margin:0;
+}
+body.wrapped div#ou, body.wrapped div#org {
+	max-width:70em;
+	margin:0 auto;
+	padding:1em 3em;
+	background-color:white;
+}
+body.home ul.children, body.home dl.children {
+	display:none;
+}
+div#region0 {
+	background-color:#fff;
+	padding:0;
+	margin:0;
+}
+/*div#region0 p {padding-bottom:1.5em;}*/
+div#region1, div#region3 {
+	float:left;
+	width:65%;
+}
+div#region2 {
+	float:right;
+	width:32%;
+	color:#444;
+}
+
+div.g2 {
+	background-image:url(dot.gif);
+	background-position:50%;
+	background-repeat:repeat-y;
+}
+div.c1of2 {
+	float:left;
+	width:49%;
+	overflow:hidden;
+}
+div.c2of2 {
+	float:right;
+	width:49%;
+	overflow:hidden;
+}
+div.c1of3 {
+	width:30%;
+	height:auto;
+	float:left;
+}
+div.c2of3 {
+	width:30%;
+	height:auto;
+	float:left;
+	margin:0 4%;
+}
+div.c3of3 {
+	width:30%;
+	height:auto;
+	float:left;
+}
+div#ou, div#org {/**/
+}
+div#ou-topbars {/**/
+}
+.go1 {
+	float:left;
+	margin-right:1.6em;
+}
+.go2 {
+	float:right;
+	margin-left:1.6em;
+}
+.go3 {
+	display:block;
+	margin:1em auto;
+}
+/*img, object {max-width:100%; height:auto;}*/
+div.pic {
+	width:100%;
+	height:auto;
+	overflow:hidden;
+}
+div.pic img {
+	display:block;
+	margin:0;
+}
+div.pic p {
+	text-align:left;
+	color:#666;
+	margin-top:0.5em;
+}
+#region1 div.pic {
+	width:auto;
+}
+div#site-header {
+	padding:1em 0;
+}
+div#site-footer {
+	padding:1em 0;
+	color:#666;
+}
+/*
+body.gutters div#site-header {background-image:url(dot.gif); background-repeat:repeat-x; background-position:bottom left;}
+body.gutters div#site-footer {background-image:url(dot.gif); background-repeat:repeat-x; background-position:top left;}
+*/
+
+div#ou-topbars {
+	margin:0;
+	padding:0;
+}
+div#region0 {
+	background-color:white;
+	float:left;
+	clear:both;
+	width:100%;
+	height:auto;
+}
+div#site-footer {
+	border-top:2px solid #eee;
+	margin-top:2em;
+}
+div#site-footer h2 {
+	font-size:1em;
+	font-weight:bold;
+}
+
+/*
+
+Removed due to IE6 'issues'
+
+body.grid {
+	background-image:url(grid.gif);
+	background-repeat:repeat;
+}
+*/
+body.grid.wrapped {
+	background-image:none;
+}
+
+/* Removed due to IE6 'issues'
+body.grid.wrapped div#site-body {
+	background-image:url(grid.gif);
+	background-repeat:repeat;
+}
+*/
+
+/*body.wide {background-image:url(light-to-dark-gradient.jpg); background-position:top left; background-repeat:repeat-x; background-color:#E2EFF7;}*/
+
+body.wide div#site {max-width:none;}
+
+div#ouheader {margin-top:0; line-height:normal;}
+div#ouheader img {margin-left:-5px;}
+
+/* Sidebar on the left.. */
+
+body.alt-sidebar {/**/}
+body.alt-sidebar div#region1 {width:82%; margin:0 0 0 18%;}
+* html body.alt-sidebar div#region1 {display: inline;}
+body.alt-sidebar div#region2 {width:15%; margin:0 0 0 -100%; float:left;}
+
+body.fixed {margin:20px;}
+body.fixed div#ou, body.fixed div#org, body.fixed div#site {width:940px; margin:0 auto; padding:0; max-width:none; min-width:none;}
+body.fixed div#region1 {width:620px; margin:0; padding:0;}
+body.fixed div#region2 {width:300px; margin:0; padding:0;}
+body.fixed div.c1of2, body.fixed div.c2of2 {width:300px; margin:0; padding:0;}
+body.fixed div.c1of3, body.fixed div.c2of3, body.fixed div.c3of3 {width:200px; margin:0; padding:0;}
+body.fixed div.c2of3 {margin:0 10px;}
+
+/* More experimental layouts 
+--------------------------------*/
+
+body.threeregions-a /* fixed width left and right col, stretchey content */ {
+/**/
+}
+
+body.threeregions-a div#region1 {float:left; width:60%; margin:0; margin-left:20%; padding:0;}
+body.threeregions-a div#region2 {float:left; width:18%; margin:0; margin-left:-80%; padding:0;}
+body.threeregions-a div#region3 {float:right; width:18%; margin:0; padding:0;}
+
+
+body.r3 {margin:0 6%; padding:0;}
+body.r3 div#site-body {position:relative;}
+body.r3 div#region0, body.r3 div#region1 {float:none; width:auto; margin:0 240px 0 160px;}
+body.r3 div#region2 {float:none; position:absolute; left:0; top:0; width:140px;}
+body.r3 div#region3 {float:none; position:absolute; right:0; top:0; width:220px;}
+
+body.r3a {margin:0 6%; padding:0;}
+body.r3a div#site-body {position:relative;}
+body.r3a div#region0, body.r3a div#region1 {float:none; width:auto; margin:0 320px 0 160px;}
+body.r3a div#region2 {float:none; position:absolute; left:0; top:0; width:140px;}
+body.r3a div#region3 {float:none; position:absolute; right:0; top:0; width:300px;}
+
+body.r3b {margin:0 6%; padding:0;}
+body.r3b div#region3 {float:right; width:32%;}
+
+body.r3b div#region3 div.promos {padding:1em; color:#666666; background-color:#f8f8f8; border-top:5px solid #eee;}
+
+/* 4.0 COLOUR
+-------------------------------------------------------------------------*/
+
+ul.siblings li a {
+	color:#333;
+}
+a:hover {
+	background-color:#eee;
+}
+body.pink a {
+	color:#8d0047;
+}
+body.pink a:hover {
+	background-color:#FDE5F1;
+}
+body.pink h2, body.pink h3, body.pink h4, body.pink h5, body.pink h6 {
+	color:#5d002e;
+}
+body.pink a.parent, body.pink ul.sections {
+	border-bottom-color:#facce3;
+}
+body.pink ul.siblings li strong, body.pink ul.sections li a.selected {
+	background-color:#FDE5F1;
+}
+body.light-blue a {
+	color:#425466;
+}
+body.light-blue a:hover {
+	background-color:#dbedff;
+}
+body.light-blue h2, body.light-blue h3, body.light-blue h4, body.light-blue h5, body.light-blue h6 {
+	color:#2a3542;
+}
+body.light-blue a.parent, body.light-blue ul.sections {
+	border-bottom-color:#dbedff;
+}
+body.light-blue ul.siblings li strong, body.light-blue ul.sections li a.selected {
+	background-color:#dbedff;
+}
+body.yellow a {
+	color:#624e00;
+}
+body.yellow a:hover {
+	background-color:#f7d64d;
+}
+body.yellow h2, body.yellow h3, body.yellow h4, body.yellow h5, body.yellow h6 {
+	color:#493b00;
+}
+body.yellow a.parent, body.yellow ul.sections {
+	border-bottom-color:#f7d64d;
+}
+body.yellow ul.siblings li strong, body.yellow ul.sections li a.selected {
+	background-color:#fbe799;
+}
+body.light-green a {
+	color:#333;
+}
+body.light-green a:hover {
+	background-color:#f8f8f8;
+}
+body.light-green h2, body.light-green h3, body.light-green h4, body.light-green h5, body.light-green h6 {
+	color:#333;
+}
+body.light-green a.parent, body.light-green ul.sections {
+	border-bottom-color:#eee;
+}
+body.light-green ul.siblings li strong, body.light-green ul.sections li a.selected {
+	background-color:#eee;
+}
+body.turquoise a {
+	color:#333;
+}
+body.turquoise a:hover {
+	background-color:#f8f8f8;
+}
+body.turquoise h2, body.turquoise h3, body.turquoise h4, body.turquoise h5, body.turquoise h6 {
+	color:#333;
+}
+body.turquoise a.parent, body.turquoise ul.sections {
+	border-bottom-color:#eee;
+}
+body.turquoise ul.siblings li strong, body.turquoise ul.sections li a.selected {
+	background-color:#eee;
+}
+body.dark-green a {
+	color:#333;
+}
+body.dark-green a:hover {
+	background-color:#f8f8f8;
+}
+body.dark-green h2, body.dark-green h3, body.dark-green h4, body.dark-green h5, body.dark-green h6 {
+	color:#333;
+}
+body.dark-green a.parent, body.dark-green ul.sections {
+	border-bottom-color:#eee;
+}
+body.dark-green ul.siblings li strong, body.dark-green ul.sections li a.selected {
+	background-color:#eee;
+}
+body.dark-red a {
+	color:#333;
+}
+body.dark-red a:hover {
+	background-color:#f8f8f8;
+}
+body.dark-red h2, body.dark-red h3, body.dark-red h4, body.dark-red h5, body.dark-red h6 {
+	color:#333;
+}
+body.dark-red a.parent, body.dark-red ul.sections {
+	border-bottom-color:#eee;
+}
+body.dark-red ul.siblings li strong, body.dark-red ul.sections li a.selected {
+	background-color:#eee;
+}
+body.dark-blue a {
+	color:#333;
+}
+body.dark-blue a:hover {
+	background-color:#f8f8f8;
+}
+body.dark-blue h2, body.dark-blue h3, body.dark-blue h4, body.dark-blue h5, body.dark-blue h6 {
+	color:#333;
+}
+body.dark-blue a.parent, body.dark-blue ul.sections {
+	border-bottom-color:#eee;
+}
+body.dark-blue ul.siblings li strong, body.dark-blue ul.sections li a.selected {
+	background-color:#eee;
+}
+body.orange a {
+	color:#333;
+}
+body.orange a:hover {
+	background-color:#f8f8f8;
+}
+body.orange h2, body.orange h3, body.orange h4, body.orange h5, body.orange h6 {
+	color:#333;
+}
+body.orange a.parent, body.orange ul.sections {
+	border-bottom-color:#eee;
+}
+body.orange ul.siblings li strong, body.orange ul.sections li a.selected {
+	background-color:#eee;
+}
+body.light-red a {
+	color:#333;
+}
+body.light-red a:hover {
+	background-color:#f8f8f8;
+}
+body.light-red h2, body.light-red h3, body.light-red h4, body.light-red h5, body.light-red h6 {
+	color:#333;
+}
+body.light-red a.parent, body.light-red ul.sections {
+	border-bottom-color:#eee;
+}
+body.light-red ul.siblings li strong, body.light-red ul.sections li a.selected {
+	background-color:#eee;
+}
+body.purple a {
+	color:#333;
+}
+body.purple a:hover {
+	background-color:#f8f8f8;
+}
+body.purple h2, body.purple h3, body.purple h4, body.purple h5, body.purple h6 {
+	color:#333;
+}
+body.purple a.parent, body.purple ul.sections {
+	border-bottom-color:#eee;
+}
+body.purple ul.siblings li strong, body.purple ul.sections li a.selected {
+	background-color:#eee;
+}
+body.beige a {
+	color:#333;
+}
+body.beige a:hover {
+	background-color:#f8f8f8;
+}
+body.beige h2, body.beige h3, body.beige h4, body.beige h5, body.beige h6 {
+	color:#333;
+}
+body.beige a.parent, body.beige ul.sections {
+	border-bottom-color:#eee;
+}
+body.beige ul.siblings li strong, body.beige ul.sections li a.selected {
+	background-color:#eee;
+}
+/* 5.0 NAVIGATION SYSTEMS
+-------------------------------------------------------------------------*/
+
+/* IA NAV ---- */ 
+
+div#ia-nav {
+	width:100%;
+	height:auto;
+	float:left;
+	clear:both;
+	background-image:url(site-nav-bg.jpg);
+	background-position:left center;
+	border-bottom:1px solid #ddd;
+	margin:0;
+	padding:0;
+}
+div#ia-nav ul {
+	width:100%;
+	height:auto;
+	float:left;
+	clear:both;
+	border-bottom:1px solid #FFF;
+	margin:0;
+	padding:0;
+}
+div#ia-nav ul li {
+	list-style-type:none;
+	display:inline;
+	margin:0;
+	padding:0;
+}
+div#ia-nav ul li a {
+	display:block;
+	float:left;
+	text-decoration:none;
+	background-color:transaprent;
+	background-image:url(s-bg.jpg);
+	background-position:right center;
+	background-repeat:repeat-x;
+	color:#333;
+	padding:0.7em 1.3em;
+}
+
+
+div#ia-nav ul li a.s1, div#ia-nav ul li a.s1:hover {
+	background-image:url(s1-bg.jpg);
+	background-position:right center;
+	color:#FFF;
+	font-weight:700;
+	padding-right:2em;
+}
+
+
+div#ia-nav ul li a:hover, body.s1 div#ia-nav ul li a.s1, body.s2 div#ia-nav ul li a.s2, body.s3 div#ia-nav ul li a.s3, body.s4 div#ia-nav ul li a.s4, body.s5 div#ia-nav ul li a.s5, body.s6 div#ia-nav ul li a.s6, body.s7 div#ia-nav ul li a.s7, body.s8 div#ia-nav ul li a.s8 {
+	background-image:url(s-bg-hover.jpg);
+	color:#000;
+}
+
+
+/* Prospective student bar (or not signed in */
+/* Added by gdc53 31.07.09 */
+
+div.prospective-oie {width:100%; height:auto; float:left; clear:both; margin:0; padding:0; background-image:url(../../gui/site-nav-bg.jpg); xbackground-image:url(prospective-oie-bg.jpg); background-position:left center; border-bottom:1px solid #ddd;}
+div.prospective-oie p {padding:0.7em 1em; margin:0; border-bottom:1px solid #fff;}
+
+
+body.s2 div#ia-nav ul li a.s1 {
+	background-image:url(s1-bg-hover.jpg);
+}
+p#site-title a#sub-site-title {
+	color:#666;
+}
+div#site-breadcrumb {
+	font-size:1em;
+	color:#666;
+	text-transform:uppercase;
+	letter-spacing:0.2em;
+}
+div#site-breadcrumb a {
+	text-decoration:none;
+}
+.nav ul {
+	margin:1em 0;
+	padding:0;
+}
+.nav li {
+	list-style-type:none;
+	margin:0 0 0 0;
+	padding:0;
+	display:inline;
+}
+.nav li a, .nav li strong {
+	padding:0.5em;
+	border:1px solid #eee;
+}
+.nav li a:hover {
+	background-color:#ddd;
+}
+.nav li strong {
+	background-color:#eee;
+	color:black;
+}
+/* Deprecated menu method..
+
+.menu {border-top:3px solid #eee; margin-bottom:1em; background-color:#f8f8f8; padding-bottom:0.5em;} 
+.menu h2 {font-size:1em; font-weight:bold; margin:1em; padding:0;}
+.menu p {margin:1em;}
+.menu ul {padding-left:1em;}
+.menu ul li a {text-decoration:none;}
+
+*/
+
+div.tabs ul {
+	margin:0 0 1em 0;
+	padding:0;
+	width:100%;
+	height:auto;
+	float:left;
+	clear:both;
+	background-color:white;
+}
+div.tabs li {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	display:block;
+	float:left;
+	margin-right:0.5em;
+}
+div.tabs a {
+	float:left;
+	display:block;
+	padding:1em;
+	text-decoration:none;
+}
+.selected a {
+	background-color:#eee;
+	color:black;
+	text-decoration:none;
+}
+p#skip, p#skip a {
+	color:#666;
+	text-decoration:none;
+	display:none;
+}
+div#site-footer ul {
+	margin:1em 0;
+	padding:0;
+}
+div#site-footer li {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+a#ou-skip5 {
+	display:none;
+}
+/* Sections
+-----------------------*/
+ul.sections {
+	border-bottom:1px solid #eee;
+}
+ul.sections li {/**/
+}
+ul.sections li a {/**/
+}
+/* Ancestors
+-----------------------*/
+p.ancestors {
+	padding:0.5em 0;
+	margin:0 0 1em 0;
+}
+p.ancestors a {
+	padding-right:20px;
+	background-image:url(gui-arrow-right-hollow.gif);
+	background-repeat:no-repeat;
+	background-position:top right;
+	text-decoration:none;
+	color:#333;
+}
+p.ancestors a.root {/**/
+}
+p.ancestors span {
+	display:none;
+}
+p.ancestors span.root {/**/
+}
+p.ancestors strong {/**/
+}
+/* Table of contents
+-----------------------*/
+dl.toc {
+	border-top:3px solid #eee;
+	padding-top:1em;
+}
+dl.toc dt {
+	font-size:1.3em;
+	font-weight:bold;
+}
+dl.toc dd {
+	margin:0;
+	padding:0;
+}
+dl.toc dd ul {
+	margin:1em 0;
+}
+dl.toc dd ul li {
+	display:inline;
+}
+dl.toc dd ul li a {
+	display:block;
+	text-decoration:none;
+	color:#333;
+	list-style-type:none;
+	margin:0;
+	padding:0.5em 0 0.5em 20px;
+	background-image:url(gui-arrow-down.gif);
+	background-position:0 0.6em;
+	background-repeat:no-repeat;
+	border-bottom:1px solid #eee;
+}
+dl.toc dd ul li a:hover {
+	background-color:#f8f8f8;
+	color:black;
+}
+/* Parent
+-----------------------*/
+a.parent {
+	display:block;
+	background-image:url(gui-arrow-up.gif);
+	background-position:0 0.7em;
+	color:#333;
+	border-bottom:2px solid #ccc;
+	background-repeat:no-repeat;
+	text-decoration:none;
+	padding:0.5em 0.5em 0.5em 20px;
+	border-top:1px solid #eee;
+	;
+}
+a.parent:hover {
+	background-color:#f8f8f8;
+}
+/* Siblings
+-----------------------*/
+ul.siblings {
+	margin:0 0 1em 0;
+	padding:0;
+}
+ul.siblings li {
+	display:inline;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+ul.siblings li a, ul.siblings li strong {
+	background:url(gui-arrow-right.gif) 0 .7em no-repeat;
+	margin:0;
+	padding:.5em 0 .4em 20px;
+	display:block;
+	text-decoration:none; /*color:#333;*/
+	border-bottom:1px solid #eee;
+}
+ul.siblings li strong {
+	background:#f8f8f8 url(gui-arrow-left.gif);
+	font-weight:normal;
+	background-position:0 0.7em;
+	background-repeat:no-repeat;
+}
+ul.siblings li a:hover {
+	background-color:#f8f8f8;
+}
+/* Paged
+-----------------------*/
+
+/*
+
+Page 5 of 20
+<< | < | 3 | 4 | 5 | 6 | 7 | > | >>
+
+*/
+
+div.paged {
+	border-top:1px solid #eee;
+	padding-top:1em;
+}
+div.paged p {/**/
+}
+div.paged ul {
+	margin:1em 0;
+	padding:0;
+}
+div.paged ul li {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	display:inline;
+}
+div.paged ul li a {
+	padding:0.5em 0;
+	margin:0 0.5em;
+	color:#333;
+	text-decoration:none;
+}
+div.paged ul li a:hover {
+	background-color:#f8f8f8;
+}
+div.paged ul a.first {
+	padding-left:20px;
+	background-image:url(gui-arrow-left.gif);
+	background-position:0 0.7em;
+	background-repeat:no-repeat;
+}
+div.paged ul a.previous {
+	padding-left:20px;
+	background-image:url(gui-arrow-left.gif);
+	background-position:0 0.7em;
+	background-repeat:no-repeat;
+}
+div.paged ul strong {
+	color:black;
+	border:1px solid #eee;
+	padding:0.5em;
+}
+div.paged ul a.next {
+	padding-right:20px;
+	background-image:url(gui-arrow-right.gif);
+	background-position:right 0.7em;
+	background-repeat:no-repeat;
+}
+div.paged ul a.last {
+	padding-right:20px;
+	background-image:url(gui-arrow-right.gif);
+	background-position:right 0.7em;
+	background-repeat:no-repeat;
+}
+/* Children
+-----------------------*/
+dl.children {/*border:1px solid #eee; */
+	padding:0;
+	font-weight:normal;
+}
+dl.children dt a {
+	text-decoration:none;
+	display:block;
+	background-image:url("http://www.open.ac.uk/webstandards/gui/gui-arrow-right.gif");
+	background-repeat:no-repeat;
+	background-position:left center;/* background-color:#f8f8f8;*/
+	border-bottom:1px solid #eee;
+	padding:0.5em 0 0.5em 20px;
+	color:black;
+}
+dl.children dt a:hover {
+	background-color:#f8f8f8;
+}
+dl.children dd {
+	margin:0 0 0 0;
+	padding:1em 20px;
+}
+/* Children (basic)
+-----------------------*/
+ul.children {
+	margin:0 0;
+	padding:0;
+}
+ul.children li {
+	list-style-type:none;
+	display:inline;
+}
+ul.children li a, ul.sitemap li strong {
+	display:block;
+	text-decoration:none;
+	background-image:url(gui-arrow-right.gif);
+	background-repeat:no-repeat;
+	background-position:0 0.3em;
+	padding:0.2em 0 0.2em 20px;
+}
+ul.children li ul {
+	margin:0 0 0 1em;
+	padding:0;
+}
+/* Sitemap
+-----------------------*/
+ul.sitemap {
+	margin:1em 0;
+}
+ul.sitemap li {
+	list-style-type:none;
+	display:inline;
+}
+ul.sitemap li a, ul.sitemap li strong {
+	display:block;
+	text-decoration:none;
+	background-image:url(gui-arrow-right.gif);
+	background-repeat:no-repeat;
+	background-position:0 0.3em;
+	padding:0.2em 0 0.2em 20px;
+}
+ul.sitemap li ul {
+	margin:0 0 0 1em;
+	padding:0;
+}
+/* A to Z
+-----------------------*/
+ul.atoz-menu {
+	margin: 0 0 1.5em 0;
+	width:100%;
+	height:Auto;
+	float:left;
+	clear:both;
+}
+ul.atoz-menu li {
+	display:inline;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+ul.atoz-menu li a {
+	border:1px solid #eee;
+	padding:0.5em;
+	margin:0 0.5em 0.5em 0;
+	background-color:#f8f8f8;
+	text-decoration:none;
+	display:block;
+	float:left;
+}
+ul.atoz-menu li a:hover {
+	background-color:#fff;
+	border-color:#000;
+}
+ul.atoz-menu li span {/* for when the letter does not link to anything (no entires) */
+}
+ul.atoz {
+	margin:1em 0;
+	float:left;
+	clear:both;
+	width:100%;
+	height:auto;
+}
+ul.atoz li {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+ul.atoz li a {/**/
+}
+ul.atoz li ul {/**/
+}
+ul.atoz li ul li {/**/
+}
+ul.atoz dl {/**/
+}
+ul.atoz dl dt {
+	font-weight:bold;
+}
+ul.atoz dl dd {
+	margin:0;
+	padding:0;
+}
+/* Tags
+-----------------------*/
+dl.tags {/**/
+}
+dl.tags dt {
+	padding:0.5em 0;
+}
+dl.tags dd {
+	margin:0;
+	padding:0;
+}
+dl.tags dd ul {
+	margin:0;
+	padding:0;
+}
+dl.tags dd ul li {
+	display:inline;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+dl.tags dd ul li a {
+	display:block;
+	padding:0.5em 0 0.5em 20px;
+	background-image:url(gui-arrow-right.gif);
+	background-position:0 0.7em;
+	background-repeat:no-repeat;
+	text-decoration:none;
+	color:#333;
+	border-bottom:1px solid #eee;
+}
+dl.tags dd ul li a:hover {
+	background-color:#f8f8f8;
+}
+/* 10. Categories
+-----------------------*/
+dl.categories {/**/
+}
+dl.categories dt {
+	padding:0.5em 0;
+}
+dl.categories dd {
+	margin:0;
+	padding:0;
+}
+dl.categories dd ul {
+	margin:0;
+	padding:0;
+}
+dl.categories dd ul li {
+	display:inline;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+dl.categories dd ul li a {
+	display:block;
+	padding:0.5em 0 0.5em 20px;
+	background-image:url(gui-arrow-right.gif);
+	background-position:0 0.7em;
+	background-repeat:no-repeat;
+	text-decoration:none;
+	color:#333;
+	border-bottom:1px solid #eee;
+}
+dl.categories dd ul li a:hover {
+	background-color:#f8f8f8;
+}
+/* 11. Related links
+-----------------------*/
+dl.related {/**/
+}
+dl.related dt {
+	padding:0.5em 0;
+}
+dl.related dd {
+	margin:0;
+	padding:0;
+}
+dl.related dd ul {
+	margin:0;
+	padding:0;
+}
+dl.related dd ul li {
+	display:inline;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+dl.related dd ul li a {
+	display:block;
+	padding:0.5em 0 0.5em 20px;
+	background-image:url(gui-arrow-right.gif);
+	background-position:0 0.7em;
+	background-repeat:no-repeat;
+	text-decoration:none;
+	color:#333;
+	border-bottom:1px solid #eee;
+}
+dl.related dd ul li a:hover {
+	background-color:#f8f8f8;
+}
+/* 12. Menu
+-----------------------*/
+dl.menu {/**/
+}
+dl.menu dt {
+	padding:0 0 0.5em 0;
+}
+dl.menu dd {
+	margin:0;
+	padding:0;
+}
+dl.menu dd ul {
+	margin:0;
+	padding:0;
+}
+dl.menu dd ul li {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	display:inline;
+}
+dl.menu dd ul li a {
+	display:block;
+	background-image:url(gui-arrow-right.gif);
+	background-repeat:no-repeat;
+	padding:0.5em 0 0.5em 20px;
+	background-position:0 0.7em;
+	border-bottom:1px solid white;
+	color:#333;
+}
+dl.menu dd ul li a:hover {
+	background-color:#fff;
+	color:black;
+}
+ul.menu {
+	margin:1em 0;
+}
+ul.menu h2 {
+	font-size:1em;
+}
+ul.menu ul {/**/
+}
+ul.menu li {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	display:inline;
+}
+ul.menu li a {
+	display:block;
+	background-image:url(gui-arrow-right.gif);
+	background-repeat:no-repeat;
+	padding:0.2em 0 0.2em 20px;
+	background-position:0 0.4em;
+	border-bottom:1px solid white;
+	color:#333;
+	text-decoration:none;
+}
+ul.menu li a:hover {
+	background-color:#fff;
+	color:black;
+}
+/* 13. Promo
+-----------------------*/
+dl.promo {/**/
+}
+dl.promo dt {/**/
+}
+dl.promo dt a {/**/
+}
+dl.promo dd {/**/
+}
+dl.promo dd p {/**/
+}
+dl.promo dd p a {/**/
+}
+dl.promo dd ul {/**/
+}
+dl.promo dd ul li {/**/
+}
+dl.promo dd ul li a {/**/
+}
+/* 14. Top
+-----------------------*/
+a.to-top {
+	display:block;
+	background-image:url(gui-arrow-up.gif);
+	background-position:0 0.7em;
+	color:#333;
+	background-repeat:no-repeat;
+	text-decoration:none;
+	padding:0.5em 0.5em 0.5em 20px;
+}
+a.to-top:hover {
+	background-color:#f8f8f8;
+}
+/* 15. Skip to content
+-----------------------*/
+a.skip-to-content {/**/
+}
+/* 16. Site Nav
+-----------------------*/
+div#site-nav {/**/
+}
+div#site-nav-r1 {/**/
+}
+div#site-nav-r1 ul {/**/
+}
+div#site-nav-r1 ul li {/**/
+}
+div#site-nav-r1 ul li a {/**/
+}
+div#site-nav-r1 ul li a.home {/**/
+}
+div#site-nav-r1 ul li a.about {/**/
+}
+div#site-nav-r1 ul li a.contact {/**/
+}
+div#site-nav-r2 {/**/
+}
+div#site-nav-r2 ul {/**/
+}
+div#site-nav-r2 ul li {/**/
+}
+div#site-nav-r2 ul li a {/**/
+}
+div#site-nav-r2 ul li a.sitemap {/**/
+}
+div#site-nav-r2 ul li a.atoz {/**/
+}
+div#site-nav-r2 form {/**/
+}
+div#site-nav-r2 form fieldset {/**/
+}
+div#site-nav-r2 form fieldset legend {/**/
+}
+/* 17. Site Title
+-----------------------*/
+div#site-title {/**/
+}
+div#site-title a {/**/
+}
+/* 18. Customise
+-----------------------*/
+a#site-customise {/**/
+}
+/* 19. Site footer
+-----------------------*/
+div#site-footer {/**/
+}
+div#site-footer ul {/**/
+}
+div#site-footer ul li {/**/
+}
+div#site-footer ul li a {/**/
+}
+div#site-footer ul li a.top {/**/
+}
+div#site-footer ul li a.customise {/**/
+}
+div#site-footer ul li a.print {/**/
+}
+div#site-footer ul li a.feedback {/**/
+}
+div#site-footer p {/**/
+}
+div#site-footer p a {/**/
+}
+/* 20. Boxes
+-----------------------*/
+dl.box {/**/
+}
+dl.box dt {/**/
+}
+dl.box dt a {/**/
+}
+dl.box dd {/**/
+}
+dl.box dd a {/**/
+}
+dl.box dd p {/**/
+}
+dl.box dd p a {/**/
+}
+dl.box dd ul {/**/
+}
+dl.box dd ul li {/**/
+}
+dl.box dd ul li a {/**/
+}
+/* Specific styling types.. */
+
+dl.box2 {/**/
+}
+dl.box3 {/**/
+}
+dl.box4 {/**/
+}
+/* SECTION NAV */
+
+ul.sections {
+	margin:1em 0 0 0;
+	padding:0;
+	width:100%;
+	height:auto;
+	float:left;
+	clear:both;
+}
+ul.sections li {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	display:inline;
+}
+ul.sections li a {
+	display:block;
+	float:left;
+	margin:0 0 0 0;
+	padding:0.5em 1em;
+	text-decoration:none;
+	color:#222;
+	background-color:#fff;
+}
+ul.sections li a:hover {
+	color:black;
+	background-color:#f8f8f8;
+}
+
+/*
+ul.sections li a.s1, ul.sections li#n-mainpage a, ul.sections li#n-Home a, ul.sections li#n-Web-styles-and-standards a, ul.sections li#n-Homepage a {
+	background-image:url("http://www.open.ac.uk/webstandards/gui/gui-arrow-right.gif");
+	background-repeat:no-repeat;
+	background-position:right 0.7em;
+	padding-right:20px;
+	padding-left:0;
+	margin-right:0.5em;
+	font-weight:bold;
+	border:none;
+}*/
+
+
+body.s0 ul.sections li a.s0, body.s1 ul.sections li a.s1, body.s2 ul.sections li a.s2, body.s3 ul.sections li a.s3, body.s4 ul.sections li a.s4, body.s5 ul.sections li a.s5, body.s6 ul.sections li a.s6, body.s7 ul.sections li a.s7, body.s8 ul.sections li a.s8, body.s9 ul.sections li a.s9, ul.sections li a.selected {
+	color:black;
+	background-color:#eee;
+}
+
+/* Removed for 1.1
+body.s1 ul.sections li a.s1 {
+	background-color:transparent;
+	background-image:url(gui-arrow-down.gif);
+}
+*/
+
+
+/* SUBSECTIONS NAV */
+
+ul.subsections {
+	margin:0 0 0 0;
+	padding:0;
+	width:100%;
+	height:auto;
+	float:left;
+	clear:both;
+	background-color:#f8f8f8;
+}
+ul.subsections li {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	display:inline;
+}
+ul.subsections li a {
+	display:block;
+	float:left;
+	margin:0 0 0 0;
+	padding:0.5em 1em;
+	text-decoration:none;
+	color:#222;
+	background-color:#f8f8f8;
+}
+/* UTILITIES NAV */
+
+ul.utilities {
+	margin:0 0 1em 0;
+	padding:0;
+	width:100%;
+	height:auto;
+	float:left;
+	clear:both;
+	background-color:#fff;
+	border:3px solid #eee;
+	border-left:none;
+	border-right:none;
+	border-bottom:none;
+}
+ul.utilities li {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	display:inline;
+}
+ul.utilities li a {
+	display:block;
+	float:left;
+	margin:0 0 0 0;
+	padding:0.5em 20px;
+	text-decoration:none;
+	color:#222;
+	background-color:#fff;
+	background-image:url(gui-arrow-down.gif);
+	background-repeat:no-repeat;
+	background-position:left center;
+	border-bottom:2px solid white;
+}
+ul.utilities li a:hover {
+	border-color:#eee;
+}
+body.u0 ul.utilities li a.u0, body.u1 ul.utilities li a.u1, body.u2 ul.utilities li a.u2, body.u3 ul.utilities li a.u3, body.u4 ul.utilities li a.u4, body.u5 ul.utilities li a.u5, body.u6 ul.utilities li a.u6, body.u7 ul.utilities li a.u7, body.u8 ul.utilities li a.u8, body.u9 ul.utilities li a.u9, ul.utilities strong, ul.utilities a.selected, ul.utilities li.selected a, ul.utilities a.current, ul.utilities a.active /* GC: Takes care of the various CMS methods of doing things! */ {
+	color:black;
+	border-bottom-color:#eee;
+	border-color:#eee;
+}
+body.sib1 a.sib1, body.sib2 a.sib2, body.sib3 a.sib3, body.sib4 a.sib4, body.sib5 a.sib5, body.sib6 a.sib6, body.sib7 a.sib7, body.sib8 a.sib8, body.sib9 a.sib9, body.sib10 a.sib10, body.sib11 a.sib10, body.sib12 a.sib12, body.sib13 a.sib13, body.sib14 a.sib14, body.sib15 a.sib15, body.sib16 a.sib16, body.sib17 a.sib17, body.sib18 a.sib18, body.sib19 a.sib19, body.sib20 a.sib20 {
+	background-color:#f8f8f8;
+	cursor:default;
+	background-image:url("/webstandards/gui/gui-arrow-left.gif");
+}
+/*  Parent and siblings */
+
+/* old method
+ul.parent-siblings {margin:0; padding:0;}
+ul.parent-siblings ul {margin:1em 0;}
+ul.parent-siblings li {list-style-type:none; margin:0; padding:0; display:inline;}
+*/
+
+dl.parent-siblings {
+	margin:0;
+	padding:0;
+}
+dl.parent-siblings dt {
+	margin:0;
+	padding:0;
+	font-weight:normal;
+}
+dl.parent-siblings dd {
+	margin:0;
+	padding:0;
+}
+/* A to Z
+------------------------------------------------*/
+
+ul.atozlist {
+	margin: 0 0 1.5em 0;
+	width:100%;
+	height:Auto;
+	float:left;
+	clear:both;
+}
+ul.atozlist li {
+	display:inline;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+ul.atozlist li a {
+	border:1px solid #eee;
+	padding:0.5em;
+	margin:0 0.5em 0.5em 0;
+	background-color:#f8f8f8;
+	text-decoration:none;
+	display:block;
+	float:left;
+}
+ul.atozlist li a:hover {
+	background-color:#fff;
+	border-color:#000;
+}
+ul#atozdirectory {
+	margin:1em 0;
+	float:left;
+	clear:both;
+}
+ul#atozdirectory li {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+ul#atozdirectory dt {
+	font-weight:bold;
+}
+ul#atozdirectory h2 {
+	background-image:url(gui-dotted-line.gif);
+	background-position:bottom left;
+	background-repeat:repeat-x;
+	padding-bottom:0.5em;
+}
+ul#menu-az {
+	padding:0;
+	margin:0;
+	float:left;
+	clear:both;
+	width:100%;
+	height:auto;
+}
+ul#menu-az li {
+	list-style-type:none;
+	display:inline;
+	margin:0;
+	padding:0;
+}
+ul#menu-az li a {
+	display:block;
+	float:left;
+	padding:0.5em;
+	border:1px solid #eee;
+	margin:0 0.5em 0.5em 0;
+}
+ul#menu-az li a:hover {
+	background-color:#eee;
+}
+ul#list-az {
+	margin:0;
+	padding:0;
+}
+ul#list-az li {
+	list-style-type:none;
+}
+ul#list-az li h2 {
+	margin:1em 0 0 0;
+}
+div.children ul {
+	margin:0 0 1em 0;
+	padding:1em 0 0 0;
+	border-top:2px solid #ccc;
+}
+div.children ul li {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	display:inline;
+}
+div.children ul li a {
+	display:block;
+	padding:0.5em 0 0.5em 20px;
+	text-decoration:none;
+	border-bottom:1px solid #eee;
+	background-repeat:no-repeat;
+	background-position:0 0.7em;
+	background-image:url(gui-arrow-right.gif);
+	color:#333;
+}
+div.children ul li a:hover {
+	background-color:#eee;
+}
+div.quick-links {
+	margin-top:2em;
+	padding:1em;
+	border:1px solid #eee;
+	background-color:#f8f8f8;
+}
+div.quick-links h2 {
+	font-size:1em;
+	font-weight:bold;
+}
+
+/* Removed for 1.1
+ul.sections li a.s1, ul.sections li.n-Web-styles-and-standards a {
+	background-image:url("http://www.open.ac.uk/webstandards/gui/gui-arrow-right.gif");
+	background-repeat:no-repeat;
+	background-position:right 0.7em;
+	padding-right:20px;
+	padding-left:0;
+	margin-right:0.5em;
+	font-weight:bold;
+	border:none;
+}
+*/
+
+body.s1 ul.sections li a.s1 {
+	background-color:transparent;
+}
+div#site-footer ul.utilities, div#site-header ul.utilities, div#region2 ul.utilities {
+	border-top:none;
+}
+div#site-footer ul.utilities li {
+	margin:0;
+	padding:0;
+}
+div#site-footer ul.utilities a, div#region2 ul.utilities a {
+	background-image:none;
+	padding:0 0 0 0;
+	margin:0 2em 0 0;
+	color:#666;
+}
+div#site-header ul.utilities {
+	text-align:right;
+	margin:0.5em 0;
+}
+div#site-header ul.utilities li, div#site-header ul.utilities li a {
+	display:inline;
+	background-image:none;
+	text-align:right;
+	float:none;
+	padding:0 0 0 1em;
+	border:none;
+}
+div#site-footer a.to-top:hover {
+	background-color:transparent;
+}
+a.parent {
+	border-top:none;
+}
+ul.atozlist strong {
+	border:1px solid #fff;
+	display:block;
+	float:left;
+	margin:0 0.5em 0.5em 0;
+	padding:0.5em;
+	text-decoration:none;
+}
+div.paged ul li a.previous {
+	background-position:left center;
+}
+div.paged ul li a.next {
+	background-position:right center;
+}
+div.paged ul li a.up {
+	background-position:top center;
+	background-image:url(http://www.open.ac.uk/webstandards/gui/gui-arrow-up.gif);
+	background-repeat:no-repeat;
+}
+ul.links li a {
+	text-decoration:none;
+}
+ul.links h2, div.block h2 {
+	font-size:1em;
+	margin:0 0 0 0;
+	padding:0;
+	font-weight:bold;
+}
+
+/* Context nav, the expanding and collapsing sidebar nav */
+
+div.context-nav {margin:0 0 1em 0; padding:0;}
+div.context-nav ul {margin:0; padding:0;}
+div.context-nav ul li {margin:0; padding:0; list-style-type:none;}
+
+div.context-nav ul li a, div.context-nav ul li strong {display:block; margin:0; padding:0.3em; text-decoration:none; background-image:url("/webstandards/gui/arrow-content-right.gif"); background-position:left center; background-repeat:no-repeat; padding-left:12px; color:#333;}
+div.context-nav ul li strong {color:#000000;}
+
+div.context-nav ul li a, div.context-nav ul li strong {border-bottom:1px solid #eee;}
+div.context-nav ul li li a, div.context-nav ul li li strong {border-bottom:none;}
+
+div.context-nav ul ul ul {margin-left:1em;}
+
+
+/* 6.0 CONTENT STYLES
+-------------------------------------------------------------------------*/
+
+div.box {
+	padding:1em;
+	background-color:#f8f8f8;
+	margin-bottom:1em;
+	border:1px solid #eee;
+}
+div.box h2 {
+	font-size:1em;
+	font-weight:bold;
+}
+div.box.go1 {
+	float:left;
+	width:45%;
+	margin:1em;
+	margin-left:0;
+	margin-top:0;
+}
+div.box.go2 {
+	float:right;
+	width:45%;
+	margin:1em;
+	margin-right:0;
+	margin-top:0;
+}
+p.intro {
+	color:black;
+}
+.plain {
+	border:none;
+	background-color:transparent;
+}
+/* Horizontal and Vertical rules */
+
+.hr1 {
+	background-image:url(dot.gif);
+	background-repeat:repeat-x;
+	background-position:top;
+	margin-top:1em;
+	padding-top:1em;
+}
+.hr2 {
+	background-image:url(dot.gif);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	margin-bottom:1em;
+	padding-bottom:1em;
+}
+.vr1 {
+	background-image:url(dot.gif);
+	background-repeat:repeat-y;
+	background-position:left;
+}
+.vr2 {
+	background-image:url(dot.gif);
+	background-repeat:repeat-y;
+	background-position:right;
+}
+.vr3 {
+	background-image:url(dot.gif);
+	background-repeat:repeat-y;
+	background-position:top center;
+}
+p.introduction {
+	color:black;
+}
+/* Tips and steps box */
+div.tip, div.steps {
+	background:#FBF6D5 url(gui-box-bg.gif) top left no-repeat;
+	border-right: 1px solid #EFD745;
+	border-bottom: 1px solid #EFD745;
+	padding: 1.3em 1em 0 1em;
+	margin:2em 0;
+}
+div#region2 div.tip, div#region2 div.steps {
+	margin-top:0;
+	margin-bottom:1em;
+}
+div.steps {
+	background:#F7F8E9 url(gui-steps-bg.gif) top left no-repeat;
+	border-right: 1px solid #D6DA92;
+	border-bottom: 1px solid #D6DA92;
+}
+div.tip h2, div.tip h3 {
+	color:#182952;
+	font-size: 1.6em;
+}
+div.steps h2, div.steps h3 {
+	color:#384336;
+	font-size: 1.6em;
+}
+div.steps ul {
+	margin:0;
+}
+div.steps ul li {
+	list-style:none;
+	background:url(icon-arrow-right.gif) 0 .4em no-repeat;
+	padding-left:1em;
+	margin-bottom:.5em;
+}
+/* Warning, Action, Download, Contact, Contents, About box */
+
+div.warning, div.contact, div.action, div.download, div.pdf-contents, div.about, div.info {
+	border-top: 3px solid #eee;
+	border-bottom: 3px solid #eee;
+	margin:0 0 1em 0;
+	background:url(icon-warning.jpg) 0 1em no-repeat;
+	padding: 1em 0 0 44px;
+}
+div.contact {
+	background:url(icon-contact.jpg) 0 1em no-repeat;
+}
+div.action {
+	background:url(icon-action.jpg) 0 1em no-repeat;
+}
+div.download {
+	background:url(icon-download.jpg) 0 1em no-repeat;
+}
+div.download h2 {
+	font-size:1em;
+}
+div.pdf-contents {
+	background:url(icon-pdf32x32.gif) 0 1em no-repeat;
+}
+div.info {
+	background:url(icon-about.jpg) 0 1em no-repeat;
+}
+body.s1 div.info {
+	border-top:none;
+	background:url(icon-about.jpg) 0 0 no-repeat;
+	padding:0 0 0 3.8em;
+}
+/* Footer links */
+div#site-footer ul.footer-links {
+	float:none;
+	margin:0;
+	padding:0;
+}
+div#site-footer ul.footer-links li {
+	display:inline;
+}
+div#site-footer ul.footer-links li a {
+	background:url(icon-top.gif) 0 .3em no-repeat;
+	padding:3px 0 3px 22px;
+	display:block;
+	float:left;
+	margin:0 1em 0 0;
+	text-decoration:none;
+	color:#003399;
+}
+div#site-footer ul.footer-links li a.customise {
+	background:url(icon-customise.gif) 0 .3em no-repeat;
+}
+div#site-footer ul.footer-links li a.print {
+	background:url(icon-print.gif) 0 .3em no-repeat;
+}
+div#site-footer ul.footer-links li a.feedback {
+	background:url(icon-feedback.gif) 0 .3em no-repeat;
+}
+/* External links */
+a.external span {
+	position: absolute;
+	left: -5000px;
+	width: 4000px;
+}
+a.external {
+	background: url(icon-external-link.gif) no-repeat 100% 2px;
+	padding: 0 18px 0 0;
+}
+a.external:hover {
+	background: url(icon-external-link.gif) no-repeat 100% -20px;
+	padding: 0 18px 0 0;
+}
+/* Code style
+------------------------------------------------*/
+ol.code {
+	margin:1em 0;
+	clear:both;
+}
+.code {
+	overflow:auto;
+	padding:3px 5px 3px 35px;
+	border:1px solid #e3e0d1;
+	list-style-type:decimal-leading-zero;
+	font-family:Courier;
+	background-color:#fff;
+}
+.code code {
+	font-family:Monaco, "Courier New", Tahoma;
+}
+.code li {
+	margin:2px 0;
+	padding:0 5px;
+	background:#ededdb;
+}
+.code li.tab1 {
+	padding-left:4ex;
+}
+.code li.tab2 {
+	padding-left:8ex;
+}
+.code li.tab3 {
+	padding-left:12ex;
+}
+.code li.tab4 {
+	padding-left:16ex;
+}
+.code li.tab5 {
+	padding-left:20ex;
+}
+.code .changed {
+	color:#900;
+	font-weight:bold;
+}
+.code em {
+	color:#900;
+	font-weight:bold;
+	font-style:normal;
+}
+/* Photo style
+------------------------------------------------*/
+
+div.photo {
+	margin-bottom:1em;
+	border-bottom:3px solid #D6DA92;
+}
+div.photo img {
+	display:block;
+	margin:0 0 0.7em 0;
+	padding:0;
+}
+xdiv.landscape {
+	width:220px;
+	height:auto;
+}
+xdiv.portrait {
+	width:140px;
+	height:auto;
+}
+div.photo p {
+	color:#5c2400;
+	margin-bottom:0.7em;
+	padding:0 1em;
+}
+div.photo.portrait p {
+	padding:0 0.5em;
+}
+div.photo {
+	background-color:#F7F8E9;
+}
+/* Customise this site
+------------------------------------------------*/
+div#site-header {
+	position:relative;
+}
+a#site-customise {
+	font-size:1em;
+	position:absolute;
+	top:2em;
+	right:0;
+	text-decoration:none;
+	background:transparent url(icon-customise.gif) no-repeat scroll 0 0.3em;
+	padding:0.3em 0 0.3em 22px;
+}
+/* Quotes
+------------------------------------------------*/
+
+div.quote {
+	border-bottom:2px solid #eee;
+}
+div.quote p.source {
+	font-style:italic;
+	color:#666;
+}
+div.quote blockquote {
+	margin-left:1em;
+	border-left:1px solid #eee;
+	padding-left:2em;
+	font-style:normal;
+	color:#333;
+}
+/* Plurals
+------------------------------------------------*/
+
+div.contacts div.contact, div.actions div.action {
+	border-bottom:none;
+}
+div.actions div.action {
+	border:none;
+}
+/* Comment
+------------------------------------------------*/
+
+ol.comments {
+	margin:1em 0;
+	padding:0;
+}
+ol.comments li {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+div.comment {
+	border: 1px solid #CEE4F1;
+	background-color:white;
+	padding:0.5em;
+	margin:1em 0;
+}
+div.comment dl {
+	padding:1em;
+	margin:0;
+	background-color:#f8f8f8;
+}
+div.comment dt {
+	padding:0.5em 0;
+}
+div.comment dd {
+	margin:0;
+	padding:0 0 0 2em;
+}
+img.comment-avatar {
+	display:block;
+	float:right;
+	padding:5px;
+	border:1px solid #eee;
+	margin:0.5em;
+	background-color:#fff;
+}
+/* Addresses
+------------------------------------------------*/
+.vcard {
+	margin:1em 0;
+}
+.vcard span {
+	display:block;
+}
+.vcard span span {
+	display:inline;
+	padding-right:0.5em;
+}
+.vcard .adr {
+	margin:0 0 1em 0;
+}
+/* Dialogue
+------------------------------------------------*/
+
+div.dialogue dl dt, div.dialogue dl dd, div.dialogue dl dd p {
+	display:inline;
+	margin:0;
+	padding:0 0 0 0;
+}
+/* Example
+------------------------------------------------*/
+div.example {
+	border: 1px solid #CEE4F1;
+	background-color:#f5f9fc;
+	padding:1em;
+}
+div.example p {
+	margin:1em 0;
+}
+/* Glossary
+------------------------------------------------*/
+
+/* Summary
+------------------------------------------------*/
+div.summary {
+	border-bottom:2px solid #eee;
+	border-top:1px solid #eee;
+	padding:1em 0 0 0;
+}
+/* References
+------------------------------------------------*/
+
+/* Notes
+------------------------------------------------*/
+
+.notes {
+	background-color:#FFFFCC;
+}
+div.notes {
+	border:1px solid #F2AD7F;
+	padding:1em 1em 0 1em;
+	border-top:none;
+	border-left:none;
+}
+/* Appendix
+------------------------------------------------*/
+
+/* Promo
+------------------------------------------------*/
+
+/* Odds and Evens
+------------------------------------------------*/
+
+
+
+.odd {
+	background-color:#ecf4f9;
+}
+.even {
+	background-color:/*#f5f9fc*/ #fff;
+}
+/* Zebra lists */
+
+ul.zebra, ol.zebra {
+	border: 1px solid #CEE4F1;
+	background-color:white;
+	padding:0.5em;
+	margin:1em 0;
+}
+.zebra li {
+	list-style-type:none;
+	margin:0;
+	padding:1em;
+}
+th, td {
+	vertical-align:top;
+}
+th.tdate {
+	width:15em;
+}
+table tr {
+	border-bottom:1px solid #eee;
+}
+th {
+	Background-color:#eee;
+}
+td {
+	padding-top:1em;
+}
+tr {
+	border-bottom:1px solid #ccc;
+}
+th {
+	background-color:#eee;
+	border-bottom:1px solid #999;
+}
+table {
+	border-bottom:5px solid #eee;
+}
+td {
+	border-bottom:1px solid #eee;
+	padding:1em 0.5em;
+}
+th.name {
+	min-width:15em;
+}
+td.name {
+	color:black;
+}
+th.role {
+	max-width:10em;
+}
+th.email {
+	max-width:10em;
+}
+th.description {
+	max-width:15em;
+}
+th.extension {
+	max-width:10em;
+}
+div#region1 div.box {
+	border:1px solid #ddd;
+	background-color:white;
+}
+div#region1 div.box h2 {
+	font-size:1.6em;
+	font-weight:normal;
+}
+div#region1 div.box.focus {
+	background-color:#ededdb;
+	border:none;
+	color:black;
+}
+textarea {
+	width:100%;
+	max-width:100%;
+}
+span.editsection, div.editsection {
+	float:right;
+	color:#ccc;
+	text-decoration:none;
+}
+span.editsection a, div.editsection a {
+	color:#ccc;
+	text-decoration:none;
+}
+span.editsection a:hover, div.editsection a:hover {
+	color:red;
+}
+div.editsection {
+	font-size:2em;
+}
+.printfooter {
+	margin:1em 0;
+}
+#legal ul {
+	margin:0;
+	padding:0;
+}
+#legal li {
+	display:inline;
+}
+#legal li a {
+	margin-right:1em;
+}
+#editpage-copywarn p {
+	margin:1em 0;
+}
+.editOptions {
+	background-color:#eee;
+	padding:1em;
+	line-height:200%;
+	border-top:3px solid #ddd;
+}
+div#globalWrapper {
+	text-align:left;
+}
+div.printfooter {
+	display:none;
+}
+div.quick-links {
+	margin-top:2em;
+	padding:1em;
+	border:1px solid #eee;
+	background-color:#f8f8f8;
+}
+div.quick-links h2 {
+	font-size:1em;
+	font-weight:bold;
+}
+th, td {
+	vertical-align:top;
+}
+th.tdate {
+	width:15em;
+}
+table tr {
+	border-bottom:1px solid #eee;
+}
+th {
+	Background-color:#eee;
+}
+td {
+	padding-top:1em;
+}
+tr {
+	border-bottom:1px solid #ccc;
+}
+div#ou-footerf {
+	margin-right:0;
+}
+/* Photo style
+------------------------------------------------*/
+
+div.photo {
+	margin-bottom:1em;
+	border-bottom:3px solid #D6DA92;
+}
+div.photo img {
+	display:block;
+	margin:0 0 0.7em 0;
+	padding:0;
+}
+xdiv.landscape {
+	width:300px;
+	height:auto;
+}
+xdiv.portrait {
+	width:220px;
+	height:auto;
+}
+div.photo p {
+	color:#5c2400;
+	margin:1em 1em 0.7em 1em;
+	white-space:normal;
+}
+div.photo.portrait p {
+	padding:0 0.5em;
+}
+div.photo {
+	background-color:#F7F8E9;
+}
+/* ITEMS */
+
+div.item {
+	width:100%;
+	height:auto;
+	float:left;
+	clear:both;
+}
+dl.menu {
+	padding:1em;
+}
+div.ident {
+	margin-bottom:1em;
+}
+div.ident p {
+	display:inline;
+	margin:0;
+	padding:0;
+}
+div.ident a {
+	display:block;
+	text-decoration:none;
+	font-weight:normal;
+	background-image:url(gui-arrow-left.gif);
+	background-repeat:no-repeat;
+	background-position:0 0.6em;
+	padding:0.5em 0 0.5em 16px;
+}
+div.ident a:hover {
+	background-color:#f8f8f8;
+}
+h1 a {
+	text-decoration:none;
+	color:black;
+}
+/*
+hAtom spec: http://microformats.org/wiki/hatom
+
+.hfeed, hentry, entry-title, entry-content, entry-summary, updated, published, author, bookmark (rel-bookmark), rel-tag
+
+*/
+
+div.hentry {
+	margin:1em 0;
+}
+/* Every site needs a title! */
+
+p#site-title {
+	font-size:2em;
+	margin:0;
+}
+p#site-title a {
+	text-decoration:none;
+	color:#000;
+}
+p#site-title a:hover {
+	background-color:#eee;
+}
+div#site-ident {
+	float:left;
+	clear:both;
+	width:100%;
+	height:auto;
+	margin:1em 0 0.5em 0;
+}
+p#site-description {
+	color:#666666;
+	margin:0.5em 0 0 0;
+	padding:0;
+}
+h1#page-title {
+	/*display:none;*/
+}
+/* HOME PAGE
+-------------------------------------------*/
+/*
+Microformats: hAtom
+http://microformats.org/wiki/hatom
+*/
+
+body.home {/**/
+}
+body.home h1 {/*display:none;*/
+}
+div.promo {
+	height:180px;
+	width:100%;
+	background-color:#eee;
+	border-bottom:1em solid #fff;
+}
+/* LANDING PAGE
+-------------------------------------------*/
+body.landing {/**/
+}
+body.landing div.promo {
+	height:60px;
+}
+/* GALLERY PAGE
+-------------------------------------------*/
+/*
+Microformats: hAtom
+http://microformats.org/wiki/hatom
+*/
+
+body.gallery {/**/
+}
+ol.hfeed {
+	margin:1em 0;
+	padding:0;
+}
+ol.hfeed li.hentry {
+	list-style-type:none;
+	margin:1em 0;
+	padding:0;
+}
+ol.hfeed li.hentry h2 {
+	margin:0 0 0.5em 0;
+	padding:0;
+	font-size:1.3em;
+}
+ol.hfeed li.hentry p {
+	margin:0 0 0 0;
+	padding:0 0;
+}
+ol.hfeed li.hentry p.meta {
+	color:#666;
+	margin:0;
+}
+
+div.showcase img {border:20px solid #F6F6ED; display:block;}
+
+/* SEARCH RESULTS PAGE
+-------------------------------------------*/
+/*
+Microformats: hAtom
+http://microformats.org/wiki/hatom
+*/
+
+body.search {/**/
+}
+form.search-form {
+	margin-bottom:1em;
+	padding-bottom:1em;
+}
+form.search-form input.search-box {/**/
+}
+form.search-form input.search-button {/**/
+}
+ol.search-results {
+	margin:1em 0;
+}
+ol.search-results li {
+	margin:1em 0;
+	padding:0;
+	list-style-type:none;
+}
+ol.search-results li h2 {
+	margin:0;
+	padding:0;
+	font-size:1.3em;
+}
+ol.search-results li h2 a {/**/
+}
+ol.search-results li p {
+	margin:0;
+	padding:0;
+}
+ol.search-results li p cite {
+	font-style:normal;
+	color:#666;
+}
+/* CONTENT PAGE
+-------------------------------------------*/
+/*
+Microformats: 
+
+rel-license
+http://microformats.org/wiki/rel-license
+
+hCard
+http://microformats.org/wiki/hcard
+
+hCalendar
+http://microformats.org/wiki/hcalendar
+
+*/
+
+body.content {/**/
+}
+/* VIDEO PAGE
+-------------------------------------------*/
+/*
+Microformats: rel-license
+http://microformats.org/wiki/rel-license
+*/
+
+body.video {/**/
+}
+
+div.ouice-video {/**/}
+
+/* AUDIO PAGE
+-------------------------------------------*/
+/*
+Microformats: rel-license
+http://microformats.org/wiki/rel-license
+*/
+
+body.audio {/**/
+}
+/* IMAGE PAGE
+-------------------------------------------*/
+/*
+Microformats: rel-license
+http://microformats.org/wiki/rel-license
+*/
+
+body.image {/**/
+}
+div.main-image {
+	margin:1em 0;
+	padding:1em 0;
+	display:block;
+	border-bottom:2px solid #eee;
+}
+div.main-image p.caption {
+	color:#666;
+	margin:0;
+}
+div.thumbnails {
+	border-bottom:1px solid #eee;
+	margin-bottom:1em;
+}
+div.thumbnails ul {
+	margin:0;
+	padding:0;
+}
+div.thumbnails ul li {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	display:inline;
+}
+div.thumbnails ul li a {
+	display:block;
+	float:left;
+	margin:0 1em 1em 0;
+}
+div.thumbnails ul li a:hover {
+	background-color:#000;
+}
+div.thumbnails ul li a img {
+	margin:0;
+	padding:0;
+	display:block;
+}
+/* FORM PAGE
+-------------------------------------------*/
+body.form {/**/
+}
+form.ouice {/**/
+}
+form.ouice fieldset {/**/
+}
+form.ouice fieldset legend {
+	margin:0;
+	padding:0;
+	font-weight:bold;
+}
+form.ouice fieldset ol {
+	margin:1em 0;
+	padding:0;
+}
+form.ouice fieldset ol li {
+	list-style-type:none;
+	margin:0.5em 0;
+	padding:0;
+}
+form.ouice fieldset ol li label {
+	display:block;
+}
+form.ouice fieldset.options ol li label {
+	display:inline;
+}
+form.ouice fieldset ol li input {/**/
+}
+form.ouice p {
+	margin:1em 0;
+}
+/* APPLICATION PAGE
+-------------------------------------------*/
+body.application {/**/
+}
+
+ul.inline, ol.inline {margin:1em 0; padding:0;}
+ul.inline li, ol.inline li {display:inline; list-style-type:none; margin:0; padding:0 10px; background-image:url(arrow-content-right.gif); background-repeat:no-repeat; background-position:left center;}
+
+
+/* OUICE 1.1 -- new additions
+--------------------------------------------*/
+
+div#site-footer p {margin-bottom:0;}
+div#site-footer ul.utilities li a {border-right:1px solid #ccc; padding-right:1em; margin-right:1em;}
+
+ul.sections li a {background-color:#f8f8f8;}
+div#site-footer a {text-decoration:none; color:#666;}
+div#site-footer p {width:100%; float:left; clear:both;}
+
+h1,h2,h3 {font-weight:100;}
+
+dl.gallery {border-top:1px solid #eee; padding-top:1em;}
+dl.gallery dt {font-size:1.8em; font-weight:normal;}
+dl.gallery dt a {text-decoration:none;}
+dl.gallery dd {margin:1em 0 0 0; padding:0;}
+
+div.paged ul a.previous {background-image: url(gui-arrow-left-hollow.gif);}
+div.paged ul a.next {background-image: url(gui-arrow-right-hollow.gif);}
+a.to-top {background-image: url(gui-arrow-up-hollow.gif);}
+dl.toc dd ul li a {background-image: url(gui-arrow-down-hollow.gif);}
+
+dl.siblings dt, div#region1 ul.siblings li {display:block; background-image: url(gui-arrow-right-hollow.gif); background-color:transparent; border:none; padding:0.3em 16px; background-position:center left; background-repeat:no-repeat;}
+
+dl.siblings dt {background-image: url(gui-arrow-left-hollow.gif); font-weight:normal;}
+
+dl.siblings dt a {color:#333; text-decoration:none;}
+
+div#region1 ul.siblings li a, div#region1 ul.siblings li strong {display:inline; background-image:none; padding:0; border:none;}
+
+div#region1 ul.siblings li strong {font-weight:bold; color:#000; background-color:transparent;}
+
+div#region1 ul.siblings li a:hover {background-color:#f8f8f8;}
+
+dl.siblings dd {margin:0; padding:0;}
+
+/* CODE tabbing */
+
+.i1 {padding-left:1em;}
+.i2 {padding-left:2em;}
+.i3 {padding-left:3em;}
+.i4 {padding-left:4em;}
+.i5 {padding-left:5em;}
+.i6 {padding-left:6em;}
+.i7 {padding-left:7em;}
+.i8 {padding-left:8em;}
+
+iframe.eg {width:100%; max-width:100%; height:30ex; border:1px solid #ccc; background-color:#ededdb; margin:1em 0; padding:0;}

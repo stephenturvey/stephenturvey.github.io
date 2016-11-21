@@ -1,0 +1,87 @@
+/*Cookie Banner*/
+.cookieBannerWrap
+{
+	min-width: 180px;
+	background-image: none;
+}
+.cookieBannerWrap p
+{
+	width: 100%;
+}
+.cookieBannerWrap ul
+{
+	width: 100%;
+	margin: 0;
+	padding-top: 0;
+}
+/*end of Cookie Banner*/
+
+a.ou-link-ou {top:0.5em;}
+div.ou-role-nav {margin:0;}
+div#ou-org-header div.ou-role-nav  {padding:0.5em 0.5em; margin:0 0 0 21px;}
+div#ou-org-header div.ou-role-nav li a {padding:0 0.5em; margin:0;}
+div#ou-org-header a#ou-signout,div#ou-org-header a#ou-signout2{padding:0}
+a.ou-link-ou {width:14px; height:16px; background-image:url("/includes/headers-footers/oulogo-16.jpg"); background-repeat:no-repeat;}
+a.ou-link-ou img {display:none;}
+div#ou-org-footer {background-image:none;}
+div#ou-org-header {min-height:30px;}
+div.ou-ia-nav,
+div.ou-role-nav li.ou-role-accessibility,
+div.ou-role-nav li.ou-toggle-mobile,
+div.ou-role-nav li.ou-role-studenthome,
+div.ou-role-nav li.ou-role-tutorhome,
+div.ou-role-nav li.ou-role-intranet,
+div.ou-role-nav li.ou-role-contact,
+li.ou-email,
+div.ou-role-nav li.ou-role-search,
+li.ou-copyright,
+li.ou-phone,
+body.ou-ia-study div#ou-org-footer div.ou-c3of4 li.ou-ia-study,
+body.ou-ia-research div#ou-org-footer div.ou-c3of4 li.ou-ia-research,
+body.ou-ia-community div#ou-org-footer div.ou-c3of4 li.ou-ia-community,
+body.ou-ia-learning div#ou-org-footer div.ou-c3of4 li.ou-ia-learning,
+body.ou-ia-about div#ou-org-footer div.ou-c3of4 li.ou-ia-about {display:none !important;}
+#ou-org-footer li.ou-title, #ou-org-footer li.ou-phone {font-size:1em; font-family:Tahoma, "Lucida Grande", Arial, Helvetica, sans-serif;}
+ 
+#ou-org-footer div.ou-c1of4, #ou-org-footer div.ou-c2of4 {width:48%;}
+#ou-org-footer ul {background-image:none;padding:0 1em}
+#ou-org-footer div.ou-footer-links ul li {padding:0.25em 0;}
+#ou-org-footer ul {background:none}
+li.ou-study,
+li.ou-research,
+li.ou-community,
+li.ou-about,
+li.ou-accessibility,
+li.ou-contact,
+li.ou-search,
+div.ou-mobile-footer {display:block;}
+
+#ou-org-footer div.ou-mobile-footer p {margin:0 1em;}
+#ou-org-footer ul.ou-footer-portals {margin:1em; padding:0 0 8px; float:left; clear:both;  background-image:none; border-bottom:1px dotted #ddd; width:100%}
+#ou-org-footer div.ou-mobile-footer ul.ou-footer-portals li {display:inline-block; margin-right:0.5em; padding-right:0.8em; border-right:1px solid #ddd;}
+#ou-org-footer div.ou-mobile-footer ul.ou-footer-portals li:last-child {border-right:none;}
+li.ou-mobile-enquiries {display:block}
+#ou-org-footer li.ou-title {margin-bottom:0}
+
+div#ou-org-footer div.ou-c1of4, div#ou-org-footer div.ou-c2of4, div#ou-org-footer div.ou-c3of4, div#ou-org-footer div.ou-c4of4 {min-height:0;}
+
+div.ou-grid:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#ou-org-footer div.ou-mobile-footer p {
+	border:1px solid #ccc; 
+	background:url(/includes/headers-footers/boxShade3.gif) repeat-x scroll center bottom #fff; 
+	font:0.85em Arial,Helvetica,sans-serif; 
+	text-align:center;
+	padding:0.3em 0;
+	border-radius: 5px; 
+	box-shadow:0 3px 3px #eee;
+	width:12em;
+}
+
+#ou-org-footer div.ou-mobile-footer p a:hover {background:transparent}

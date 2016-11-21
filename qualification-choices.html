@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>StudentHome - Open University</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+<!-- ST: remove stylesheets
+<link rel="stylesheet" type="text/css" href="includes/ouice/3/screen.css" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="includes/ouice/3/print.css" media="print" />
+<link rel="stylesheet" type="text/css" href="css/site11.css" />
+-->
+<link rel="stylesheet" type="text/css" href="includes/studenthome-header-2012.css" />
+
+<!-- ST: new stylesheets -->
+<link rel="stylesheet" type="text/css" href="includes/headers-footers/ou-header.css" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="css/studenthome.css" media="screen, projection" />
+<!-- end ST -->
+
+
+
+
+
+
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="includes/ouice/3/ie.css" />
+<link rel="stylesheet" href="css/sh-ie.css" />
+<![endif]-->
+
+<!--[if lt IE 7]>
+<link rel="stylesheet" href="css/sh-ie6.css" />
+<![endif]-->
+
+<script type="text/javascript" src="includes/headers-footers/ou-header.js"></script>
+<script type="text/javascript" src="includes/studenthome-menu-2012.js"></script>
+<script type="text/javascript" src="js/site.js"></script>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body class="ou-ia-learning ou-blend study r2r3 sh-study ou-mobile" onload="boot()">
+<script type="text/javascript">if (typeof window.ou_sitestat=='function')ou_sitestat();</script>
+<div id="ou-org-header"> <a class="ou-skip" href="#ou-content">Skip to content</a> <a class="ou-link-ou" href="http://www.open.ac.uk/"><img src="includes/headers-footers/oulogo-56.jpg" alt="The Open University" /></a>
+  <div class="ou-role-nav">
+    <ul>
+      <li class="ou-role-accessibility"><a href="http://www.open.ac.uk/accessibility/">Accessibility</a></li>
+      <li class="ou-role-signin" id="ou-signin1"><a href="https://msds.open.ac.uk/signon/sams001.aspx" id="ou-signin2">Sign in</a></li>
+      <li id="ou-signout" class="ou-role-signout"><a href="https://msds.open.ac.uk/signon/samsoff.aspx" id="ou-signout2">/ Sign out</a></li>
+      <li id="ou-studenthome" class="ou-role-studenthome"><a href="http://www.open.ac.uk/students/" id="ou-studenthome2">StudentHome</a></li>
+      <li id="ou-tutorhome" class="ou-role-tutorhome"><a href="http://www.open.ac.uk/tutorhome/">TutorHome</a></li>
+      <li id="ou-intranet" class="ou-role-intranet"><a href="http://intranet.open.ac.uk/">IntranetHome</a></li>
+      <li id="ou-sponsor" class="ou-role-sponsor"><a href="https://css2.open.ac.uk/employers/sponsorhome/home/HomePage.aspx">SponsorHome</a></li>
+      <li id="ou-contact" class="ou-role-contact"><a href="http://www.open.ac.uk/contact/">Contact</a></li>
+      <li id="ou-search" class="ou-role-search"><a href="http://www.open.ac.uk/search/">Search the OU</a></li>
+    </ul>
+  </div>
+  <div class="ou-ia-nav">
+    <ul>
+      <li class="ou-ia-home"><a href="http://www.open.ac.uk/">The Open University</a></li>
+      <li class="ou-ia-study"><a href="http://www.open.ac.uk/study/">Study at the OU</a></li>
+      <li class="ou-ia-research"><a href="http://www.open.ac.uk/research/">Research at the OU</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/community/">OU Community</a></li>
+      <li class="ou-ia-about"><a href="http://www.open.ac.uk/about/">About the OU</a></li>
+    </ul>
+  </div>
+</div>
+<div class="canvas">
+
+<div class="mnuwrap"><div class="sh-header" role="navigation">
+<ul>
+<li class="sh-home"><a href="index.aspx">StudentHome</a></li>
+<li class="sh-profile"><a href="profile.aspx">Profile</a></li>
+<li class="sh-study"><a href="study-record.aspx" onmouseover="ioe_showmenu(3)" onmouseout="ioe_hidemenu()" onclick="ioe_hidemenu()" class="selected">Study</a></li>
+<li class="sh-community"><a href="oulife.aspx">Community</a></li>
+<li class="sh-help"><a href="help.aspx">Help Centre</a></li>
+</ul>
+</div></div><div id="sh-header-menu"></div>
+<script type="text/javascript">
+var ioe_rel=1;
+var ioe_numcrse=4;
+var ioe_numqual=2;
+var ioe_course=["AA100","A105","MU123","T173"];
+var ioe_pres=["2015B","2015B","2012B","2011B"];
+var ioe_crsetype=[1,1,2,2];
+var ioe_crsetitle=["The arts past and present","Voices, texts and material culture","Discovering mathematics","Engineering the future"];
+var ioe_crsewidth=29;
+var ioe_qualocc=["Q01_1","B65_1"];
+var ioe_qualtitle=["BA (Honours) History","Bachelor of Engineering (Honours)"];
+var ioe_qualwidth=21;
+var iox_name="";
+var iox_nf="Q";
+ioe_createmenus();
+</script>
+
+
+
+
+<div class="grid">
+
+	<div class="r1 aside">
+		<div class="static">
+
+
+		</div>
+	</div>
+
+	<div class="r2">
+		<div class="ou-content" id="ou-content">
+			<h1 class="h1main">Qualification choices</h1>
+			<div class="inview">
+
+
+
+
+<p>Credit that you have gained by studying Open University modules could be eligible to count towards a qualification.</p>
+
+<p><strong>View your options</strong></p>
+
+<form action="qualification-choice-pathways.aspx" method="get" onsubmit="return qc_validate()">
+<table class="plain">
+<tr>
+  <td>Select a subject</td>
+  <td><select name="subjects" id="qc-subj" class="qualchoice" onchange="qc_build_qualifications()">
+    <option value="ANY">I don't mind</option>
+    <option value="AHU">Arts and Humanities</option>
+    <option value="BMA">Business and Management</option>
+    <option value="CYS">Childhood and Youth</option>
+    <option value="CIT">Computing and IT</option>
+    <option value="EDU">Education</option>
+    <option value="ETE">Engineering, Technology and Design</option>
+    <option value="EDI">Environment, Development and International Studies</option>
+    <option value="HSC">Health and Social Care</option>
+    <option value="LAN">Languages</option>
+    <option value="LAW">Law</option>
+    <option value="MST">Mathematics and Statistics</option>
+    <option value="PSY">Psychology and Counselling</option>
+    <option value="SCI">Science</option>
+    <option value="SSC">Social Sciences</option>    
+  </select></td>
+</tr>
+<tr>
+  <td class="szmed">Select a qualification type</td>
+  <td><input type="checkbox" id="qc-degree" name="degree" value="Y" checked="checked" onclick="qc_build_qualifications()" /> Degree &nbsp;
+  <input type="checkbox" id="qc-cert" name="certificate" value="Y" checked="checked" onclick="qc_build_qualifications()" /> Certificate &nbsp;
+  <input type="checkbox" id="qc-diploma" name="diploma" value="Y" checked="checked" onclick="qc_build_qualifications()" /> Diploma</td>
+</tr>
+<tr>
+  <td>Select a qualification</td>
+  <td><select name="qualcode" id="qc-qual" class="qualchoice" onchange="qc_qual_selected()"></select></td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td><input type="submit" value="Show further details" disabled="disabled" id="qc-submit" /></td>
+</tr>
+</table>
+</form>
+
+<script type="text/javascript" src="js/qual-chooser-v5.js"></script>
+
+<script type="text/javascript">
+
+qc_qualifications=[
+["Q88","BA (Honours) Business Management (Sport and Football)","E","BMA"],
+["Q70","BA (Honours) Business Studies","E","BMA.EDI.LAN.LAW.SSC"],
+["Q23","BA (Honours) Childhood and Youth Studies","E","CYS.EDU.HSC"],
+["Q69","BA (Honours) Combined Social Sciences","E","PSY.SSC"],
+["Q51","BA (Honours) Early Years","E","CYS.EDU"],
+["Q39","BA (Honours) English Language and Literature","E","AHU"],
+["Q66","BA (Honours) English Literature","E","AHU"],
+["Q19","BA (Honours) Environmental Studies","E","EDI.SCI.SSC"],
+["Q01","BA (Honours) History","E","AHU"],
+["Q03","BA (Honours) Humanities","E","AHU.LAN"],
+["Q11","BA (Honours) International Studies","E","EDI.SSC"],
+["Q30","BA (Honours) Language Studies","E","AHU.LAN"],
+["Q54","BA (Honours) Leadership and Management","E","BMA"],
+["Q43","BA (Honours) Philosophy and Psychological Studies","E","AHU.PSY.SSC"],
+["Q45","BA (Honours) Politics, Philosophy and Economics","E","AHU.SSC"],
+["Q57","BA (Honours) Social Policy and Criminology","E","SSC"],
+["Q32","BA (Honours) Social Work (England)","E","HSC"],
+["Q41","BA (Honours) Social Work (Scotland)","E","HSC"],
+["Q50","BA (Honours) Social Work (Scotland)","E","HSC"],
+["Q42","BA (Honours) Social Work (Wales)","E","HSC"],
+["Q55","BA (Honours) Youth Work","E","CYS.EDU.HSC"],
+["Q63","BA (Hons) Youth Justice Studies (England and Wales)","E","CYS.HSC"],
+["Q61","BA/BSc (Honours) Design and Innovation","E","ETE"],
+["Q18","BA/BSc (Honours) Health and Social Care","E","CYS.HSC"],
+["QD","BA/BSc (Honours) Open degree","E","AHU.BMA.CIT.CYS.EDI.EDU.ETE.HSC.LAN.LAW.MST.PSY.SCI.SSC"],
+["Q73","BSc (Honours) Adult Nursing","E","HSC"],
+["Q67","BSc (Honours) Computing & IT and a second subject","E","BMA.CIT.ETE.MST.PSY"],
+["Q62","BSc (Honours) Computing and IT","E","CIT"],
+["Q48","BSc (Honours) Criminology and Psychological Studies","E","PSY.SSC"],
+["Q15","BSc (Honours) Economics and Mathematical Sciences","E","MST.SSC"],
+["Q72","BSc (Honours) Environmental Management and Technology","E","EDI.SCI"],
+["Q52","BSc (Honours) Environmental Science","E","EDI.SCI"],
+["Q71","BSc (Honours) Health Sciences","E","SCI"],
+["Q31","BSc (Honours) Mathematics","E","MST"],
+["Q77","BSc (Honours) Mathematics and Physics","E","MST.SCI"],
+["Q36","BSc (Honours) Mathematics and Statistics","E","MST"],
+["Q46","BSc (Honours) Mathematics and its Learning","E","EDU.MST"],
+["Q74","BSc (Honours) Mental Health Nursing","E","HSC"],
+["Q64","BSc (Honours) Natural Sciences","E","SCI"],
+["Q53","BSc (Honours) Nursing Practice","E","HSC"],
+["Q07","BSc (Honours) Psychology","E","PSY"],
+["Q76","BSc (Honours) Sport, Fitness and Coaching","E","HSC"],
+["Q65","Bachelor of Engineering (Honours)","E","ETE"],
+["Q05","Bachelor of Laws (Honours)","E","LAW"],
+["Q79","Bachelor of Laws (Honours)","E","LAW"],
+["Q75","Bachelor of Laws (Honours) (graduate entry)","E","LAW"],
+["T25","CertHE in Business Management (Sport and Football)","C","BMA"],
+["T20","CertHE in Supporting Teaching and Learning in Primary Schools","C","CYS.EDU"],
+["S10","Certificate in Astronomy and Planetary Science","C","SCI"],
+["S05","Certificate in Early Years Practice","C","CYS.EDU.HSC"],
+["S30","Certificate in End-of-Life Care","C","HSC"],
+["S19","Certificate in Health Sciences","C","HSC.SCI"],
+["S31","Certificate in Health and Social Care","C","HSC"],
+["S24","Certificate in Mental Health Studies","C","HSC"],
+["S20","Certificate in Physics","C","SCI"],
+["S26","Certificate in Professional Practice in Delivering Public Services","C","BMA"],
+["S13","Certificate in Promoting Public Health","C","HSC"],
+["S11","Certificate in Supporting Learning in Primary Schools","C","CYS"],
+["S23","Certificate in Working Together for Children","C","CYS.EDU.HSC"],
+["T09","Certificate of Higher Education Open","C","AHU.BMA.CIT.CYS.EDI.EDU.ETE.HSC.LAN.LAW.MST.PSY.SCI.SSC"],
+["T17","Certificate of Higher Education in Business and Management","C","BMA"],
+["T13","Certificate of Higher Education in Computing & IT and a second subject","C","BMA.CIT.ETE.MST.PSY"],
+["T12","Certificate of Higher Education in Computing and IT","C","CIT"],
+["T19","Certificate of Higher Education in Early Years Professional Practice","C","CYS.EDU.HSC"],
+["T16","Certificate of Higher Education in Environment","C","EDI.SCI"],
+["T18","Certificate of Higher Education in Health Sciences","C","SCI"],
+["T01","Certificate of Higher Education in Healthcare Practice","C","HSC"],
+["T10","Certificate of Higher Education in Healthcare Sciences","C","SCI"],
+["T07","Certificate of Higher Education in Humanities","C","AHU"],
+["T14","Certificate of Higher Education in Mathematical Sciences","C","MST"],
+["T11","Certificate of Higher Education in Natural Sciences","C","SCI"],
+["T02","Certificate of Higher Education in Social Care (England)","C","HSC"],
+["T03","Certificate of Higher Education in Social Care (Scotland)","C","HSC"],
+["T04","Certificate of Higher Education in Social Care (Wales)","C","HSC"],
+["T06","Certificate of Higher Education in Social Sciences","C","SSC"],
+["T05","Certificate of Higher Education in Sport, Fitness and Management","C","HSC"],
+["T15","Certificate of Higher Education in Working with Young People","C","CYS.EDU.HSC"],
+["T08","Certificate of Higher Education in Youth Justice (England and Wales)","C","CYS.HSC"],
+["W49","DipHE in Business Management (Sport and Football)","D","BMA"],
+["V20","Diploma in Paramedic Science","D","SCI"],
+["W34","Diploma of Higher Education Open","D","AHU.BMA.CIT.CYS.EDI.EDU.ETE.HSC.LAN.LAW.MST.PSY.SCI.SSC"],
+["W05","Diploma of Higher Education in Business","D","BMA"],
+["W01","Diploma of Higher Education in Childhood Practice","D","CYS.EDU.HSC"],
+["W40","Diploma of Higher Education in Combined Social Sciences","D","PSY.SSC"],
+["W42","Diploma of Higher Education in Computing & IT and a second subject","D","BMA.CIT.ETE.MST.PSY"],
+["W36","Diploma of Higher Education in Computing and IT","D","CIT"],
+["W15","Diploma of Higher Education in Computing and IT Practice","D","CIT"],
+["W09","Diploma of Higher Education in Counselling","D","HSC.PSY.SSC"],
+["W39","Diploma of Higher Education in Criminology and Psychological Studies","D","PSY.SSC"],
+["W11","Diploma of Higher Education in Engineering","D","ETE"],
+["W10","Diploma of Higher Education in Financial Services","D","BMA.SSC"],
+["W16","Diploma of Higher Education in Healthcare Practice","D","HSC"],
+["W35","Diploma of Higher Education in Humanities","D","AHU"],
+["W41","Diploma of Higher Education in Language Studies","D","AHU.LAN"],
+["W06","Diploma of Higher Education in Leadership and Management","D","BMA"],
+["W12","Diploma of Higher Education in Materials Fabrication and Engineering","D","ETE"],
+["W43","Diploma of Higher Education in Mathematical Sciences","D","MST"],
+["W37","Diploma of Higher Education in Natural Sciences","D","SCI"],
+["W08","Diploma of Higher Education in Paramedic Sciences","D","HSC.SCI"],
+["W02","Diploma of Higher Education in Primary Teaching and Learning","D","CYS.EDU"],
+["W14","Diploma of Higher Education in Retail Management","D","BMA"],
+["W31","Diploma of Higher Education in Social Care (Scotland)","D","HSC"],
+["W38","Diploma of Higher Education in Social Policy and Criminology","D","SSC"],
+["W07","Diploma of Higher Education in Sport and Fitness","D","HSC"],
+["W03","Diploma of Higher Education in Working with Young People","D","CYS.EDU.HSC"],
+["X05","Foundation Degree in Business","E","BMA"],
+["X15","Foundation Degree in Computing and IT Practice","E","CIT"],
+["X09","Foundation Degree in Counselling","E","HSC.PSY.SSC"],
+["X01","Foundation Degree in Early Years","E","CYS.EDU.HSC"],
+["X11","Foundation Degree in Engineering","E","ETE"],
+["X10","Foundation Degree in Financial Services","E","BMA.SSC"],
+["X16","Foundation Degree in Healthcare Practice","E","HSC"],
+["X06","Foundation Degree in Leadership and Management","E","BMA"],
+["X12","Foundation Degree in Materials Fabrication and Engineering","E","ETE"],
+["X08","Foundation Degree in Paramedic Sciences","E","HSC.SCI"],
+["X02","Foundation Degree in Primary Teaching and Learning","E","CYS.EDU"],
+["X14","Foundation Degree in Retail Management","E","BMA"],
+["X07","Foundation Degree in Sport and Fitness","E","HSC"],
+["X03","Foundation Degree in Working with Young People","E","CYS.EDU.HSC"],
+["X17","Foundation Degree in Youth Justice (England and Wales)","E","CYS.HSC"],
+["V14","Graduate Diploma in Mathematics Education","D","EDU.MST"],
+["S25","Professional Certificate in Accounting","C","BMA"],
+["S21","Professional Certificate in Effective Practice (Youth Justice)","C","CYS.HSC"],
+["S01","Professional Certificate in Management","C","BMA"],
+["V19","Professional Graduate Diploma in Education","C","EDU"],
+["Q60","Top-up BA (Honours) Early Years","E","CYS.EDU"],
+["Q68","Top-up BSc (Honours) Computing and IT Practice","E","CIT"],
+["Q78","Top-up Bachelor of Engineering (Honours)","E","ETE"]
+];
+
+
+
+</script>
+
+
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+	<div class="r3 aside">
+
+
+<div class="context-nav">
+    <ul>
+        <li><a href="study-record.aspx?stay=1">Your study record</a></li>
+        <li><strong>Qualification choices</strong></li>
+    </ul>
+</div>
+
+
+	</div>
+	
+</div>
+</div>
+<div id="ou-org-footer">
+
+<div class="ou-grid ou-mobile-footer" id="ou-mobile-jlinks"></div>
+
+<div class="ou-grid ou-footer-links">
+  <div class="ou-c1of4">
+    <ul>
+      <li class="ou-title"><a href="http://www.open.ac.uk">The Open University</a></li>
+      <li class="ou-copyright">&#169; Copyright <span id="sbyear"></span>. All rights reserved</li>
+      <li class="ou-phone" id="ou-phone1">+44 (0)300 303 5303</li>
+      <li class="ou-email"><a href="http://www.open.ac.uk/email/">Contact us</a></li>
+      <li class="ou-study"><a href="http://www.open.ac.uk/study/">Study at the OU</a></li>
+      <li class="ou-research"><a href="http://www.open.ac.uk/research/">Research</a></li>
+      <li class="ou-community"><a href="http://www.open.ac.uk/community/">Community</a></li>
+      <li class="ou-about"><a href="http://www.open.ac.uk/about/">About</a></li>
+      <li class="ou-accessibility"><a href="http://www.open.ac.uk/about/">Accessibility</a></li>
+    </ul>
+  </div>
+  <div class="ou-c2of4">
+    <ul>
+    <li class="ou-contact"><a href="http://www.open.ac.uk/contact/">Contact</a></li>
+      <li class="ou-search"><a href="http://www.open.ac.uk/search/">Search</a></li>
+      <li class="ou-privacy"><a href="http://www.open.ac.uk/privacy/">Privacy and cookies</a></li>
+      <li class="ou-copyright"><a href="http://www.open.ac.uk/copyright/">Copyright</a></li>
+      <li class="ou-conditions"><a href="http://www.open.ac.uk/conditions/">Conditions of use</a></li>
+      <li class="ou-cymraeg"><a href="http://www.open.ac.uk/cymraeg/">Cymraeg</a></li>
+      <li class="ou-mobile-enquiries" id="ou-phone2">0300 303 5303</li>
+    </ul>
+  </div>
+  <div class="ou-c3of4">
+    <ul>
+      <li class="ou-ia-study"><a href="http://www3.open.ac.uk/study/undergraduate/">Undergraduate</a></li>
+      <li class="ou-ia-study"><a href="http://www3.open.ac.uk/study/postgraduate/">Postgraduate</a></li>
+      <li class="ou-ia-study ou-ia-research"><a href="http://www.open.ac.uk/research-degrees">Research degrees</a></li>
+      <li class="ou-ia-home ou-ia-study"><a href="http://www.open.ac.uk/employers/">Employers</a></li>
+      <li class="ou-ia-about"><a href="http://www8.open.ac.uk/about/main/the-ou-explained/">OU explained</a></li>
+      <li class="ou-ia-about"><a href="http://www8.open.ac.uk/about/main/faculties-and-centres/">Faculties and centres</a></li>
+      <li class="ou-ia-about"><a href="http://www8.open.ac.uk/about/main/admin-and-governance/">Admin and governance</a></li>
+      <li class="ou-ia-about ou-ia-home"><a href="http://www.open.ac.uk/news/">Press Room</a></li>
+      <li class="ou-ia-home"><a href="http://www.open.ac.uk/alumni/" class="ou-home">Alumni</a></li>
+      <li class="ou-ia-home ou-ia-research ou-ia-about"><a href="http://www.open.ac.uk/jobs/">Jobs</a></li>
+      <li class="ou-ia-home"><a href="http://www.open.ac.uk/fundraising/">Donate</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/platform/">Platform</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/openlearn/">OpenLearn</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/facebook/">Facebook</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/twitter/">Twitter</a></li>
+      <li class="ou-ia-community"><a href="http://www.open.ac.uk/youtube/">YouTube</a></li>
+      <li class="ou-ia-learning"><a href="http://www.open.ac.uk/students/">StudentHome</a></li>
+      <li class="ou-ia-learning"><a href="http://www.open.ac.uk/skillsforstudy/">Learning Support</a></li>
+      <li class="ou-ia-learning"><a href="http://library.open.ac.uk/">Library</a></li>
+    </ul>
+  </div>
+  <div class="ou-charter">The Open University is incorporated by Royal Charter (RC 000391), an <a href="http://www.open.ac.uk/foi/main/who-we-are-and-what-we-do/charity-information-gateway">exempt charity</a> in England &amp; Wales and a charity registered in Scotland (SC 038302).</div>
+  <div class="ou-charter"><br />Open University Student Budget Accounts Limited (OUSBA) is a wholly owned subsidiary of The Open University, Companies House number 303735 and until 31 March 2014 was licensed by the Office of Fair Trading (OFT) under licence number 573250 and from 1 April 2014 is authorised and regulated by the Financial Conduct Authority (FCA) under interim permission number 573250.</div>
+  <div class="ou-c4of4"><!-- reserved --></div>
+  </div>
+    
+</div>
+
+<script type="text/javascript">if (typeof window.ou_init=='function')ou_init();</script>
+</body>
+</html>
